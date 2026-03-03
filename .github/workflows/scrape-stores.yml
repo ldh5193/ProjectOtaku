@@ -1,0 +1,36 @@
+name: Scrape Stores
+
+on:
+  schedule:
+    # 매주 일요일 18:00 UTC (= KST 월요일 03:00)
+    - cron: "0 18 * * 0"
+  workflow_dispatch: # 수동 실행 지원
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run scraper
+        run: npm run scrape
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/stores.json public/data/scraped-candidates.json
+          git diff --staged --quiet || git commit -m "chore: update stores data via scraper" && git push

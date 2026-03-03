@@ -1,0 +1,41 @@
+name: "매장 정보 수정 요청"
+description: "등록된 매장의 잘못된 정보를 신고합니다"
+title: "[정보 수정] "
+labels: ["store-report"]
+body:
+  - type: input
+    id: store-id
+    attributes:
+      label: 매장 ID
+      description: "매장 ID (예: hongdae-001)"
+      placeholder: "hongdae-001"
+    validations:
+      required: true
+  - type: input
+    id: store-name
+    attributes:
+      label: 매장명
+      placeholder: "매장 이름"
+    validations:
+      required: true
+  - type: dropdown
+    id: report-type
+    attributes:
+      label: 수정 유형
+      options:
+        - 영업시간 변경
+        - 전화번호 변경
+        - 주소 변경
+        - 폐업
+        - 장르/카테고리 오류
+        - 기타
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 상세 내용
+      description: "수정이 필요한 내용을 구체적으로 작성해 주세요"
+      placeholder: "예: 영업시간이 12:00-21:00에서 13:00-22:00으로 변경되었습니다"
+    validations:
+      required: true

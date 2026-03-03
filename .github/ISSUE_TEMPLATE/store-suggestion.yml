@@ -1,0 +1,45 @@
+name: "매장 추가 제안"
+description: "새로운 오프라인 굿즈샵을 제안합니다"
+title: "[매장 추가] "
+labels: ["store-suggestion"]
+body:
+  - type: input
+    id: store-name
+    attributes:
+      label: 매장명
+      placeholder: "매장 이름"
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: 주소
+      description: "도로명 주소를 입력해 주세요"
+      placeholder: "서울특별시 마포구 ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: genre
+    attributes:
+      label: 주요 장르
+      description: "가장 관련 있는 장르를 선택해 주세요"
+      multiple: true
+      options:
+        - 애니메이션
+        - 피규어
+        - 굿즈
+        - 만화
+        - 게임
+        - 아이돌
+        - TCG
+        - 가챠
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 추가 정보
+      description: "영업시간, 전화번호, 매장 특징 등 알고 계신 정보를 작성해 주세요"
+      placeholder: "예: 평일 12:00-21:00, 피규어 위주 판매"
+    validations:
+      required: false

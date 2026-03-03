@@ -22,6 +22,8 @@ export interface Store {
   openingHours?: string;
   website?: string;
   description?: string;
+  source?: "manual" | "scraped";
+  lastVerified?: string;
 }
 
 export const genreLabels: Record<Genre, string> = {
@@ -46,12 +48,22 @@ export const ALL_GENRES: Genre[] = [
   "gashapon",
 ];
 
-type Area = "hongdae" | "gangnam" | "sinchon" | "etc";
+export type Area =
+  | "hongdae"
+  | "gangnam"
+  | "sinchon"
+  | "jongno"
+  | "dongdaemun"
+  | "yongsan"
+  | "etc";
 
 export const areaLabels: Record<Area, string> = {
   hongdae: "홍대",
   gangnam: "강남",
   sinchon: "신촌",
+  jongno: "종로",
+  dongdaemun: "동대문",
+  yongsan: "용산",
   etc: "기타",
 };
 
