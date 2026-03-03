@@ -21,18 +21,53 @@ ProjectOtaku/
 └── src/
     ├── app/
     │   ├── layout.tsx                  # 루트 레이아웃 (NaverMapProvider 적용)
-    │   ├── page.tsx                    # 홈 - stores.json → MapSection 전달
-    │   └── globals.css
+    │   ├── page.tsx                    # 홈 - stores.json → HomeClient 전달
+    │   └── globals.css                 # 글로벌 스타일 + scrollbar-hide 유틸
+    ├── hooks/
+    │   └── useStoreFilter.ts           # 장르 필터 + 검색 상태/로직 (filteredStores, groupedStores)
     ├── components/
     │   ├── NaverMapProvider.tsx         # "use client" - 네이버맵 SDK 로딩
     │   ├── Header.tsx                  # 서비스명 표시
+    │   ├── HomeClient.tsx              # "use client" - 메인 오케스트레이터 (필터/지도/리스트 조합)
+    │   ├── filter/
+    │   │   ├── GenreFilterBar.tsx      # 장르 칩 토글 버튼 (8종, 멀티선택, 초기화)
+    │   │   └── SearchBar.tsx           # 검색 입력 (300ms 디바운스)
+    │   ├── list/
+    │   │   └── StoreListPanel.tsx      # 지역 그룹별 매장 리스트 + 빈 결과 상태
+    │   ├── layout/
+    │   │   ├── MobileBottomSheet.tsx   # 모바일 슬라이드업 하단 시트 (55vh)
+    │   │   └── DesktopSidePanel.tsx    # 데스크톱 사이드 패널 (md+, 360px)
     │   └── map/
-    │       ├── MapSection.tsx          # "use client" - 지도 렌더링, 마커, 정보창
+    │       ├── MapSection.tsx          # "use client" - 지도 렌더링, diff 기반 마커 관리, actionRef
     │       └── InfoWindowContent.tsx   # 정보창 HTML 빌더
     └── types/
-        ├── store.ts                    # Store, Genre, StoreType 타입
+        ├── store.ts                    # Store, Genre, StoreType 타입 + genreLabels, areaLabels, 헬퍼
         └── naver-maps.d.ts            # 네이버맵 SDK 타입 선언
 ```
+
+## 기능
+
+### 지도 기반 매장 탐색
+- 네이버맵에 매장 마커 표시 및 정보창
+- 마커 클릭 시 매장 상세 정보 (장르 태그, 운영시간, 전화번호 등)
+
+### 카테고리 필터
+- 8개 장르 칩 버튼으로 필터링 (애니/피규어/굿즈/만화/게임/아이돌/TCG/가챠)
+- 멀티 선택 가능 (OR 조건)
+- 초기화 버튼으로 전체 복원
+
+### 검색
+- 매장 이름/주소 검색 (300ms 디바운스)
+- 장르 필터와 AND 조합
+
+### 매장 리스트
+- 지역별 그룹 헤더로 정리된 리스트 뷰
+- 리스트에서 매장 클릭 → 지도 이동 + 정보창 열림
+- 빈 결과 시 안내 메시지
+
+### 반응형 레이아웃
+- **모바일**: 헤더 → 검색바+목록 토글 → 장르 칩 → 지도 (리스트는 하단 슬라이드업 시트)
+- **데스크톱(md+)**: 헤더 → [좌측 사이드패널(검색+필터+리스트) | 우측 지도]
 
 ## 기술 스택
 

@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import MapSection from "@/components/map/MapSection";
+import HomeClient from "@/components/HomeClient";
 import type { Store } from "@/types/store";
 import storesData from "../../public/data/stores.json";
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <MapSection stores={stores} />
+      <HomeClient stores={stores} />
     </>
   );
 }

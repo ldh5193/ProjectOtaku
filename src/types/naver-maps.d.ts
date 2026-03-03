@@ -1,6 +1,8 @@
 declare namespace naver.maps {
   class Map {
     constructor(element: HTMLElement, options?: MapOptions);
+    setCenter(latlng: LatLng): void;
+    setZoom(zoom: number, effect?: boolean): void;
   }
 
   interface MapOptions {

@@ -1,15 +1,5 @@
-import type { Store, Genre } from "@/types/store";
-
-const genreLabels: Record<Genre, string> = {
-  anime: "애니",
-  figure: "피규어",
-  goods: "굿즈",
-  manga: "만화",
-  game: "게임",
-  idol: "아이돌",
-  tcg: "TCG",
-  gashapon: "가챠",
-};
+import type { Store } from "@/types/store";
+import { genreLabels } from "@/types/store";
 
 export function buildInfoWindowHTML(store: Store): string {
   const tags = store.genre
