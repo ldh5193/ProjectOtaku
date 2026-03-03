@@ -19,3 +19,8 @@ export function buildSuggestUrl(): string {
   });
   return `${BASE}?${params.toString()}`;
 }
+
+export function buildNaverMapUrl(store: Store): string {
+  const query = encodeURIComponent(store.name);
+  return `https://map.naver.com/v5/search/${query}?c=${store.lng},${store.lat},15,0,0,0,dh`;
+}
