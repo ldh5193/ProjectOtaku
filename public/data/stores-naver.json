@@ -1,7 +1,7 @@
 [
   {
     "id": "hongdae-001",
-    "name": "WouldyouGacha",
+    "name": "우주가챠",
     "address": "서울 마포구 와우산로29길 66 지하1층",
     "lat": 37.5563026,
     "lng": 126.926695,
@@ -20,7 +20,7 @@
   },
   {
     "id": "gyeonggi-001",
-    "name": "playgacha",
+    "name": "플레이가챠 서현점",
     "address": "경기 성남시 분당구 황새울로360번길 12",
     "lat": 37.3865328,
     "lng": 127.1250066,
@@ -39,7 +39,7 @@
   },
   {
     "id": "gyeonggi-002",
-    "name": "gacha_rowunharu",
+    "name": "가챠로운하루",
     "address": "경기 수원시 팔달구 화서문로31번길 14-10",
     "lat": 37.2856258,
     "lng": 127.0115381,
@@ -58,7 +58,7 @@
   },
   {
     "id": "gyeonggi-003",
-    "name": "HaenggungGacha",
+    "name": "행궁가챠",
     "address": "경기 수원시 팔달구 화서문로 64-6",
     "lat": 37.2854437,
     "lng": 127.014944,
@@ -77,7 +77,7 @@
   },
   {
     "id": "hongdae-002",
-    "name": "GACHA OCEAN",
+    "name": "가챠오션 홍대점",
     "address": "서울 마포구 어울마당로 134",
     "lat": 37.555909,
     "lng": 126.9248758,
@@ -96,7 +96,7 @@
   },
   {
     "id": "hongdae-003",
-    "name": "DOREMI LAND",
+    "name": "도레미랜드",
     "address": "서울 마포구 신촌로4길 22-22",
     "lat": 37.5574883,
     "lng": 126.927259,
@@ -115,7 +115,7 @@
   },
   {
     "id": "gyeonggi-004",
-    "name": "Azalea",
+    "name": "아젤",
     "address": "경기 성남시 분당구 분당로53번길 9",
     "lat": 37.3839309,
     "lng": 127.1213312,
@@ -129,7 +129,7 @@
   },
   {
     "id": "gyeonggi-005",
-    "name": "CACTI GACHA SHOP",
+    "name": "캑티 가챠샵 수원역점",
     "address": "경기 수원시 팔달구 향교로 21",
     "lat": 37.2683131,
     "lng": 127.0033597,
@@ -148,7 +148,7 @@
   },
   {
     "id": "gyeonggi-006",
-    "name": "Brother Goods Gachyasyap",
+    "name": "브라더굿즈가챠샵",
     "address": "경기 수원시 팔달구 향교로 8-1",
     "lat": 37.2676767,
     "lng": 127.0020969,
@@ -162,7 +162,7 @@
   },
   {
     "id": "gyeonggi-007",
-    "name": "Odeok Odeok Goods Shop",
+    "name": "오덕오덕굿즈샵",
     "address": "경기 수원시 팔달구 매산로 21-9",
     "lat": 37.2680476,
     "lng": 127.003605,
@@ -181,7 +181,7 @@
   },
   {
     "id": "gyeonggi-008",
-    "name": "TheKU",
+    "name": "더쿠 수원점",
     "address": "경기 수원시 팔달구 향교로3번길 17",
     "lat": 37.2682931,
     "lng": 127.0014162,
@@ -200,7 +200,7 @@
   },
   {
     "id": "gwangjin-001",
-    "name": "Uju Gachya",
+    "name": "우주가챠",
     "address": "서울 광진구 아차산로 242",
     "lat": 37.5399387,
     "lng": 127.0699186,
@@ -219,7 +219,7 @@
   },
   {
     "id": "gwangjin-002",
-    "name": "GUNDAE GACHA 25",
+    "name": "건대가챠25",
     "address": "서울 광진구 능동로13길 11",
     "lat": 37.5426659,
     "lng": 127.0711187,
@@ -237,7 +237,7 @@
   },
   {
     "id": "jeju-001",
-    "name": "parkseobang_Jeju",
+    "name": "박서방 제주지점",
     "address": "제주 제주시 다랑곶길 1",
     "lat": 33.4902305,
     "lng": 126.474171,
@@ -256,7 +256,7 @@
   },
   {
     "id": "jeju-002",
-    "name": "Banjihagachya Shop Jeju City Hall 2nd Branch",
+    "name": "반지하가챠샵 제주시청2호점",
     "address": "제주 제주시 중앙로 230",
     "lat": 33.4991046,
     "lng": 126.5298985,
@@ -274,7 +274,7 @@
   },
   {
     "id": "gyeonggi-009",
-    "name": "CAPSULE PLANET",
+    "name": "캡슐플래닛",
     "address": "경기 파주시 미래로 612",
     "lat": 37.7319502,
     "lng": 126.7512932,
@@ -293,7 +293,7 @@
   },
   {
     "id": "gyeonggi-010",
-    "name": "LANG STORE",
+    "name": "랑스토어 본점",
     "address": "경기 안성시 혜산로 2",
     "lat": 37.0108711,
     "lng": 127.2708694,
@@ -312,7 +312,7 @@
   },
   {
     "id": "gyeonggi-011",
-    "name": "Toy Sagye Gaeul Branch",
+    "name": "토이사계 가을점",
     "address": "경기 안성시 아양1로 73",
     "lat": 37.008091,
     "lng": 127.2585558,
@@ -329,7 +329,7 @@
   },
   {
     "id": "gyeonggi-012",
-    "name": "siwoostore",
+    "name": "띠우's Store",
     "address": "경기 안성시 중앙로419번길 60",
     "lat": 37.0093228,
     "lng": 127.2743343,
@@ -348,7 +348,7 @@
   },
   {
     "id": "gyeongbuk-001",
-    "name": "TOYWAY",
+    "name": "토이웨이",
     "address": "경북 안동시 태사길 14-10",
     "lat": 36.5662791,
     "lng": 128.7316253,
@@ -364,8 +364,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "gacha nest",
+    "id": "seouletc-001",
+    "name": "가챠네스트",
     "address": "서울 강동구 천호대로157길 44",
     "lat": 37.5395862,
     "lng": 127.127863,
@@ -378,8 +378,8 @@
     "naverPlaceId": "1221523316"
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Dopaminegoods",
+    "id": "seouletc-002",
+    "name": "도파민굿즈",
     "address": "서울 강동구 양재대로143길 8",
     "lat": 37.5517055,
     "lng": 127.1434874,
@@ -392,8 +392,8 @@
     "naverPlaceId": "2060753894"
   },
   {
-    "id": "etc-seoul-001",
-    "name": "KUJIFAM",
+    "id": "seouletc-003",
+    "name": "쿠지팸",
     "address": "서울 강동구 양재대로128길 28",
     "lat": 37.5445896,
     "lng": 127.1443714,
@@ -407,7 +407,7 @@
   },
   {
     "id": "gangwon-001",
-    "name": "thekuda",
+    "name": "더쿠다",
     "address": "강원 춘천시 공지로 265-2",
     "lat": 37.8653558,
     "lng": 127.7349216,
@@ -421,7 +421,7 @@
   },
   {
     "id": "gyeonggi-013",
-    "name": "Gachashop yangju store",
+    "name": "가챠샵 양주점",
     "address": "경기 양주시 옥정동로7가길 36",
     "lat": 37.8198373,
     "lng": 127.0941014,
@@ -435,7 +435,7 @@
   },
   {
     "id": "gangwon-002",
-    "name": "gachamongttang",
+    "name": "가챠몽땅",
     "address": "강원 원주시 능라동길 51",
     "lat": 37.3346896,
     "lng": 127.9304377,
@@ -449,7 +449,7 @@
   },
   {
     "id": "etc-001",
-    "name": "Gachyasyap Seongnam-dong Branch",
+    "name": "가챠샵 성남동점",
     "address": "울산 중구 젊음의거리 76",
     "lat": 35.5539665,
     "lng": 129.3213314,
@@ -463,7 +463,7 @@
   },
   {
     "id": "etc-002",
-    "name": "anisekai",
+    "name": "애니세카이 울산점",
     "address": "울산 중구 젊음의거리 72",
     "lat": 35.5539479,
     "lng": 129.3210022,
@@ -477,7 +477,7 @@
   },
   {
     "id": "gyeongbuk-002",
-    "name": "Topiko Pohang Branch",
+    "name": "토피코 포항점",
     "address": "경북 포항시 북구 중앙상가길 30-1",
     "lat": 36.0377719,
     "lng": 129.3638065,
@@ -491,7 +491,7 @@
   },
   {
     "id": "hongdae-004",
-    "name": "Gasyapon Street Hongik Univ. Branch",
+    "name": "가샤폰스트리트홍대점",
     "address": "서울특별시 마포구 동교동 192-45",
     "lat": 37.557925,
     "lng": 126.9263355,
@@ -505,7 +505,7 @@
   },
   {
     "id": "busan-001",
-    "name": "PREMIUM GACHA",
+    "name": "프리미엄가챠샵 광안리점",
     "address": "부산 수영구 민락수변로 49",
     "lat": 35.1534877,
     "lng": 129.1260032,
@@ -519,7 +519,7 @@
   },
   {
     "id": "busan-002",
-    "name": "KUJI FACTORY",
+    "name": "쿠지팩토리",
     "address": "부산 부산진구 서전로 42-1",
     "lat": 35.1575699,
     "lng": 129.0643624,
@@ -533,7 +533,7 @@
   },
   {
     "id": "busan-003",
-    "name": "KODAWARI",
+    "name": "코다와리",
     "address": "부산 부산진구 서전로10번길 71",
     "lat": 35.1546941,
     "lng": 129.0599694,
@@ -547,7 +547,7 @@
   },
   {
     "id": "busan-004",
-    "name": "FIGUREWAREHOUSE",
+    "name": "피규어창고",
     "address": "부산 부산진구 중앙대로680번길 45-9",
     "lat": 35.1538913,
     "lng": 129.0616127,
@@ -561,7 +561,7 @@
   },
   {
     "id": "busan-005",
-    "name": "The Goods Busan Seo-myeon Branch",
+    "name": "더굿즈 부산서면점",
     "address": "부산 부산진구 전포대로209번길 39",
     "lat": 35.155295,
     "lng": 129.0631116,
@@ -575,7 +575,7 @@
   },
   {
     "id": "busan-006",
-    "name": "Adult Ai",
+    "name": "어른아이",
     "address": "부산 남구 유엔평화로 166",
     "lat": 35.1219117,
     "lng": 129.0980494,
@@ -589,7 +589,7 @@
   },
   {
     "id": "jeonnam-001",
-    "name": "THEKOOSHOP",
+    "name": "더쿠샵",
     "address": "전남 순천시 충효로 15",
     "lat": 34.9412513,
     "lng": 127.5108541,
@@ -603,7 +603,7 @@
   },
   {
     "id": "jeonnam-002",
-    "name": "Eurachachya Muan Namak Branch",
+    "name": "으라차챠 무안남악점",
     "address": "전남 무안군 삼향읍 남악3로82번길 14",
     "lat": 34.8126853,
     "lng": 126.4617278,
@@ -617,7 +617,7 @@
   },
   {
     "id": "jeonnam-003",
-    "name": "Eurachachya Mokpo Jangmi Geori Branch",
+    "name": "으라차챠 목포장미거리점",
     "address": "전남 목포시 장미로 23",
     "lat": 34.8016914,
     "lng": 126.4239773,
@@ -631,7 +631,7 @@
   },
   {
     "id": "jeonnam-004",
-    "name": "Any Deokuji",
+    "name": "애니더쿠지",
     "address": "전남 나주시 상야4길 16-16",
     "lat": 35.0239007,
     "lng": 126.7930697,
@@ -645,7 +645,7 @@
   },
   {
     "id": "gwangju-001",
-    "name": "Eurachachya Chungjangno Branch",
+    "name": "으라차챠 충장로점",
     "address": "광주 동구 중앙로160번길 15-2",
     "lat": 35.1473922,
     "lng": 126.9148995,
@@ -662,7 +662,7 @@
   },
   {
     "id": "daejeon-001",
-    "name": "Topiko Gachya Shop Eunhaeng Branch",
+    "name": "토피코가챠샵은행점",
     "address": "대전 중구 중앙로156번길 28",
     "lat": 36.3277943,
     "lng": 127.4274663,
@@ -679,7 +679,7 @@
   },
   {
     "id": "daejeon-002",
-    "name": "The KU",
+    "name": "더쿠 대전점",
     "address": "대전 중구 대종로 468",
     "lat": 36.3263069,
     "lng": 127.4276335,
@@ -698,7 +698,7 @@
   },
   {
     "id": "daejeon-003",
-    "name": "Nero Goods",
+    "name": "네로굿즈",
     "address": "대전 중구 계백로1685번길 51",
     "lat": 36.3228904,
     "lng": 127.4051481,
@@ -717,7 +717,7 @@
   },
   {
     "id": "daejeon-004",
-    "name": "thebunkerkuji",
+    "name": "더벙커쿠지",
     "address": "대전 유성구 대학로 34",
     "lat": 36.3566525,
     "lng": 127.3430123,
@@ -734,7 +734,7 @@
   },
   {
     "id": "chungnam-001",
-    "name": "Merrybelle",
+    "name": "메리벨",
     "address": "충남 천안시 동남구 성황7길 13",
     "lat": 36.814649,
     "lng": 127.1496611,
@@ -753,7 +753,7 @@
   },
   {
     "id": "chungnam-002",
-    "name": "UP Yokocho Figurine Unmanned Shop",
+    "name": "유피요코초피규어 무인샵",
     "address": "충남 천안시 동남구 먹거리9길 28-1",
     "lat": 36.8174458,
     "lng": 127.1569836,
@@ -772,7 +772,7 @@
   },
   {
     "id": "chungnam-003",
-    "name": "TOPIKO Cheonan",
+    "name": "토피코 신부동점",
     "address": "충남 천안시 동남구 먹거리11길 30",
     "lat": 36.8180992,
     "lng": 127.1557769,
@@ -791,7 +791,7 @@
   },
   {
     "id": "chungnam-004",
-    "name": "Figurine Queens",
+    "name": "피규어 퀸즈",
     "address": "충남 천안시 동남구 먹거리11길 41",
     "lat": 36.8183498,
     "lng": 127.1572133,
@@ -810,7 +810,7 @@
   },
   {
     "id": "chungnam-005",
-    "name": "WOOJURO",
+    "name": "우주아카이브",
     "address": "충남 천안시 동남구 신부14길 23",
     "lat": 36.8194594,
     "lng": 127.1633476,
@@ -829,7 +829,7 @@
   },
   {
     "id": "chungnam-006",
-    "name": "The Figures Main Branch",
+    "name": "더피규어 본점",
     "address": "충남 천안시 서북구 성성8로 2-34",
     "lat": 36.8402038,
     "lng": 127.1297469,
@@ -848,7 +848,7 @@
   },
   {
     "id": "chungnam-007",
-    "name": "ARCHIVE9",
+    "name": "아카이브9",
     "address": "충남 아산시 탕정면 매곡한들15길 34",
     "lat": 36.786119,
     "lng": 127.0822234,
@@ -867,7 +867,7 @@
   },
   {
     "id": "songpa-001",
-    "name": "CACTI GACHASHOP",
+    "name": "캑티 가챠샵 잠실새내점",
     "address": "서울 송파구 백제고분로7길 24",
     "lat": 37.5106043,
     "lng": 127.0815488,
@@ -886,7 +886,7 @@
   },
   {
     "id": "jongno-001",
-    "name": "CACTI GACHASHOP JONGGAK",
+    "name": "캑티 가챠샵 종각점",
     "address": "서울 종로구 종로12길 9",
     "lat": 37.569626,
     "lng": 126.985886,
@@ -904,8 +904,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "NINI MYEONGDONG",
+    "id": "seouletc-004",
+    "name": "니니 명동",
     "address": "서울 중구 명동3길 23",
     "lat": 37.5647839,
     "lng": 126.983443,
@@ -924,7 +924,7 @@
   },
   {
     "id": "jongno-002",
-    "name": "Figurine Agit",
+    "name": "피규어아지트",
     "address": "서울 종로구 종로54길 29-4",
     "lat": 37.5710272,
     "lng": 127.014166,
@@ -938,7 +938,7 @@
   },
   {
     "id": "jongno-003",
-    "name": "toymarket",
+    "name": "토이마켓",
     "address": "서울 종로구 종로52길 18-1",
     "lat": 37.5714617,
     "lng": 127.0134998,
@@ -956,8 +956,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Gacha shop",
+    "id": "seouletc-005",
+    "name": "오늘또가챠가챠",
     "address": "서울 성동구 행당로 84",
     "lat": 37.5566034,
     "lng": 127.0288249,
@@ -976,7 +976,7 @@
   },
   {
     "id": "gwangjin-003",
-    "name": "CACTI GACHASHOP KONDAE",
+    "name": "캑티 가챠샵 건대점",
     "address": "서울 광진구 아차산로 219",
     "lat": 37.5411322,
     "lng": 127.0680537,
@@ -994,8 +994,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Ocktakustore",
+    "id": "seouletc-006",
+    "name": "옥타쿠상점",
     "address": "서울 구로구 새말로 97",
     "lat": 37.5070143,
     "lng": 126.8902633,
@@ -1011,8 +1011,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Tomoe Shop",
+    "id": "seouletc-007",
+    "name": "토모에 샵",
     "address": "서울 구로구 새말로 97",
     "lat": 37.5070143,
     "lng": 126.8902633,
@@ -1029,7 +1029,7 @@
   },
   {
     "id": "hongdae-005",
-    "name": "kokiribob capsule",
+    "name": "코끼리밥캡슐토이",
     "address": "서울 마포구 양화로 161",
     "lat": 37.5569371,
     "lng": 126.9233225,
@@ -1048,7 +1048,7 @@
   },
   {
     "id": "hongdae-006",
-    "name": "SHIRO GACHA",
+    "name": "시로가챠",
     "address": "서울 마포구 와우산로33길 23",
     "lat": 37.5554388,
     "lng": 126.928963,
@@ -1065,7 +1065,7 @@
   },
   {
     "id": "hongdae-007",
-    "name": "LAST ONE",
+    "name": "라스트원 홍대",
     "address": "서울 마포구 와우산로29길 37",
     "lat": 37.5553551,
     "lng": 126.9278868,
@@ -1084,7 +1084,7 @@
   },
   {
     "id": "hongdae-008",
-    "name": "CACTI GACHASHOP HONGDAE",
+    "name": "캑티 가챠샵 홍대점",
     "address": "서울 마포구 어울마당로 62",
     "lat": 37.5506499,
     "lng": 126.9213713,
@@ -1103,7 +1103,7 @@
   },
   {
     "id": "sinchon-001",
-    "name": "Gachatim",
+    "name": "가챠틈",
     "address": "서울 서대문구 연희맛로 7-31",
     "lat": 37.5664394,
     "lng": 126.9281432,
@@ -1121,8 +1121,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Gacha",
+    "id": "seouletc-008",
+    "name": "꽁실가챠샵 화곡점",
     "address": "서울 강서구 강서로33길 19",
     "lat": 37.54169,
     "lng": 126.838847,
@@ -1139,8 +1139,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "CACTI GACHASHOP",
+    "id": "seouletc-009",
+    "name": "캑티 가챠샵 발산점",
     "address": "서울 강서구 마곡중앙6로 93",
     "lat": 37.5599396,
     "lng": 126.8377733,
@@ -1159,7 +1159,7 @@
   },
   {
     "id": "gyeonggi-014",
-    "name": "Busstoptoy",
+    "name": "정류장난감",
     "address": "경기 김포시 유현로 52",
     "lat": 37.5968024,
     "lng": 126.7277369,
@@ -1178,7 +1178,7 @@
   },
   {
     "id": "incheon-001",
-    "name": "CACTI GACHA SHOP",
+    "name": "캑티 가챠샵 구월점",
     "address": "인천 남동구 인하로 497-28",
     "lat": 37.4447489,
     "lng": 126.7026529,
@@ -1197,7 +1197,7 @@
   },
   {
     "id": "incheon-002",
-    "name": "THEFIGURE",
+    "name": "더피규어",
     "address": "인천 미추홀구 경인남길30번길 91",
     "lat": 37.4512221,
     "lng": 126.6594558,
@@ -1216,7 +1216,7 @@
   },
   {
     "id": "gyeonggi-015",
-    "name": "Akihabara in Buchun",
+    "name": "아키하바라 in 부천",
     "address": "경기 부천시 원미구 부일로460번길 12",
     "lat": 37.4856063,
     "lng": 126.780971,
@@ -1235,7 +1235,7 @@
   },
   {
     "id": "gyeonggi-016",
-    "name": "Brother Goods Bucheon",
+    "name": "브라더굿즈 부천",
     "address": "경기 부천시 원미구 부천로9번길 24",
     "lat": 37.4855125,
     "lng": 126.7817413,
@@ -1254,7 +1254,7 @@
   },
   {
     "id": "gyeonggi-017",
-    "name": "Rangseutoeo Bucheon Branch",
+    "name": "랑스토어 부천점",
     "address": "경기 부천시 원미구 부일로445번길 40",
     "lat": 37.4880365,
     "lng": 126.7795761,
@@ -1273,7 +1273,7 @@
   },
   {
     "id": "gyeonggi-018",
-    "name": "Kaekti Gachyasyap Jungdong Branch",
+    "name": "캑티 가챠샵 중동점",
     "address": "경기 부천시 원미구 석천로177번길 36 1층",
     "lat": 37.503664,
     "lng": 126.761062,
@@ -1292,7 +1292,7 @@
   },
   {
     "id": "hongdae-009",
-    "name": "biasfigure",
+    "name": "최애 피규어",
     "address": "서울 마포구 신촌로4길 5-19",
     "lat": 37.5574272,
     "lng": 126.9293449,
@@ -1311,7 +1311,7 @@
   },
   {
     "id": "daejeon-005",
-    "name": "BUBIBU",
+    "name": "부비부",
     "address": "대전 중구 대종로480번길 46 1층,2층, 3층",
     "lat": 36.3281482,
     "lng": 127.42907,
@@ -1328,7 +1328,7 @@
   },
   {
     "id": "gyeonggi-019",
-    "name": "higacha",
+    "name": "하이가챠",
     "address": "경기 평택시 중앙2로 13",
     "lat": 36.9920822,
     "lng": 127.0886438,
@@ -1347,7 +1347,7 @@
   },
   {
     "id": "gyeonggi-020",
-    "name": "Toy Island Pyeongtaek 2nd Branch",
+    "name": "토이아일랜드 평택2호점",
     "address": "경기 평택시 중앙2로 28",
     "lat": 36.9913684,
     "lng": 127.090027,
@@ -1366,7 +1366,7 @@
   },
   {
     "id": "gyeonggi-021",
-    "name": "FigureKuji",
+    "name": "피규어쿠지",
     "address": "경기 평택시 평택2로20번길 27",
     "lat": 36.9920709,
     "lng": 127.0898973,
@@ -1376,11 +1376,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2039082829"
+    "naverPlaceId": "2039082829",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20251126_67/1764146578712SQcyO_PNG/IMG_7381.png"
+    ]
   },
   {
     "id": "gyeonggi-022",
-    "name": "Toy island",
+    "name": "토이아일랜드",
     "address": "경기 평택시 팔각정길 8-1",
     "lat": 36.9977539,
     "lng": 127.1027033,
@@ -1390,11 +1393,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1963000270"
+    "naverPlaceId": "1963000270",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20241203_99/1733216282631MkPjo_JPEG/KakaoTalk_20241203_175746129.jpg",
+      "https://ldb-phinf.pstatic.net/20241203_186/1733216314679ulPlN_JPEG/KakaoTalk_20241203_175746774.jpg",
+      "https://ldb-phinf.pstatic.net/20241203_80/1733216302466CBtzC_JPEG/KakaoTalk_20241203_175745442.jpg"
+    ]
   },
   {
     "id": "etc-003",
-    "name": "gachanokami",
+    "name": "가챠노카미",
     "address": "",
     "lat": 37.5207918,
     "lng": 126.6775066,
@@ -1404,11 +1412,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2022610640"
+    "naverPlaceId": "2022610640",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250815_155/1755266425213TaMSN_JPEG/1000038667.jpg",
+      "https://ldb-phinf.pstatic.net/20250815_54/1755266425065IhB61_JPEG/1000038666.jpg",
+      "https://ldb-phinf.pstatic.net/20250815_41/1755266425217teEAH_JPEG/1000038668.jpg"
+    ]
   },
   {
     "id": "gyeonggi-023",
-    "name": "Uju Station",
+    "name": "우주정거장",
     "address": "경기 양평군 양평읍 시민로 7",
     "lat": 37.4895058,
     "lng": 127.4927522,
@@ -1418,11 +1431,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1536634549"
+    "naverPlaceId": "1536634549",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250424_138/1745494699758Looke_JPEG/1000022993.jpg",
+      "https://ldb-phinf.pstatic.net/20250424_289/1745494699540nahD1_JPEG/1000022994.jpg",
+      "https://ldb-phinf.pstatic.net/20250424_291/1745494699861KYPHV_JPEG/1000022995.jpg"
+    ]
   },
   {
     "id": "hongdae-010",
-    "name": "Brother Goods Hongik Univ. Entrance Station Branch",
+    "name": "브라더굿즈 홍대입구역점",
     "address": "서울 마포구 홍익로6길 30 지하1층",
     "lat": 37.5556923,
     "lng": 126.9234855,
@@ -1432,11 +1450,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2053141875"
+    "naverPlaceId": "2053141875",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250917_290/17580931390231XhCf_JPEG/KakaoTalk_20250917_161042212.jpg",
+      "https://ldb-phinf.pstatic.net/20251116_194/17632798211632rFvx_JPEG/1000054873.jpg"
+    ]
   },
   {
     "id": "etc-004",
-    "name": "ToysRus Jinjang Branch",
+    "name": "토이저러스 진장점",
     "address": "울산 북구 진장유통로 64",
     "lat": 35.5759101,
     "lng": 129.3583688,
@@ -1446,11 +1468,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "31111437"
+    "naverPlaceId": "31111437",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20200325_214/1585121317129Qlk9g_JPEG/BOJFMFgceBfwSlyr6chR3okW.jpg",
+      "https://ldb-phinf.pstatic.net/20200325_226/1585121336413iQzJV_JPEG/0rKqjEA5JfpenQJmPmftPCbh.jpg"
+    ]
   },
   {
     "id": "gyeonggi-024",
-    "name": "CACTI GACHASHOP HWAJEONG",
+    "name": "캑티 가챠샵 화정점",
     "address": "경기 고양시 덕양구 화신로272번길 58",
     "lat": 37.6336275,
     "lng": 126.8321555,
@@ -1460,11 +1486,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2074297533"
+    "naverPlaceId": "2074297533",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250507_135/1746606445988uNfGI_PNG/%C4%B4%C6%BC_%B0%A1%C3%AD%BC%A5_%B3%D7%C0%CC%B9%F6.png"
+    ]
   },
   {
     "id": "gyeonggi-025",
-    "name": "Goods Shop Moe Bako",
+    "name": "굿즈샵 모에바코",
     "address": "경기 파주시 소리천로 25",
     "lat": 37.7148478,
     "lng": 126.7614804,
@@ -1474,11 +1503,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2019512381"
+    "naverPlaceId": "2019512381",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250806_37/1754464909943oBjq5_JPEG/IMG_1464.JPEG",
+      "https://ldb-phinf.pstatic.net/20250623_248/1750651110167Bthmn_JPEG/KakaoTalk_20250623_125751545.jpg",
+      "https://ldb-phinf.pstatic.net/20250623_293/1750651110144OEGwW_JPEG/KakaoTalk_20250623_125751545_01.jpg"
+    ]
   },
   {
     "id": "gyeonggi-026",
-    "name": "Figurine Ribbon Ilsan Branch",
+    "name": "피규어리본 일산점",
     "address": "경기 고양시 일산동구 정발산로 24",
     "lat": 37.6548765,
     "lng": 126.7728021,
@@ -1488,11 +1522,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2042330022"
+    "naverPlaceId": "2042330022",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20260129_243/1769616708150j3AfY_PNG/be7eb3356014b645.png"
+    ]
   },
   {
     "id": "daegu-001",
-    "name": "TOPIKO",
+    "name": "토피코가챠샵중앙로점",
     "address": "대구 중구 동성로6길 11",
     "lat": 35.8691229,
     "lng": 128.5960517,
@@ -1502,11 +1539,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2065512862"
+    "naverPlaceId": "2065512862",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20251114_288/1763110167214YlCe1_JPEG/KakaoTalk_20250915_094722278.jpg",
+      "https://ldb-phinf.pstatic.net/20251114_235/1763110185576UkBYU_JPEG/KakaoTalk_20250915_094715198.jpg",
+      "https://ldb-phinf.pstatic.net/20251114_60/1763110179076BOvXI_JPEG/KakaoTalk_20250915_094713020.jpg"
+    ]
   },
   {
     "id": "daegu-002",
-    "name": "TOPIKO",
+    "name": "토피코가챠샵경대북문점",
     "address": "대구 북구 대학로17길 8",
     "lat": 35.8930393,
     "lng": 128.6089444,
@@ -1516,11 +1558,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2016426109"
+    "naverPlaceId": "2016426109",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20251114_294/17631079772726QGdC_JPEG/%A4%BC%A4%BD%A4%BB.jpg"
+    ]
   },
   {
     "id": "gyeonggi-027",
-    "name": "Toysrus Lotte Premium Outlet Paju Branch",
+    "name": "토이저러스 롯데프리미엄아울렛 파주점",
     "address": "경기 파주시 문발로 302",
     "lat": 37.7199965,
     "lng": 126.6926717,
@@ -1534,7 +1579,7 @@
   },
   {
     "id": "chungnam-008",
-    "name": "Global Luna Figures Shop",
+    "name": "글로벌루나 피규어샵",
     "address": "충남 천안시 서북구 불당7길 9-1",
     "lat": 36.8023675,
     "lng": 127.11161,
@@ -1544,11 +1589,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1507306618"
+    "naverPlaceId": "1507306618",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20241209_169/17337303617375mEpG_PNG/KakaoTalk_20241129_170759997.png",
+      "https://ldb-phinf.pstatic.net/20250314_300/1741909014983L7lQE_JPEG/1000002913.jpg",
+      "https://ldb-phinf.pstatic.net/20250314_295/1741909011507A3iRe_JPEG/1000002904.jpg"
+    ]
   },
   {
     "id": "hongdae-011",
-    "name": "Mega House Official Store",
+    "name": "메가하우스 홍대본점",
     "address": "서울 마포구 양화로 188 AK플라자홍대점 3층",
     "lat": 37.5577702,
     "lng": 126.9265109,
@@ -1558,11 +1608,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2020764810"
+    "naverPlaceId": "2020764810",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20251014_126/1760407243945nnQKH_PNG/8rGySN1Q_400x400.png",
+      "https://ldb-phinf.pstatic.net/20260128_246/1769589828543W78tw_PNG/%C5%A9%B1%E2%BA%AF%C8%AF%B7%E8%BE%F7%B1%C2%C1%EE1.png",
+      "https://ldb-phinf.pstatic.net/20260128_89/1769589828557PdG6z_PNG/%C5%A9%B1%E2%BA%AF%C8%AF%B7%E8%BE%F7%B1%C2%C1%EE2.png"
+    ]
   },
   {
     "id": "hongdae-012",
-    "name": "KIRAKIRATOMO HongDae House",
+    "name": "키라키라토모 홍대하우스",
     "address": "서울 마포구 양화로18길 7",
     "lat": 37.5568601,
     "lng": 126.9246109,
@@ -1572,11 +1627,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2072305291"
+    "naverPlaceId": "2072305291",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250920_64/1758346893229t980h_PNG/%B4%EB%C1%F6_1.png",
+      "https://ldb-phinf.pstatic.net/20251017_82/1760679960068eKJmv_PNG/%B8%C5%C0%E5%BE%C8%B3%BB%C0%CC%B9%CC%C1%F62_%C3%D6%BD%C5.png"
+    ]
   },
   {
     "id": "gyeonggi-028",
-    "name": "Dabicheu Gacha Shop",
+    "name": "다비츠가챠샵",
     "address": "경기 하남시 미사강변동로 95",
     "lat": 37.5637312,
     "lng": 127.1917417,
@@ -1586,11 +1645,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1594791580"
+    "naverPlaceId": "1594791580",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250226_274/1740559373692jMOS9_JPEG/KakaoTalk_20250224_003145151_01.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "NANAGACHA",
+    "id": "seouletc-010",
+    "name": "나나가챠",
     "address": "서울 성동구 서울숲2길 11-17",
     "lat": 37.5477718,
     "lng": 127.0400206,
@@ -1600,11 +1662,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1658915181"
+    "naverPlaceId": "1658915181",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240809_198/1723182165220sbBoq_PNG/IMG_1389.png",
+      "https://ldb-phinf.pstatic.net/20240809_5/1723182164889Ozkue_JPEG/IMG_1380.jpeg",
+      "https://ldb-phinf.pstatic.net/20240809_127/1723182164840uMJ29_JPEG/IMG_1379.jpeg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "DABITS GACHA",
+    "id": "seouletc-011",
+    "name": "다비츠가챠 서울숲점",
     "address": "서울 성동구 서울숲6길 10",
     "lat": 37.5476152,
     "lng": 127.0426787,
@@ -1614,11 +1681,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2060323052"
+    "naverPlaceId": "2060323052",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250812_4/17550065704989VrhE_JPEG/KakaoTalk_20250812_185933924_05.jpg",
+      "https://ldb-phinf.pstatic.net/20250812_288/17550065855325XQPd_JPEG/KakaoTalk_20250812_185933924.jpg",
+      "https://ldb-phinf.pstatic.net/20250812_262/17550065855688UooO_JPEG/KakaoTalk_20250812_185933924_01.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Teonseutok Seu",
+    "id": "seouletc-012",
+    "name": "턴스톡스",
     "address": "서울 중랑구 양원역로 20",
     "lat": 37.6023115,
     "lng": 127.1082325,
@@ -1628,11 +1700,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "37993195"
+    "naverPlaceId": "37993195",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20180815_235/15342936748225L9Di_JPEG/A981CUiSUfZx6Xj0QzphKX6z.jpg",
+      "https://ldb-phinf.pstatic.net/20180815_120/1534293674577Tv5tq_JPEG/Vbwuxx6zg7oQO5GYp_6Sg5ci.jpg",
+      "https://ldb-phinf.pstatic.net/20180815_109/1534293674632vT6vv_JPEG/JnhCQAj283h6ZoVBvR4uAxit.jpg"
+    ]
   },
   {
     "id": "jeju-003",
-    "name": "aniRang goodsRang",
+    "name": "애니랑굿즈랑",
     "address": "제주 제주시 구남동5길 16",
     "lat": 33.4900418,
     "lng": 126.5402836,
@@ -1642,11 +1719,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1013005032"
+    "naverPlaceId": "1013005032",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250816_264/17553297971641Rah2_PNG/1.6.png"
+    ]
   },
   {
     "id": "jeju-004",
-    "name": "TUNSTOKS",
+    "name": "턴스톡스 제주점",
     "address": "제주 제주시 중앙로 281",
     "lat": 33.4953372,
     "lng": 126.533365,
@@ -1664,7 +1744,7 @@
   },
   {
     "id": "gyeonggi-029",
-    "name": "gifishop",
+    "name": "기피있는가게",
     "address": "경기 고양시 일산동구 무궁화로 43-15",
     "lat": 37.6636684,
     "lng": 126.7679572,
@@ -1682,8 +1762,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "gacha shop",
+    "id": "seouletc-013",
+    "name": "가챠샵",
     "address": "서울 구로구 디지털로29길 38",
     "lat": 37.4863856,
     "lng": 126.8924571,
@@ -1702,7 +1782,7 @@
   },
   {
     "id": "etc-005",
-    "name": "Hobby Factory BOK Art Center Branch",
+    "name": "하비팩토리 비오케이아트센터점",
     "address": "세종  국책연구원3로 12",
     "lat": 36.472098,
     "lng": 127.2771921,
@@ -1719,7 +1799,7 @@
   },
   {
     "id": "daejeon-006",
-    "name": "Jiilgachya",
+    "name": "지일가챠",
     "address": "대전 서구 도솔로 445",
     "lat": 36.3273684,
     "lng": 127.4276598,
@@ -1736,7 +1816,7 @@
   },
   {
     "id": "gangnam-001",
-    "name": "Kukje Electronic Center",
+    "name": "국제전자센터",
     "address": "서울 서초구 효령로 304",
     "lat": 37.4848185,
     "lng": 127.0177083,
@@ -1755,7 +1835,7 @@
   },
   {
     "id": "daegu-003",
-    "name": "Space Urara DS",
+    "name": "스페이스우라라DS",
     "address": "대구 중구 동성로6길 61",
     "lat": 35.8687083,
     "lng": 128.5987415,
@@ -1774,7 +1854,7 @@
   },
   {
     "id": "daegu-004",
-    "name": "Space URARA Daegu Spark",
+    "name": "스페이스 우라라 동성로스파크점",
     "address": "대구 중구 동성로6길 61",
     "lat": 35.8687083,
     "lng": 128.5987415,
@@ -1792,8 +1872,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Space Urara Hwagok",
+    "id": "seouletc-014",
+    "name": "스페이스 우라라 강서화곡점",
     "address": "서울 강서구 화곡로 164",
     "lat": 37.5412508,
     "lng": 126.8398924,
@@ -1812,7 +1892,7 @@
   },
   {
     "id": "hongdae-013",
-    "name": "Duckmo Cl",
+    "name": "덕모클",
     "address": "서울 마포구 양화로18안길 7 지하1층",
     "lat": 37.5568246,
     "lng": 126.9250744,
@@ -1829,7 +1909,7 @@
   },
   {
     "id": "hongdae-014",
-    "name": "FIGURE CENTER 2",
+    "name": "피규어센터 2호점",
     "address": "서울 마포구 와우산로29길 39 1층",
     "lat": 37.5554486,
     "lng": 126.9277927,
@@ -1846,7 +1926,7 @@
   },
   {
     "id": "hongdae-015",
-    "name": "FIGURE CENTER",
+    "name": "피규어센터 1호점",
     "address": "서울 마포구 양화로18안길 40 지하1층",
     "lat": 37.5570913,
     "lng": 126.9267426,
@@ -1864,7 +1944,7 @@
   },
   {
     "id": "hongdae-016",
-    "name": "kyouma",
+    "name": "쿄우마가챠샵 LC타워점",
     "address": "서울 마포구 양화로 186",
     "lat": 37.5576339,
     "lng": 126.9261602,
@@ -1878,7 +1958,7 @@
   },
   {
     "id": "hongdae-017",
-    "name": "YUECHAIGOOS",
+    "name": "웨차이굿즈",
     "address": "서울 마포구 와우산로35길 75 2,3층",
     "lat": 37.5564017,
     "lng": 126.9267382,
@@ -1897,7 +1977,7 @@
   },
   {
     "id": "gangnam-002",
-    "name": "Getchya Seoul Gangnam Branch",
+    "name": "겟챠 서울 강남점",
     "address": "서울 강남구 강남대로 428",
     "lat": 37.5008145,
     "lng": 127.026849,
@@ -1916,7 +1996,7 @@
   },
   {
     "id": "gangnam-003",
-    "name": "PIKA STATION",
+    "name": "피카스테이션 강남",
     "address": "서울 강남구 테헤란로 101",
     "lat": 37.4983345,
     "lng": 127.0274128,
@@ -1933,8 +2013,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Yume Gacha",
+    "id": "seouletc-015",
+    "name": "유메가챠",
     "address": "서울 관악구 신림로59길 6",
     "lat": 37.4830783,
     "lng": 126.9295084,
@@ -1953,7 +2033,7 @@
   },
   {
     "id": "gangnam-004",
-    "name": "ANIPEACE",
+    "name": "애니피스",
     "address": "서울 서초구 신반포로47길 33-2",
     "lat": 37.5121902,
     "lng": 127.0189569,
@@ -1971,8 +2051,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Jeongseu Super",
+    "id": "seouletc-016",
+    "name": "정스슈퍼",
     "address": "서울 양천구 신목로6길 41",
     "lat": 37.5221977,
     "lng": 126.8758067,
@@ -1990,8 +2070,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Kkongsil Gachya Shop",
+    "id": "seouletc-017",
+    "name": "꽁실가챠샵",
     "address": "서울 강서구 마곡중앙로 111",
     "lat": 37.5636544,
     "lng": 126.8258048,
@@ -2008,7 +2088,7 @@
   },
   {
     "id": "incheon-003",
-    "name": "Gachakucha",
+    "name": "가챠쿠챠",
     "address": "인천 부평구 부평대로 38",
     "lat": 37.4948608,
     "lng": 126.72304,
@@ -2027,7 +2107,7 @@
   },
   {
     "id": "incheon-004",
-    "name": "Kongkong Gachya",
+    "name": "콩콩가챠",
     "address": "인천 부평구 시장로 10",
     "lat": 37.4914927,
     "lng": 126.724401,
@@ -2045,7 +2125,7 @@
   },
   {
     "id": "incheon-005",
-    "name": "bboggi",
+    "name": "뽀끼",
     "address": "인천 남동구 서창남순환로 223",
     "lat": 37.4248367,
     "lng": 126.7489215,
@@ -2064,7 +2144,7 @@
   },
   {
     "id": "gyeonggi-030",
-    "name": "gacha store",
+    "name": "가챠 스토어",
     "address": "경기 시흥시 은계번영길 9",
     "lat": 37.4374767,
     "lng": 126.8016257,
@@ -2083,7 +2163,7 @@
   },
   {
     "id": "incheon-006",
-    "name": "runrun gacha",
+    "name": "룬룬가챠샵",
     "address": "인천 미추홀구 경인로 372",
     "lat": 37.4573949,
     "lng": 126.6811634,
@@ -2102,7 +2182,7 @@
   },
   {
     "id": "incheon-007",
-    "name": "Market Heidi",
+    "name": "마켓헤이디",
     "address": "인천 서구 이음5로 60",
     "lat": 37.5943218,
     "lng": 126.7146621,
@@ -2121,7 +2201,7 @@
   },
   {
     "id": "incheon-008",
-    "name": "Figure-Re:born",
+    "name": "피규어리본 검단 본점",
     "address": "인천 서구 원당대로840번길 5",
     "lat": 37.593062,
     "lng": 126.6948981,
@@ -2138,7 +2218,7 @@
   },
   {
     "id": "gyeonggi-031",
-    "name": "anicompany",
+    "name": "애니컴퍼니",
     "address": "경기 김포시 김포한강9로75번길 22",
     "lat": 37.64387,
     "lng": 126.624022,
@@ -2155,7 +2235,7 @@
   },
   {
     "id": "gyeonggi-032",
-    "name": "Gachyaui Gachi",
+    "name": "가챠의가치",
     "address": "경기 김포시 김포한강9로76번길 11",
     "lat": 37.6441737,
     "lng": 126.6265483,
@@ -2174,7 +2254,7 @@
   },
   {
     "id": "gyeonggi-033",
-    "name": "nekogacha",
+    "name": "네코가챠",
     "address": "경기 고양시 일산서구 한류월드로 300",
     "lat": 37.6645702,
     "lng": 126.7547931,
@@ -2191,7 +2271,7 @@
   },
   {
     "id": "gyeonggi-034",
-    "name": "GachaAlive02",
+    "name": "얼라이브 02",
     "address": "경기 고양시 일산서구 한류월드로 300",
     "lat": 37.6652069,
     "lng": 126.7542034,
@@ -2210,7 +2290,7 @@
   },
   {
     "id": "gyeonggi-035",
-    "name": "Gachyasyap Lafesta Branch",
+    "name": "가챠샵 라페스타점",
     "address": "경기 고양시 일산동구 무궁화로 20-11",
     "lat": 37.6618335,
     "lng": 126.7676023,
@@ -2227,7 +2307,7 @@
   },
   {
     "id": "gyeonggi-036",
-    "name": "nekogacha",
+    "name": "네코가챠 2호점",
     "address": "경기 고양시 일산동구 정발산로 27",
     "lat": 37.6569337,
     "lng": 126.7718843,
@@ -2244,7 +2324,7 @@
   },
   {
     "id": "gyeonggi-037",
-    "name": "Place Face",
+    "name": "플레이스페이스",
     "address": "경기 파주시 경의로 1100",
     "lat": 37.7153372,
     "lng": 126.7601563,
@@ -2263,7 +2343,7 @@
   },
   {
     "id": "gyeonggi-038",
-    "name": "gacha shop heyri",
+    "name": "가챠샵 헤이리점",
     "address": "경기 파주시 탄현면 헤이리마을길 48-20",
     "lat": 37.7874633,
     "lng": 126.6993486,
@@ -2280,7 +2360,7 @@
   },
   {
     "id": "gyeonggi-039",
-    "name": "Gachya Shop Millak Branch",
+    "name": "가챠샵 민락점",
     "address": "경기 의정부시 오목로205번길 55",
     "lat": 37.745774,
     "lng": 127.0959371,
@@ -2293,8 +2373,8 @@
     "naverPlaceId": "1818856124"
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Jipsaui Haru Gachya & Goods",
+    "id": "seouletc-018",
+    "name": "집사의하루 가챠앤굿즈",
     "address": "서울 노원구 상계로 64",
     "lat": 37.6558003,
     "lng": 127.0622973,
@@ -2313,7 +2393,7 @@
   },
   {
     "id": "gangwon-003",
-    "name": "wecand",
+    "name": "위캔드",
     "address": "강원 춘천시 금강로 68",
     "lat": 37.879271,
     "lng": 127.7287574,
@@ -2332,7 +2412,7 @@
   },
   {
     "id": "gangwon-004",
-    "name": "Hidden Toy Wonju Branch",
+    "name": "히든토이 원주점",
     "address": "강원 원주시 능라동길 48-1",
     "lat": 37.3341252,
     "lng": 127.9297216,
@@ -2351,7 +2431,7 @@
   },
   {
     "id": "daegu-005",
-    "name": "HIDDENTOY",
+    "name": "히든토이 대구2호점",
     "address": "대구 중구 중앙대로 394",
     "lat": 35.8683198,
     "lng": 128.594002,
@@ -2370,7 +2450,7 @@
   },
   {
     "id": "daegu-006",
-    "name": "Random Bol",
+    "name": "랜덤볼",
     "address": "대구 중구 중앙대로 412-50",
     "lat": 35.8697901,
     "lng": 128.5950942,
@@ -2380,11 +2460,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2053468441"
+    "naverPlaceId": "2053468441",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20260209_81/1770625563746Rlb2W_JPEG/KakaoTalk_20260209_172216854_02.jpg",
+      "https://ldb-phinf.pstatic.net/20260209_282/1770625585968m1BQw_JPEG/KakaoTalk_20260209_172216854_06.jpg",
+      "https://ldb-phinf.pstatic.net/20260209_295/1770625607485wEGEy_JPEG/KakaoTalk_20260209_172216854_07.jpg"
+    ]
   },
   {
     "id": "daegu-007",
-    "name": "BONGBONG GACHA",
+    "name": "봉봉가챠 동성로점",
     "address": "대구 중구 동성로 44",
     "lat": 35.8705856,
     "lng": 128.595731,
@@ -2394,11 +2479,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2066895427"
+    "naverPlaceId": "2066895427",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250911_172/1757593759677A9Ww5_JPEG/20250904_133820.jpg",
+      "https://ldb-phinf.pstatic.net/20250911_202/1757593760315oRlgu_JPEG/20250904_133806.jpg",
+      "https://ldb-phinf.pstatic.net/20250911_73/1757593760175CwGlR_JPEG/20250904_133800.jpg"
+    ]
   },
   {
     "id": "daegu-008",
-    "name": "TOYTOY",
+    "name": "토이토이 가챠샵 교동점",
     "address": "대구 중구 교동2길 47",
     "lat": 35.8721904,
     "lng": 128.5977064,
@@ -2408,11 +2498,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2043760859"
+    "naverPlaceId": "2043760859",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250901_79/1756684943227zjNCQ_JPEG/KakaoTalk_20250901_090208632.jpg"
+    ]
   },
   {
     "id": "daegu-009",
-    "name": "GONGTEO",
+    "name": "공터애니피규어",
     "address": "대구 중구 교동2길 39",
     "lat": 35.8725565,
     "lng": 128.5977696,
@@ -2422,11 +2515,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1554738213"
+    "naverPlaceId": "1554738213",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20230922_186/1695381016705Xft0h_JPEG/KakaoTalk_20230922_200941545.jpg"
+    ]
   },
   {
     "id": "daegu-010",
-    "name": "Kkongju Gachya",
+    "name": "꽁주가챠",
     "address": "대구 중구 경상감영길 136-1",
     "lat": 35.8720931,
     "lng": 128.5949179,
@@ -2436,11 +2532,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2020665191"
+    "naverPlaceId": "2020665191",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250422_268/1745299288140pvor0_PNG/%BD%BA%C5%A9%B8%B0%BC%A6_2025-03-22_223544.png"
+    ]
   },
   {
     "id": "daegu-011",
-    "name": "My Haru",
+    "name": "마이하루",
     "address": "대구 중구 교동1길 34",
     "lat": 35.8730085,
     "lng": 128.5971974,
@@ -2450,11 +2549,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2055115514"
+    "naverPlaceId": "2055115514",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20251119_244/1763546612235fVKbo_JPEG/20251116_193834.jpg",
+      "https://ldb-phinf.pstatic.net/20251119_188/1763546612166kPT2K_JPEG/20251116_193310.jpg",
+      "https://ldb-phinf.pstatic.net/20251119_256/1763546612213Ff2cl_JPEG/20251021_181953.jpg"
+    ]
   },
   {
     "id": "daegu-012",
-    "name": "pashop",
+    "name": "파샵",
     "address": "대구 중구 공평로 55",
     "lat": 35.8689674,
     "lng": 128.5997793,
@@ -2464,11 +2568,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1525016887"
+    "naverPlaceId": "1525016887",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250613_59/17498199670236ym6r_JPEG/IMG_0396.jpeg",
+      "https://ldb-phinf.pstatic.net/20250613_200/1749819968650AhOVx_JPEG/1043B904-5B05-4EC2-9371-33E133EA3879.jpeg",
+      "https://ldb-phinf.pstatic.net/20250613_207/17498199717413ypAC_JPEG/771507523.812178.jpeg"
+    ]
   },
   {
     "id": "busan-007",
-    "name": "oujiwaotaku",
+    "name": "오지는 오타쿠",
     "address": "부산 부산진구 서면로 69-1",
     "lat": 35.157007,
     "lng": 129.0575427,
@@ -2478,11 +2587,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1461107097"
+    "naverPlaceId": "1461107097",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250111_213/1736575979529rPvyd_JPEG/KakaoTalk_20250111_151141458.jpg",
+      "https://ldb-phinf.pstatic.net/20250111_135/1736575805538EYKUo_JPEG/KakaoTalk_20250111_145909056_03.jpg",
+      "https://ldb-phinf.pstatic.net/20250111_261/17365758536583vyf6_JPEG/KakaoTalk_20250111_150920083.jpg"
+    ]
   },
   {
     "id": "busan-008",
-    "name": "dding ddong",
+    "name": "띵똥가챠",
     "address": "부산 동래구 사직북로63번길 55",
     "lat": 35.1977942,
     "lng": 129.0582908,
@@ -2492,11 +2606,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2045632980"
+    "naverPlaceId": "2045632980",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250728_253/1753676286655CoSix_JPEG/KakaoTalk_20250728_131156395.jpg",
+      "https://ldb-phinf.pstatic.net/20250728_112/1753676286466XiIvO_JPEG/KakaoTalk_20250728_131156395_01.jpg",
+      "https://ldb-phinf.pstatic.net/20250728_290/1753676286298Fnp3g_JPEG/KakaoTalk_20250728_131156395_02.jpg"
+    ]
   },
   {
     "id": "gyeongnam-001",
-    "name": "Kurone Gachya Branch",
+    "name": "쿠로네가챠점",
     "address": "경남 김해시 김해대로2315번길 22",
     "lat": 35.2281644,
     "lng": 128.8796035,
@@ -2506,11 +2625,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1475708011"
+    "naverPlaceId": "1475708011",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250321_145/1742534916062NcVK8_JPEG/IMG_9992.jpeg",
+      "https://ldb-phinf.pstatic.net/20250321_85/174253491594077iJO_JPEG/IMG_9993.jpeg"
+    ]
   },
   {
     "id": "gwangju-002",
-    "name": "ANI24",
+    "name": "애니24",
     "address": "광주 북구 우치로90번길 7",
     "lat": 35.1755916,
     "lng": 126.913198,
@@ -2520,11 +2643,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2062928791"
+    "naverPlaceId": "2062928791",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250830_145/1756485711866MBq2s_JPEG/IMG_0251.jpeg",
+      "https://ldb-phinf.pstatic.net/20250902_157/1756790434248eXmB3_JPEG/KakaoTalk_20250902_141355389_01.jpg",
+      "https://ldb-phinf.pstatic.net/20250902_222/1756790415715M0Szl_JPEG/KakaoTalk_20250902_141355389.jpg"
+    ]
   },
   {
     "id": "gwangju-003",
-    "name": "Gacha Shop Chungjangno Branch",
+    "name": "가차샵 충장로점",
     "address": "광주 동구 중앙로160번길 15-8",
     "lat": 35.1475949,
     "lng": 126.9151804,
@@ -2534,11 +2662,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2036361869"
+    "naverPlaceId": "2036361869",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250629_244/1751208104633Ww43c_JPEG/1000022530.jpg"
+    ]
   },
   {
     "id": "gwangju-004",
-    "name": "anisekai Chungjangro",
+    "name": "애니세카이 충장로점",
     "address": "광주 동구 충장로 80-7",
     "lat": 35.1480504,
     "lng": 126.9157302,
@@ -2548,11 +2679,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1029958192"
+    "naverPlaceId": "1029958192",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20241204_170/17332834350299H1sN_JPEG/KakaoTalk_20241204_105404517.jpg",
+      "https://ldb-phinf.pstatic.net/20241204_247/1733283432683x8sjx_JPEG/KakaoTalk_20241204_105404517_01.jpg"
+    ]
   },
   {
     "id": "gwangju-005",
-    "name": "Brother Goods Gwangju Chungjang Branch",
+    "name": "브라더굿즈 광주충장점",
     "address": "광주 동구 충장로 81-1",
     "lat": 35.1484035,
     "lng": 126.9162754,
@@ -2562,11 +2697,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2048897015"
+    "naverPlaceId": "2048897015",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250605_3/1749124258031x6Elg_PNG/001.png",
+      "https://ldb-phinf.pstatic.net/20250605_42/17491242580597ykng_PNG/002.png",
+      "https://ldb-phinf.pstatic.net/20250605_259/1749124258091UG32E_PNG/003.png"
+    ]
   },
   {
     "id": "jeonbuk-001",
-    "name": "Sunny Side Hanok Village Branch",
+    "name": "써니사이드 한옥마을점",
     "address": "전북 전주시 완산구 은행로 75",
     "lat": 35.8133415,
     "lng": 127.1529432,
@@ -2576,11 +2716,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1186096865"
+    "naverPlaceId": "1186096865",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250112_79/1736669041078d1qaC_JPEG/IMG_0338.jpeg"
+    ]
   },
   {
     "id": "gyeonggi-040",
-    "name": "Eurachachya Hanok Village 2nd Branch",
+    "name": "으라차챠 한옥마을2호점",
     "address": "전북 전주시 완산구 경기전길 121",
     "lat": 35.8140048,
     "lng": 127.1513125,
@@ -2590,11 +2733,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2099740082"
+    "naverPlaceId": "2099740082",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250624_34/1750768203828fsQH6_JPEG/KakaoTalk_20250624_212922320.jpg",
+      "https://ldb-phinf.pstatic.net/20250624_298/175076820376669zC3_JPEG/KakaoTalk_20250624_212922320_01.jpg",
+      "https://ldb-phinf.pstatic.net/20250624_212/1750768203637aqXA4_JPEG/KakaoTalk_20250624_212922320_02.jpg"
+    ]
   },
   {
     "id": "jeonbuk-002",
-    "name": "Eurachachya Hanok Village Branch",
+    "name": "으라차챠 한옥마을점",
     "address": "전북 전주시 완산구 태조로 18",
     "lat": 35.8148515,
     "lng": 127.1527848,
@@ -2604,11 +2752,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1023796840"
+    "naverPlaceId": "1023796840",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250313_35/1741868941603y4uOQ_JPEG/KakaoTalk_20250313_212648540.jpg",
+      "https://ldb-phinf.pstatic.net/20250313_208/17418689416012Mx7J_JPEG/KakaoTalk_20250313_212648540_01.jpg",
+      "https://ldb-phinf.pstatic.net/20250313_90/1741868941620NsY6C_JPEG/KakaoTalk_20250313_212648540_02.jpg"
+    ]
   },
   {
     "id": "jeonbuk-003",
-    "name": "Gachyasyap Jeonju Branch",
+    "name": "가챠샵 전주점",
     "address": "전북 전주시 완산구 팔달로 201-6",
     "lat": 35.8203107,
     "lng": 127.1457361,
@@ -2618,11 +2771,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "349893378"
+    "naverPlaceId": "349893378",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20210312_86/1615522113120GSiGv_JPEG/cShQK3at5ZpFmKt4gl6C-S5S.jpg",
+      "https://ldb-phinf.pstatic.net/20210312_174/16155221272183G8z7_JPEG/uEjUCSKH9l0PEby5YC-2pOGf.jpg",
+      "https://ldb-phinf.pstatic.net/20180803_230/1533278167705KmEpX_JPEG/ODm95WdLM5v-xsZmFiEqHkvq.jpg"
+    ]
   },
   {
     "id": "jeonbuk-004",
-    "name": "Imotaku",
+    "name": "아임더쿠",
     "address": "전북 전주시 완산구 전주객사5길 22-12",
     "lat": 35.8191143,
     "lng": 127.1459665,
@@ -2632,11 +2790,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2016038218"
+    "naverPlaceId": "2016038218",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250729_174/1753765360704v2oQN_JPEG/%BE%C6%C0%D3%B4%F5%C4%ED%C3%D6%C1%BE%28%C8%AD%C0%CC%C6%AE%B9%E8%B0%E6%29.jpg",
+      "https://ldb-phinf.pstatic.net/20250729_91/1753765431742xA2Jn_JPEG/KakaoTalk_20250729_140318600_01.jpg",
+      "https://ldb-phinf.pstatic.net/20250729_1/1753765435810bTW79_JPEG/KakaoTalk_20250729_140318600_02.jpg"
+    ]
   },
   {
     "id": "jeonbuk-005",
-    "name": "Eurachachya Jeonju Gaeksa 2nd Branch",
+    "name": "으라차챠 전주객사2호점",
     "address": "전북 전주시 완산구 전주객사5길 21",
     "lat": 35.8190611,
     "lng": 127.1453848,
@@ -2646,11 +2809,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "2013697242"
+    "naverPlaceId": "2013697242",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250428_176/1745838947790sYYmT_PNG/1.png"
+    ]
   },
   {
     "id": "jeonbuk-006",
-    "name": "Gachya Station",
+    "name": "가챠역",
     "address": "전북 전주시 완산구 전주객사4길 43-9",
     "lat": 35.819487,
     "lng": 127.1432036,
@@ -2669,7 +2835,7 @@
   },
   {
     "id": "jeonbuk-007",
-    "name": "Ppalgan Cape",
+    "name": "빨간망토",
     "address": "전북 전주시 완산구 전주객사4길 44-9",
     "lat": 35.8199155,
     "lng": 127.1440399,
@@ -2686,7 +2852,7 @@
   },
   {
     "id": "jeonbuk-008",
-    "name": "Eulachacha",
+    "name": "으라차챠",
     "address": "전북 전주시 완산구 전주객사4길 49",
     "lat": 35.8199015,
     "lng": 127.1434125,
@@ -2705,7 +2871,7 @@
   },
   {
     "id": "jeonbuk-009",
-    "name": "Kuji Deoku",
+    "name": "쿠지더쿠",
     "address": "전북 전주시 완산구 전주객사4길 73-7",
     "lat": 35.8207414,
     "lng": 127.14279,
@@ -2724,7 +2890,7 @@
   },
   {
     "id": "jeonbuk-010",
-    "name": "GACHA PANPAN",
+    "name": "가챠팡팡",
     "address": "전북 전주시 완산구 전주객사3길 49",
     "lat": 35.8194062,
     "lng": 127.1418862,
@@ -2743,7 +2909,7 @@
   },
   {
     "id": "jeonbuk-011",
-    "name": "eurachachya jeonbukdaejeom",
+    "name": "으라차챠 전북대점",
     "address": "전북 전주시 덕진구 명륜4길 17",
     "lat": 35.8434587,
     "lng": 127.1265534,
@@ -2762,7 +2928,7 @@
   },
   {
     "id": "jeonbuk-012",
-    "name": "Eulachacha Songcheon",
+    "name": "으라차챠 송천점",
     "address": "전북 전주시 덕진구 붓내3길 16",
     "lat": 35.8665136,
     "lng": 127.1230444,
@@ -2779,7 +2945,7 @@
   },
   {
     "id": "etc-006",
-    "name": "GACHASHOP CAPSULE TOY",
+    "name": "캡슐토이 달천점",
     "address": "울산 북구 달천로 50",
     "lat": 35.6344804,
     "lng": 129.3299306,
@@ -2798,7 +2964,7 @@
   },
   {
     "id": "etc-007",
-    "name": "Wiznyang Store",
+    "name": "위즈냥 잡화점",
     "address": "울산 남구 거마로134번길 13",
     "lat": 35.5386847,
     "lng": 129.3049195,
@@ -2817,7 +2983,7 @@
   },
   {
     "id": "gyeongbuk-003",
-    "name": "Momo Capsule Gachya",
+    "name": "모모캡슐가챠",
     "address": "경북 경주시 포석로 1080-2",
     "lat": 35.8377171,
     "lng": 129.2098777,
@@ -2831,7 +2997,7 @@
   },
   {
     "id": "gyeongbuk-004",
-    "name": "Claw Machine Claw Machine",
+    "name": "뽑기뽑기",
     "address": "경북 경주시 첨성로 97",
     "lat": 35.8370354,
     "lng": 129.2096163,
@@ -2845,7 +3011,7 @@
   },
   {
     "id": "gyeongbuk-005",
-    "name": "Gachya Shop",
+    "name": "가챠샵",
     "address": "경상북도 경주시 황남동 214-6",
     "lat": 35.8343051,
     "lng": 129.2141066,
@@ -2859,7 +3025,7 @@
   },
   {
     "id": "daejeon-007",
-    "name": "Gachya Shop",
+    "name": "가챠샵",
     "address": "대전 중구 대종로480번길 45",
     "lat": 36.3282813,
     "lng": 127.4289891,
@@ -2873,7 +3039,7 @@
   },
   {
     "id": "daejeon-008",
-    "name": "GACHA&SHOP",
+    "name": "가챠앤샵",
     "address": "대전 중구 중앙로164번길 44",
     "lat": 36.3274703,
     "lng": 127.4286293,
@@ -2892,7 +3058,7 @@
   },
   {
     "id": "daejeon-009",
-    "name": "Eurachachya Chungnam National Univ. Branch",
+    "name": "으라차챠 충남대점",
     "address": "대전 유성구 궁동로18번길 40",
     "lat": 36.3626877,
     "lng": 127.349582,
@@ -2911,7 +3077,7 @@
   },
   {
     "id": "daejeon-010",
-    "name": "Donggeurak Daejeon Dunsan Branch",
+    "name": "동그락 대전둔산점",
     "address": "대전 서구 대덕대로185번길 27",
     "lat": 36.3503719,
     "lng": 127.3758317,
@@ -2930,7 +3096,7 @@
   },
   {
     "id": "etc-008",
-    "name": "THE PLAY",
+    "name": "더플레이 세종시청점",
     "address": "세종  한누리대로 2135",
     "lat": 36.4782117,
     "lng": 127.2889324,
@@ -2949,7 +3115,7 @@
   },
   {
     "id": "chungbuk-001",
-    "name": "Onda Louise Mi",
+    "name": "온다루이즈미",
     "address": "충북 청주시 상당구 상당로91번길 17",
     "lat": 36.6362493,
     "lng": 127.4892225,
@@ -2968,7 +3134,7 @@
   },
   {
     "id": "chungbuk-002",
-    "name": "CAPSULE PLACE",
+    "name": "캡슐플레이스",
     "address": "충북 청주시 상당구 성안로 5-1",
     "lat": 36.6363914,
     "lng": 127.4891591,
@@ -2987,7 +3153,7 @@
   },
   {
     "id": "chungbuk-003",
-    "name": "Seongan Gacha",
+    "name": "성안가챠",
     "address": "충북 청주시 상당구 사직대로361번길 26",
     "lat": 36.6380402,
     "lng": 127.4875228,
@@ -3006,7 +3172,7 @@
   },
   {
     "id": "chungbuk-004",
-    "name": "Gachyaui Sup",
+    "name": "가챠의숲",
     "address": "충북 청주시 서원구 남들로35번길 47",
     "lat": 36.6216432,
     "lng": 127.4818244,
@@ -3025,7 +3191,7 @@
   },
   {
     "id": "chungnam-009",
-    "name": "GachaPop",
+    "name": "가챠팝",
     "address": "충남 천안시 서북구 두정로 267",
     "lat": 36.8332174,
     "lng": 127.1466798,
@@ -3042,7 +3208,7 @@
   },
   {
     "id": "chungnam-010",
-    "name": "GACHA_KONG",
+    "name": "가챠콩",
     "address": "충남 천안시 동남구 단대로 123-8",
     "lat": 36.8312264,
     "lng": 127.1643519,
@@ -3061,7 +3227,7 @@
   },
   {
     "id": "gyeonggi-041",
-    "name": "Temporary Palace Gachya Gachyachya",
+    "name": "행궁가챠 가챠챠",
     "address": "경기 수원시 팔달구 신풍로 48",
     "lat": 37.28538,
     "lng": 127.0142805,
@@ -3080,7 +3246,7 @@
   },
   {
     "id": "hongdae-018",
-    "name": "Jiji Comic Market Hongik Univ. Branch",
+    "name": "지지코믹마켓 홍대점",
     "address": "서울 마포구 와우산로29길 69",
     "lat": 37.5561557,
     "lng": 126.9264635,
@@ -3097,7 +3263,7 @@
   },
   {
     "id": "hongdae-019",
-    "name": "Rasinban Seoul Main Branch",
+    "name": "라신반 서울본점",
     "address": "서울 마포구 양화로 178-5 지하1층",
     "lat": 37.5577033,
     "lng": 126.9254156,
@@ -3115,7 +3281,7 @@
   },
   {
     "id": "gwangjin-004",
-    "name": "Time",
+    "name": "타임",
     "address": "서울 광진구 아차산로33길 22",
     "lat": 37.5412217,
     "lng": 127.070376,
@@ -3134,7 +3300,7 @@
   },
   {
     "id": "gwangjin-005",
-    "name": "Gachyasyap Konkuk Univ. Branch",
+    "name": "가챠샵 건대점",
     "address": "서울 광진구 아차산로29길 41",
     "lat": 37.5427429,
     "lng": 127.0689076,
@@ -3148,7 +3314,7 @@
   },
   {
     "id": "gwangjin-006",
-    "name": "byeolboreogacha",
+    "name": "별보러가챠",
     "address": "서울 광진구 능동로 131",
     "lat": 37.5426955,
     "lng": 127.0716241,
@@ -3167,7 +3333,7 @@
   },
   {
     "id": "yongsan-001",
-    "name": "Daewon Shop I'Park Mall Yongsan Nintendo Specialty Store",
+    "name": "대원샵 아이파크몰 용산점",
     "address": "서울 용산구 한강대로21나길 17",
     "lat": 37.5290571,
     "lng": 126.9640549,
@@ -3186,7 +3352,7 @@
   },
   {
     "id": "gangnam-005",
-    "name": "POP MART COEX",
+    "name": "팝마트 코엑스점",
     "address": "서울 강남구 영동대로 513",
     "lat": 37.5129131,
     "lng": 127.0590863,
@@ -3205,7 +3371,7 @@
   },
   {
     "id": "gyeonggi-042",
-    "name": "Toysrus Rotdemol Suji Branch",
+    "name": "토이저러스 롯데몰수지점",
     "address": "경기 용인시 수지구 성복2로 38",
     "lat": 37.3121395,
     "lng": 127.082277,
@@ -3219,7 +3385,7 @@
   },
   {
     "id": "gyeonggi-043",
-    "name": "Electro Mart Starfield Suwon Branch",
+    "name": "일렉트로마트 스타필드수원점",
     "address": "경기 수원시 장안구 수성로 175",
     "lat": 37.2876556,
     "lng": 126.9926261,
@@ -3238,7 +3404,7 @@
   },
   {
     "id": "gyeonggi-044",
-    "name": "Fun City Starfield Suwon Branch",
+    "name": "펀시티 스타필드 수원점",
     "address": "경기 수원시 장안구 수성로 175",
     "lat": 37.2867046,
     "lng": 126.9907536,
@@ -3252,7 +3418,7 @@
   },
   {
     "id": "gyeonggi-045",
-    "name": "Finger Toy",
+    "name": "핑거토이",
     "address": "경기 용인시 처인구 금령로27번길 27",
     "lat": 37.4855827,
     "lng": 126.7810526,
@@ -3271,7 +3437,7 @@
   },
   {
     "id": "yongsan-002",
-    "name": "Ichibang Kuji Yongsan Branch",
+    "name": "이치방쿠지 용산점",
     "address": "서울 용산구 한강대로23길 55 6층",
     "lat": 37.5297717,
     "lng": 126.9647415,
@@ -3285,7 +3451,7 @@
   },
   {
     "id": "hongdae-020",
-    "name": "Jeil Lottery AK & Hongik Univ. Official Store",
+    "name": "제일복권 AK&홍대 공식 판매점",
     "address": "서울 마포구 양화로 188 AK&홍대 5층",
     "lat": 37.5574453,
     "lng": 126.9267785,
@@ -3303,7 +3469,7 @@
   },
   {
     "id": "daegu-013",
-    "name": "SMG GOODS STORE",
+    "name": "에스엠지굿즈스토어 대구동성로스파크점",
     "address": "대구 중구 동성로6길 61 동성로스파크 4층",
     "lat": 35.8687083,
     "lng": 128.5987415,
@@ -3322,7 +3488,7 @@
   },
   {
     "id": "busan-009",
-    "name": "SMG Goods Store Busan Samjeong Tower Branch",
+    "name": "에스엠지굿즈스토어 부산 삼정타워점",
     "address": "부산 부산진구 중앙대로 672 삼정타워 2층",
     "lat": 35.1529881,
     "lng": 129.0596393,
@@ -3341,7 +3507,7 @@
   },
   {
     "id": "gyeonggi-046",
-    "name": "CACTI GACHASHOP",
+    "name": "캑티 가챠샵 신중동점",
     "address": "경기 부천시 원미구 소향로 248",
     "lat": 37.5003181,
     "lng": 126.7755695,
@@ -3360,7 +3526,7 @@
   },
   {
     "id": "gangnam-006",
-    "name": "Aenipap Goods Shop",
+    "name": "애니팝굿즈샵",
     "address": "서울 강남구 삼성로82길 25",
     "lat": 37.5069358,
     "lng": 127.0625979,
@@ -3370,11 +3536,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1094590132"
+    "naverPlaceId": "1094590132",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20241223_299/17348891010444pa64_PNG/%BB%E7%B0%A2%C7%FC%B9%E8%B3%CA.png",
+      "https://ldb-phinf.pstatic.net/20241223_104/1734889162461uSoNF_JPEG/KakaoTalk_20241103_143748788_04.jpg",
+      "https://ldb-phinf.pstatic.net/20241223_94/1734889147563WXrFD_JPEG/KakaoTalk_20241103_143748788_08.jpg"
+    ]
   },
   {
     "id": "gangnam-007",
-    "name": "KUJI BANG",
+    "name": "쿠지방",
     "address": "서울 강남구 강남대로118길 45",
     "lat": 37.473446,
     "lng": 126.8855445,
@@ -3384,11 +3555,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1097737600"
+    "naverPlaceId": "1097737600",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250709_226/1752059109522gwn98_JPEG/1000014472.jpg",
+      "https://ldb-phinf.pstatic.net/20250709_17/1752059346935VaHUt_JPEG/1000014475.jpg",
+      "https://ldb-phinf.pstatic.net/20240527_213/1716785822246NjtNd_PNG/%C1%A6%B8%F1%C0%BB-%C0%D4%B7%C2%C7%D8%C1%D6%BC%BC%BF%E4_-001_%2819%29.png"
+    ]
   },
   {
     "id": "hongdae-021",
-    "name": "Otaku Manmulsang",
+    "name": "오타쿠만물상",
     "address": "서울 마포구 와우산로29길 40-18",
     "lat": 37.5546283,
     "lng": 126.9291882,
@@ -3398,11 +3574,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1896572766"
+    "naverPlaceId": "1896572766",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240711_98/17206918630721O9lY_JPEG/Photoroom_20240711_185608.jpeg",
+      "https://ldb-phinf.pstatic.net/20230701_218/1688175677440lMXiR_JPEG/B42FF8B6-B359-4AD0-A73E-71F24A033F9B.jpeg",
+      "https://ldb-phinf.pstatic.net/20230701_144/16881756802754XpjQ_JPEG/18B70C49-EF4E-49CE-A3EF-13921FBAC92C.jpeg"
+    ]
   },
   {
     "id": "gwangju-006",
-    "name": "Gachyasyap Gwangju Suwan Branch",
+    "name": "가챠샵 광주수완점",
     "address": "광주 광산구 임방울대로358번길 28",
     "lat": 35.1897126,
     "lng": 126.8267319,
@@ -3412,11 +3593,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1106863059"
+    "naverPlaceId": "1106863059",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240821_152/1724223459808qEpuE_JPEG/1000011516.jpg",
+      "https://ldb-phinf.pstatic.net/20240821_261/1724223459818VK9il_JPEG/1000011512.jpg",
+      "https://ldb-phinf.pstatic.net/20210825_116/1629877548076YGJWj_JPEG/tZ8Gb03JJ4WMHR43jJu9gRZa.jpeg.jpg"
+    ]
   },
   {
     "id": "busan-010",
-    "name": "Happy Rain N Kiki Shop",
+    "name": "해피레인n키키샵",
     "address": "부산 중구 광복로49번길 5",
     "lat": 35.0998678,
     "lng": 129.0285541,
@@ -3426,11 +3612,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "31841103"
+    "naverPlaceId": "31841103",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20151222_211/14507819252031AJHQ_JPEG/167172598864193_0.jpeg",
+      "https://ldb-phinf.pstatic.net/20230605_61/1685953398302FsTNO_JPEG/1.jpg",
+      "https://ldb-phinf.pstatic.net/20230605_275/1685953398429ThOnY_JPEG/2.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "MANA GOODS",
+    "id": "seouletc-019",
+    "name": "마나굿즈",
     "address": "서울 노원구 상계로12길 71",
     "lat": 37.6567853,
     "lng": 127.0645443,
@@ -3444,7 +3635,7 @@
   },
   {
     "id": "incheon-009",
-    "name": "Gachashop incheon",
+    "name": "가챠샵 인천점",
     "address": "인천 남동구 논고개로123번길 17",
     "lat": 37.401441,
     "lng": 126.7250519,
@@ -3454,11 +3645,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1568946239"
+    "naverPlaceId": "1568946239",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20260213_134/1770931106679BxgQT_JPEG/1000014277.jpg",
+      "https://ldb-phinf.pstatic.net/20260213_170/1770931286579gOjrY_JPEG/1000014097.jpg",
+      "https://ldb-phinf.pstatic.net/20260213_296/1770931199070ijklj_JPEG/1000014098.jpg"
+    ]
   },
   {
     "id": "gyeonggi-047",
-    "name": "superplay dongtan",
+    "name": "슈퍼플레이 롯데백화점동탄점",
     "address": "경기 화성시 동탄역로 160",
     "lat": 37.2009647,
     "lng": 127.098236,
@@ -3468,11 +3664,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1036680283"
+    "naverPlaceId": "1036680283",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20210826_125/1629948110276tpL6P_JPEG/kNULAqNyApg9lwamSx3SEfTB.jpg",
+      "https://ldb-phinf.pstatic.net/20210826_259/162994810989510j8m_JPEG/QYBxpt4AgaF9AZs176Yy1EtQ.jpg",
+      "https://ldb-phinf.pstatic.net/20210826_207/1629948109877pbhaN_JPEG/oi7xGnTx_rxf5BqqblkqKaMf.jpg"
+    ]
   },
   {
     "id": "gyeonggi-048",
-    "name": "superplay",
+    "name": "슈퍼플레이 롯데프리미엄아울렛 의왕점",
     "address": "경기 의왕시 바라산로 1",
     "lat": 37.3753999,
     "lng": 127.010416,
@@ -3482,11 +3683,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1038386237"
+    "naverPlaceId": "1038386237",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20210914_260/1631606801900s2idP_JPEG/TTFGju44msymSoPJ4_W3MWZn.jpg",
+      "https://ldb-phinf.pstatic.net/20210914_160/1631606812305x7Nf8_JPEG/C6NnlPtqQIYQk7GmbrK34_pJ.jpg",
+      "https://ldb-phinf.pstatic.net/20210914_210/16316068124492JwTe_JPEG/KJFzbbefCjVqKyZCrZrpg9Xy.jpg"
+    ]
   },
   {
     "id": "gwangju-007",
-    "name": "toysrus suwan",
+    "name": "토이저러스 수완점",
     "address": "광주 광산구 장신로 98",
     "lat": 35.1903332,
     "lng": 126.820924,
@@ -3496,11 +3702,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "31111427"
+    "naverPlaceId": "31111427",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240918_87/1726640907773yeQpf_JPEG/1000012924.jpg"
+    ]
   },
   {
     "id": "daegu-014",
-    "name": "Toysrus Lotte Mart Daeguyulha Branch",
+    "name": "토이저러스 롯데마트 대구율하점",
     "address": "대구 동구 안심로 80",
     "lat": 35.8679381,
     "lng": 128.6939626,
@@ -3514,7 +3723,7 @@
   },
   {
     "id": "gyeonggi-049",
-    "name": "Toysrus Lotte Mart Gwanggyo Branch",
+    "name": "토이저러스 롯데마트광교점",
     "address": "경기 수원시 영통구 센트럴타운로 85",
     "lat": 37.2903814,
     "lng": 127.0497299,
@@ -3524,11 +3733,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "36957218"
+    "naverPlaceId": "36957218",
+    "thumbnailUrls": [
+      "http://blogfiles.naver.net/MjAyMDA1MDJfMjQw/MDAxNTg4MzkzNjA4ODMw.YCzEEIcYlFK4tAio1UjIWI2zt_t2HkVeYRVuQQkCJf8g.NT1mpVd_APdeamyBdqElMoqpdI6w3lnbtz_aKGR-dXog.JPEG.asutak/1588393607286.jpg#900x506"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Lotte Mart Toysrus Eunpyeong Branch",
+    "id": "seouletc-020",
+    "name": "롯데마트 토이저러스 은평점",
     "address": "서울 은평구 통일로 1050",
     "lat": 37.6382046,
     "lng": 126.9178509,
@@ -3542,7 +3754,7 @@
   },
   {
     "id": "busan-011",
-    "name": "FIGURE FARM",
+    "name": "피규어팜",
     "address": "부산 중구 백산길 6-1",
     "lat": 35.3305186,
     "lng": 129.2551145,
@@ -3552,11 +3764,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "483134243"
+    "naverPlaceId": "483134243",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250421_148/1745224013503oFPz2_JPEG/KakaoTalk_20250421_164205604_16.jpg",
+      "https://ldb-phinf.pstatic.net/20250421_105/1745224013514WidPW_JPEG/KakaoTalk_20250421_164205604_22.jpg",
+      "https://ldb-phinf.pstatic.net/20250421_169/174522401371758Aml_JPEG/KakaoTalk_20250421_164205604_09.jpg"
+    ]
   },
   {
     "id": "daegu-015",
-    "name": "aniimarket",
+    "name": "애니마켓",
     "address": "대구 중구 경상감영길 189",
     "lat": 35.87258,
     "lng": 128.597815,
@@ -3566,11 +3783,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1773758602"
+    "naverPlaceId": "1773758602",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20220507_88/1651887586330Hyuw8_JPEG/anii1.JPG",
+      "https://ldb-phinf.pstatic.net/20220507_254/1651887579474BE8Io_JPEG/KakaoTalk_20220507_103831437_02.jpg",
+      "https://ldb-phinf.pstatic.net/20220507_232/1651887569232Br6lX_JPEG/KakaoTalk_20220507_103831437_01.jpg"
+    ]
   },
   {
     "id": "daegu-016",
-    "name": "Hidden Toy",
+    "name": "히든토이 대구본점",
     "address": "대구 중구 동성로6길 43",
     "lat": 35.8690009,
     "lng": 128.595067,
@@ -3580,11 +3802,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1993086401"
+    "naverPlaceId": "1993086401",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240910_63/1725929651532lYx0l_JPEG/KakaoTalk_20240906_151929682.jpg"
+    ]
   },
   {
     "id": "hongdae-022",
-    "name": "dooniboo",
+    "name": "두니부",
     "address": "서울 마포구 와우산로29길 56-10",
     "lat": 37.5573883,
     "lng": 126.9283185,
@@ -3594,11 +3819,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1077953882"
+    "naverPlaceId": "1077953882",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20230602_128/1685675158429nWTEF_JPEG/%B5%CE%B4%CF%BA%CE%C0%CE%C0%E5_%BA%B9%BB%E7.jpg",
+      "https://ldb-phinf.pstatic.net/20230602_222/1685675506072VokCF_JPEG/KakaoTalk_20230602_120135901.jpg",
+      "https://ldb-phinf.pstatic.net/20230602_201/1685675479704U8tMO_JPEG/KakaoTalk_20230602_120256952.jpg"
+    ]
   },
   {
     "id": "hongdae-023",
-    "name": "ANIPLAZA",
+    "name": "애니플라자",
     "address": "서울 마포구 어울마당로 136-9",
     "lat": 37.5554249,
     "lng": 126.9274083,
@@ -3608,11 +3838,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1171018634"
+    "naverPlaceId": "1171018634",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250207_230/1738859321151GVxS0_PNG/KakaoTalk_20250114_012752030.png",
+      "https://ldb-phinf.pstatic.net/20210215_69/1613395595950TUgwv_JPEG/1AotcJPhosw4gY5Fwx8GbI3c.jpg",
+      "https://ldb-phinf.pstatic.net/20210215_185/1613395596288mD6o1_JPEG/pSKh4-4C7tv4hCg5hs9DjQ5v.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Sindorim Techno Mart Hanwoori",
+    "id": "seouletc-021",
+    "name": "신도림테크노마트 한우리",
     "address": "서울 구로구 새말로 97 2층 37호",
     "lat": 37.5070439,
     "lng": 126.8902273,
@@ -3622,11 +3857,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1263082469"
+    "naverPlaceId": "1263082469",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250227_164/1740634518782hwQ2P_JPEG/%BD%C5%B5%B5%B8%B2.jpg",
+      "https://ldb-phinf.pstatic.net/20250227_110/17406345223621FUeS_JPEG/%BD%C5%B5%B5%B8%B22.jpg"
+    ]
   },
   {
     "id": "hongdae-024",
-    "name": "AKIBA COMICS",
+    "name": "아키바코믹스",
     "address": "서울 마포구 와우산로23길 8 1층",
     "lat": 37.5534271,
     "lng": 126.9246705,
@@ -3636,11 +3875,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1120914624"
+    "naverPlaceId": "1120914624",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240529_120/1716937899065aBITu_JPEG/1000030676.jpg",
+      "https://ldb-phinf.pstatic.net/20240529_154/17169379384454MFeP_JPEG/20240528_181741.jpg",
+      "https://ldb-phinf.pstatic.net/20240529_175/1716937895265fLlSk_JPEG/1000030986.jpg"
+    ]
   },
   {
     "id": "hongdae-025",
-    "name": "Siro Store",
+    "name": "시로상점",
     "address": "서울 마포구 와우산로29길 14-12",
     "lat": 37.5553248,
     "lng": 126.9292133,
@@ -3657,7 +3901,7 @@
   },
   {
     "id": "hongdae-026",
-    "name": "Hoka Sangjum",
+    "name": "호카상점",
     "address": "서울 마포구 어울마당로 153-3",
     "lat": 37.556907,
     "lng": 126.9268292,
@@ -3675,8 +3919,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Joy Hobby",
+    "id": "seouletc-022",
+    "name": "조이하비",
     "address": "서울 구로구 새말로 97",
     "lat": 37.5070143,
     "lng": 126.8902633,
@@ -3694,8 +3938,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Rasinban Seoul 2nd Branch",
+    "id": "seouletc-023",
+    "name": "라신반 서울 2호점",
     "address": "서울 구로구 새말로 97",
     "lat": 37.5070143,
     "lng": 126.8902633,
@@ -3714,7 +3958,7 @@
   },
   {
     "id": "daejeon-011",
-    "name": "Woori Dongne Capsule Toy",
+    "name": "우리동네 캡슐토이",
     "address": "대전 대덕구 동춘당로 178 보람코아 상가 1층 116호",
     "lat": 36.3680597,
     "lng": 127.4319506,
@@ -3733,7 +3977,7 @@
   },
   {
     "id": "incheon-010",
-    "name": "toydongne",
+    "name": "토이동네",
     "address": "인천 부평구 부흥로315번길 14 2층",
     "lat": 37.4990133,
     "lng": 126.7272078,
@@ -3752,7 +3996,7 @@
   },
   {
     "id": "daegu-017",
-    "name": "MERAKI",
+    "name": "메라키 스토어1",
     "address": "대구 중구 경상감영1길 47",
     "lat": 35.8731407,
     "lng": 128.5927734,
@@ -3771,7 +4015,7 @@
   },
   {
     "id": "daegu-018",
-    "name": "Aseutomik Daehyun Peurimol Branch",
+    "name": "아스토믹 대현프리몰점",
     "address": "대구 중구 국채보상로 580",
     "lat": 35.8706961,
     "lng": 128.5962709,
@@ -3790,7 +4034,7 @@
   },
   {
     "id": "daegu-019",
-    "name": "WORLD HOBBY",
+    "name": "월드하비",
     "address": "대구 남구 명덕로68길 22",
     "lat": 35.8539504,
     "lng": 128.6059263,
@@ -3809,7 +4053,7 @@
   },
   {
     "id": "daegu-020",
-    "name": "GACHA SHOP",
+    "name": "모모루가챠",
     "address": "대구 달서구 조암로 25",
     "lat": 35.8247829,
     "lng": 128.527381,
@@ -3828,7 +4072,7 @@
   },
   {
     "id": "chungnam-011",
-    "name": "figure mansion",
+    "name": "피규어맨션",
     "address": "충남 천안시 서북구 성정공원6길 6",
     "lat": 36.8286076,
     "lng": 127.1382015,
@@ -3847,7 +4091,7 @@
   },
   {
     "id": "chungnam-012",
-    "name": "Gachyasyap Cheonan Branch",
+    "name": "가챠샵 천안점",
     "address": "충남 천안시 서북구 원두정6길 15",
     "lat": 36.8316126,
     "lng": 127.1351487,
@@ -3865,7 +4109,7 @@
   },
   {
     "id": "daejeon-012",
-    "name": "KUJI ACADEMY",
+    "name": "쿠지 아카데미",
     "address": "대전 중구 중앙로170번길 48",
     "lat": 36.3276367,
     "lng": 127.4295813,
@@ -3884,7 +4128,7 @@
   },
   {
     "id": "daejeon-013",
-    "name": "Onefigure daejeon",
+    "name": "원피규어 대전점",
     "address": "대전 중구 중앙로170번길 28",
     "lat": 36.3283934,
     "lng": 127.4290512,
@@ -3903,7 +4147,7 @@
   },
   {
     "id": "daejeon-014",
-    "name": "The goods",
+    "name": "더굿즈",
     "address": "대전 중구 중앙로164번길 38",
     "lat": 36.3276737,
     "lng": 127.4284476,
@@ -3922,7 +4166,7 @@
   },
   {
     "id": "daejeon-015",
-    "name": "GACHA WORLD SHOP",
+    "name": "가챠월드은행동놀거리 대전지하상가본점",
     "address": "대전 중구 중앙로 145",
     "lat": 36.3292046,
     "lng": 127.4276267,
@@ -3941,7 +4185,7 @@
   },
   {
     "id": "daejeon-016",
-    "name": "TOYPLUS",
+    "name": "토이플러스 대전점",
     "address": "대전 동구 은어송로 72",
     "lat": 36.3069109,
     "lng": 127.458017,
@@ -3960,7 +4204,7 @@
   },
   {
     "id": "busan-012",
-    "name": "Kuji Land",
+    "name": "쿠지랜드",
     "address": "부산 부산진구 중앙대로666번길 50",
     "lat": 35.1518891,
     "lng": 129.0604676,
@@ -3979,7 +4223,7 @@
   },
   {
     "id": "busan-013",
-    "name": "Brother Goods Street Of Youth Branch",
+    "name": "브라더굿즈 젊음의 거리점",
     "address": "부산 부산진구 신천대로50번길 62",
     "lat": 35.1535407,
     "lng": 129.0600543,
@@ -3997,7 +4241,7 @@
   },
   {
     "id": "busan-014",
-    "name": "ksdgacha",
+    "name": "경성대가챠샵",
     "address": "부산 남구 수영로298번길 39-6",
     "lat": 35.1352447,
     "lng": 129.100141,
@@ -4016,7 +4260,7 @@
   },
   {
     "id": "gangnam-008",
-    "name": "Figure Museum W",
+    "name": "피규어뮤지엄w",
     "address": "서울 강남구 선릉로158길 3",
     "lat": 37.5257643,
     "lng": 127.0404047,
@@ -4035,7 +4279,7 @@
   },
   {
     "id": "songpa-002",
-    "name": "GachaGetcha",
+    "name": "갓챠겟챠 송리단길점",
     "address": "서울 송파구 백제고분로45길 17",
     "lat": 37.5096929,
     "lng": 127.1095462,
@@ -4054,7 +4298,7 @@
   },
   {
     "id": "gangnam-009",
-    "name": "Brothergoods_gangnam",
+    "name": "브라더굿즈 강남",
     "address": "서울 강남구 강남대로102길 13",
     "lat": 37.5020432,
     "lng": 127.026878,
@@ -4073,7 +4317,7 @@
   },
   {
     "id": "gyeonggi-050",
-    "name": "Miracle Kuji Seohyeon Branch",
+    "name": "미라클쿠지 서현점",
     "address": "경기 성남시 분당구 분당로53번길 20",
     "lat": 37.3841229,
     "lng": 127.1226448,
@@ -4092,7 +4336,7 @@
   },
   {
     "id": "gyeonggi-051",
-    "name": "Moa goods",
+    "name": "모아굿즈",
     "address": "경기 하남시 미사강변동로 100-1",
     "lat": 37.5644155,
     "lng": 127.1929347,
@@ -4111,7 +4355,7 @@
   },
   {
     "id": "gyeongnam-002",
-    "name": "acha_place",
+    "name": "아차공간",
     "address": "경남 창원시 의창구 창원대로 386 1동 3층",
     "lat": 35.2346872,
     "lng": 128.6396657,
@@ -4129,8 +4373,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "chie_store",
+    "id": "seouletc-024",
+    "name": "치이상점 아오키네 마곡점",
     "address": "서울 강서구 마곡중앙4로 22",
     "lat": 37.5583418,
     "lng": 126.8293434,
@@ -4149,7 +4393,7 @@
   },
   {
     "id": "hongdae-027",
-    "name": "Cozy Kuji",
+    "name": "코지쿠지",
     "address": "서울 마포구 와우산로35길 19",
     "lat": 37.5558594,
     "lng": 126.929397,
@@ -4168,7 +4412,7 @@
   },
   {
     "id": "songpa-003",
-    "name": "Animatecafe JamsilLotte",
+    "name": "애니메이트 카페 잠실롯데점",
     "address": "서울 송파구 올림픽로 240 쇼핑몰동 B1층 29호",
     "lat": 37.5110794,
     "lng": 127.0981638,
@@ -4184,8 +4428,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "GameNuts",
+    "id": "seouletc-025",
+    "name": "게임너츠",
     "address": "서울 동작구 보라매로5가길 24",
     "lat": 37.4906054,
     "lng": 126.9241235,
@@ -4204,7 +4448,7 @@
   },
   {
     "id": "yongsan-003",
-    "name": "Pokemon Kadeusyop IPARK Mall Branch",
+    "name": "포켓몬카드숍 아이파크몰점",
     "address": "서울 용산구 한강대로23길 55",
     "lat": 37.5296671,
     "lng": 126.9647113,
@@ -4218,7 +4462,7 @@
   },
   {
     "id": "hongdae-028",
-    "name": "KUKU SPACE",
+    "name": "쿠쿠 스페이스",
     "address": "서울 마포구 잔다리로 45",
     "lat": 37.5521201,
     "lng": 126.9185804,
@@ -4237,7 +4481,7 @@
   },
   {
     "id": "yongsan-004",
-    "name": "Gachyapakeu I'Park Mall Yongsan Branch Living Park Branch",
+    "name": "가챠파크아이파크몰용산점리빙파크점",
     "address": "서울 용산구 한강대로23길 55",
     "lat": 37.5298019,
     "lng": 126.9644029,
@@ -4251,7 +4495,7 @@
   },
   {
     "id": "yongsan-005",
-    "name": "Dotori Sup Yongsan IPARK Mall Branch",
+    "name": "도토리숲 용산 아이파크몰점",
     "address": "서울 용산구 한강대로23길 55",
     "lat": 37.5289005,
     "lng": 126.9642375,
@@ -4269,7 +4513,7 @@
   },
   {
     "id": "yongsan-006",
-    "name": "MARVEL COLLECTION",
+    "name": "마블컬렉션 용산점",
     "address": "서울 용산구 한강대로23길 55",
     "lat": 37.5297718,
     "lng": 126.9647415,
@@ -4288,7 +4532,7 @@
   },
   {
     "id": "yongsan-007",
-    "name": "POP MART IPARK MALL YONGSAN",
+    "name": "팝마트 아이파크몰 용산점",
     "address": "서울 용산구 한강대로23길 55",
     "lat": 37.5297717,
     "lng": 126.9647415,
@@ -4307,7 +4551,7 @@
   },
   {
     "id": "yongsan-008",
-    "name": "Tamiya Plamodel Factory Yongsan",
+    "name": "타미야 플라모델 팩토리 용산점",
     "address": "서울 용산구 한강대로23길 55",
     "lat": 37.5295099,
     "lng": 126.9640684,
@@ -4326,7 +4570,7 @@
   },
   {
     "id": "yongsan-009",
-    "name": "Bandai Namko Korea Store",
+    "name": "반다이남코 코리아스토어",
     "address": "서울 용산구 한강대로23길 55",
     "lat": 37.5294079,
     "lng": 126.9643716,
@@ -4345,7 +4589,7 @@
   },
   {
     "id": "gyeonggi-052",
-    "name": "Aeniraendeu AK Plaza Suwon Branch",
+    "name": "애니랜드 AK플라자수원점",
     "address": "경기 수원시 팔달구 덕영대로 924",
     "lat": 37.2668321,
     "lng": 127.000278,
@@ -4359,7 +4603,7 @@
   },
   {
     "id": "gyeonggi-053",
-    "name": "Dotori Sup AK Plaza Suwon Branch",
+    "name": "도토리숲 AK플라자 수원점",
     "address": "경기 수원시 팔달구 덕영대로 924",
     "lat": 37.2666908,
     "lng": 127.0003027,
@@ -4378,7 +4622,7 @@
   },
   {
     "id": "gyeonggi-054",
-    "name": "SUWON TAMIYA YSHOBBY",
+    "name": "타미야플라모델팩토리 AK플라자수원점",
     "address": "경기 수원시 팔달구 덕영대로 924",
     "lat": 37.2665012,
     "lng": 127.0003184,
@@ -4388,11 +4632,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1331962079"
+    "naverPlaceId": "1331962079",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20200103_113/1578059804896jIU7o_JPEG/m4WVMRabPmpvZwoJg2K0NeCC.jpg",
+      "https://ldb-phinf.pstatic.net/20200103_197/1578059994256DnkwQ_JPEG/fvxxh-eoSfnJXld-06ArElid.jpg",
+      "https://ldb-phinf.pstatic.net/20200103_101/1578059811609piO9e_JPEG/ctQw73t-OH7-frtLaiIs-Sqh.jpg"
+    ]
   },
   {
     "id": "gyeonggi-055",
-    "name": "Gundam Base AK Plaza Suwon Branch",
+    "name": "건담베이스 AK플라자 수원점",
     "address": "경기 수원시 팔달구 덕영대로 924",
     "lat": 37.2666263,
     "lng": 127.0000765,
@@ -4405,8 +4654,8 @@
     "naverPlaceId": "1661464357"
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Gachayang",
+    "id": "seouletc-026",
+    "name": "가챠양",
     "address": "서울 관악구 관악로16길 41",
     "lat": 37.4798576,
     "lng": 126.9549426,
@@ -4416,11 +4665,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1457679594"
+    "naverPlaceId": "1457679594",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20251117_283/1763355688083Su8AP_JPEG/1000026356.jpg",
+      "https://ldb-phinf.pstatic.net/20240403_56/1712154146601jbI6P_JPEG/1000004392.jpg",
+      "https://ldb-phinf.pstatic.net/20240403_59/1712154147052NIex9_JPEG/1000004381.jpg"
+    ]
   },
   {
     "id": "gangnam-010",
-    "name": "PLAYINTHEBOX MEGABOX COEX",
+    "name": "플레이인더박스 메가박스 코엑스점",
     "address": "서울 강남구 영동대로 513",
     "lat": 37.5125982,
     "lng": 127.0587623,
@@ -4430,11 +4684,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1932537074"
+    "naverPlaceId": "1932537074",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20231228_291/1703733795991K8pnM_JPEG/IMG_9575.jpg",
+      "https://ldb-phinf.pstatic.net/20240123_164/1705973155078dnRhX_JPEG/418171924_366585639461138_442629498754547356_n.jpg",
+      "https://ldb-phinf.pstatic.net/20240123_91/1705973166921qb0Y0_JPEG/%BF%E4%C1%F2_%C0%CC%BB%DA%B4%D9%B0%ED_%B3%AD%B8%AE%B3%AD_%C7%CF%C0%CC%C6%BE_%B3%B6%B3%B6%C7%D1__%C4%B3%BA%F1%B4%D6_%BA%CE%BD%BA_%C8%AD%BB%E7%C7%CF%B0%ED_%C0%DF%B2%D9%B8%E7%C1%AE%C0%D6%BE%EE%BC%AD_%C0%CE%BB%FD%BC%A6_%B9%AB%C1%B6%B0%C7__%B3%AA%B6%FB_%C0%CE%BB%FD%BC%A6_%B0%C7%C1%FA_%C4%AB%B8%AE%B3%AA__%C7%C3%B7%B9%C0%CC%C0%CE%B4%F5%B9%DA%BD%BA_%C4%DA%BF%A2%BD%BA.jpg"
+    ]
   },
   {
     "id": "gangnam-011",
-    "name": "Gundam Base Coex Mall Branch",
+    "name": "건담베이스 코엑스몰점",
     "address": "서울 강남구 영동대로 513",
     "lat": 37.5114962,
     "lng": 127.0612332,
@@ -4444,11 +4703,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "36166448"
+    "naverPlaceId": "36166448",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20190127_153/1548583585251PzkDU_JPEG/9KUdecRmdRtS36KHy9OjnFGc.jpg",
+      "https://ldb-phinf.pstatic.net/20190127_48/1548583598069koUYv_JPEG/VtN4nD-piSgw4y8zuqi-Jyhu.jpg"
+    ]
   },
   {
     "id": "gyeonggi-056",
-    "name": "Toy Kingdom Starfield Suwon Branch",
+    "name": "토이킹덤  스타필드수원점",
     "address": "경기 수원시 장안구 수성로 175",
     "lat": 37.2871748,
     "lng": 126.9911507,
@@ -4462,7 +4725,7 @@
   },
   {
     "id": "songpa-004",
-    "name": "Gashapon Bandai Official Shop Injamsil",
+    "name": "가샤폰반다이오피셜샵in잠실",
     "address": "서울 송파구 올림픽로 240",
     "lat": 37.5112238,
     "lng": 127.0982649,
@@ -4476,7 +4739,7 @@
   },
   {
     "id": "gyeonggi-057",
-    "name": "Gasyapon Bandai Opisyeol Shop Starfield Suwon Branch",
+    "name": "가샤폰 반다이오피셜샵 스타필드 수원점",
     "address": "경기 수원시 장안구 수성로 175",
     "lat": 37.2873924,
     "lng": 126.9915605,
@@ -4490,7 +4753,7 @@
   },
   {
     "id": "gyeonggi-058",
-    "name": "Electro Mart Starfield Hanam Branch",
+    "name": "일렉트로마트 스타필드하남점",
     "address": "경기 하남시 미사대로 750",
     "lat": 37.5453861,
     "lng": 127.2255904,
@@ -4500,11 +4763,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "38502218"
+    "naverPlaceId": "38502218",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20190615_180/1560595796990qpl0J_JPEG/A0GhbS9ruOydFTZu261FZTZ4.jpg"
+    ]
   },
   {
     "id": "gyeonggi-059",
-    "name": "Matthew & Joelle's Toy Kingdom",
+    "name": "매튜 앤 조엘스 토이킹덤 스타필드 하남점",
     "address": "경기 하남시 미사대로 750",
     "lat": 37.5451562,
     "lng": 127.224022,
@@ -4514,11 +4780,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "38502477"
+    "naverPlaceId": "38502477",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20190815_130/1565857218705AxtkB_JPEG/wqikNgPw-oi8bD5XVWu3U-lW.jpg"
+    ]
   },
   {
     "id": "gyeonggi-060",
-    "name": "Matthew & Joel Seutoiking Deom Starfield Goyang Branch",
+    "name": "매튜앤조엘스토이킹덤 스타필드고양점",
     "address": "경기 고양시 덕양구 고양대로 1955",
     "lat": 37.6461575,
     "lng": 126.8929026,
@@ -4532,7 +4801,7 @@
   },
   {
     "id": "gyeonggi-061",
-    "name": "Gundam Base Starfield Goyang Branch",
+    "name": "건담베이스 스타필드 고양점",
     "address": "경기 고양시 덕양구 고양대로 1955",
     "lat": 37.6465484,
     "lng": 126.8925355,
@@ -4542,11 +4811,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1411012852"
+    "naverPlaceId": "1411012852",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20230103_55/1672748504616EMMRB_JPEG/img-goyang3x.jpg"
+    ]
   },
   {
     "id": "gyeonggi-062",
-    "name": "Electro Mart Starfield Goyang Branch",
+    "name": "일렉트로마트 스타필드고양점",
     "address": "경기 고양시 덕양구 고양대로 1955",
     "lat": 37.6460961,
     "lng": 126.8926526,
@@ -4559,8 +4831,8 @@
     "naverPlaceId": "1663931960"
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Me Na Me JoJo",
+    "id": "seouletc-027",
+    "name": "가챠샵 신도림테크노마트점",
     "address": "서울 구로구 새말로 97",
     "lat": 37.5070587,
     "lng": 126.8897786,
@@ -4570,10 +4842,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "38473259"
+    "naverPlaceId": "38473259",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20201209_113/1607458181109hshH1_JPEG/A12hUWGaw66cdLr-VZg43MO3.jpg",
+      "https://ldb-phinf.pstatic.net/20201209_195/1607458202294oHlEa_JPEG/ir4SvdthzIAvJv2XLrEolHNr.jpg",
+      "https://ldb-phinf.pstatic.net/20201209_106/1607458225514j9eSs_JPEG/7k7LE7eZaqXj7e-5bxzwQk_g.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
+    "id": "seouletc-028",
     "name": "CHI SHOP",
     "address": "서울 구로구 새말로 97",
     "lat": 37.5070488,
@@ -4587,8 +4864,8 @@
     "naverPlaceId": "1288785930"
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Artbox Isu Station Branch",
+    "id": "seouletc-029",
+    "name": "아트박스 이수역점",
     "address": "서울 동작구 사당로 295",
     "lat": 37.4850591,
     "lng": 126.9803007,
@@ -4598,11 +4875,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1950806127"
+    "naverPlaceId": "1950806127",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20260120_284/1768886327499s9DeN_PNG/%C7%C1%B7%CE%C7%CA2.png",
+      "https://ldb-phinf.pstatic.net/20251226_12/1766732821864YPBss_JPEG/2025-08-07_13_19_22.jpg",
+      "https://ldb-phinf.pstatic.net/20250723_90/1753240744255RoPJO_PNG/%C4%B3%B8%AF%C5%CD_%C7%C1%B7%CE%C7%CA_3D.png"
+    ]
   },
   {
     "id": "hongdae-029",
-    "name": "Space URARA Hongdae",
+    "name": "스페이스 우라라 홍대입구점",
     "address": "서울 마포구 양화로 166",
     "lat": 37.5567325,
     "lng": 126.9241712,
@@ -4612,11 +4894,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1508879178"
+    "naverPlaceId": "1508879178",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240622_172/1719049426380gc3HB_JPEG/%C5%A9%B1%E2%BA%AF%C8%AFDSC02043.JPG",
+      "https://ldb-phinf.pstatic.net/20240622_143/1719049426538efs58_JPEG/%C5%A9%B1%E2%BA%AF%C8%AFDSC01935.JPG",
+      "https://ldb-phinf.pstatic.net/20240622_210/1719049426829Ch4Ef_JPEG/%C5%A9%B1%E2%BA%AF%C8%AFDSC01956.JPG"
+    ]
   },
   {
     "id": "hongdae-030",
-    "name": "RAINMALL",
+    "name": "레인몰",
     "address": "서울 마포구 독막로 67-11",
     "lat": 37.5482461,
     "lng": 126.9207072,
@@ -4626,11 +4913,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1464944287"
+    "naverPlaceId": "1464944287",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20201013_203/1602584341711afj5g_JPEG/4Zi3R9xXpCmX8Ggjy_S-pkKU.JPG.jpg",
+      "https://ldb-phinf.pstatic.net/20201013_297/1602584333277PFcLs_JPEG/hOoO11ySKrkP-9oCcfbOR2Sm.jpg",
+      "https://ldb-phinf.pstatic.net/20201013_140/16025843415467FjL9_PNG/nVHnJOsngz4nqLxQ9PcyeQ4y.PNG.png"
+    ]
   },
   {
     "id": "yongsan-010",
-    "name": "Kuro Store",
+    "name": "쿠로상점",
     "address": "서울 용산구 한강대로 69",
     "lat": 37.5273235,
     "lng": 126.9651744,
@@ -4640,11 +4932,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1176440457"
+    "naverPlaceId": "1176440457",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20230320_91/1679291728430uSBN0_JPEG/%C4%ED%B7%CE%BB%F3%C1%A1_%B3%EB%C0%AF%C1%A4o_%B4%EB%C1%F6_1.jpg",
+      "https://ldb-phinf.pstatic.net/20230619_267/16871594832558Uv2i_JPEG/KakaoTalk_20230619_161609530_08.jpg",
+      "https://ldb-phinf.pstatic.net/20230619_98/16871594832684q5cp_JPEG/KakaoTalk_20230619_161609530_07.jpg"
+    ]
   },
   {
     "id": "gyeonggi-063",
-    "name": "KIRAKIRATOMO",
+    "name": "애니굿즈 키라키라토모",
     "address": "경기 수원시 팔달구 향교로 4",
     "lat": 37.2674633,
     "lng": 127.0016981,
@@ -4654,11 +4951,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1878209480"
+    "naverPlaceId": "1878209480",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20231127_158/1701057210593qwYpC_JPEG/%C1%A4%BB%E7%B0%A2%C7%FC%B0%A3%C6%C7.jpg",
+      "https://ldb-phinf.pstatic.net/20251017_146/1760680003839Ne8na_PNG/%B8%C5%C0%E5%BE%C8%B3%BB%C0%CC%B9%CC%C1%F62_%C3%D6%BD%C5.png",
+      "https://ldb-phinf.pstatic.net/20250207_178/1738881664241g3dah_JPEG/REAL_original_947_0.jpg"
+    ]
   },
   {
     "id": "chungnam-013",
-    "name": "Isegye Figurine",
+    "name": "이세계 피규어",
     "address": "충남 천안시 서북구 두정상가1길 27",
     "lat": 36.8328326,
     "lng": 127.1388487,
@@ -4677,7 +4979,7 @@
   },
   {
     "id": "hongdae-031",
-    "name": "anisekai",
+    "name": "애니세카이 홍대점",
     "address": "서울 마포구 어울마당로 155-1",
     "lat": 37.5569129,
     "lng": 126.9271314,
@@ -4694,7 +4996,7 @@
   },
   {
     "id": "daegu-021",
-    "name": "MoWaKIN",
+    "name": "모와즐 대구점",
     "address": "대구 중구 경상감영길 170",
     "lat": 35.8721006,
     "lng": 128.5966419,
@@ -4711,7 +5013,7 @@
   },
   {
     "id": "hongdae-032",
-    "name": "MOWAKIN HONGDAE",
+    "name": "모와즐 홍대점",
     "address": "서울 마포구 양화로18안길 12",
     "lat": 37.5566938,
     "lng": 126.9252996,
@@ -4728,7 +5030,7 @@
   },
   {
     "id": "jeonbuk-013",
-    "name": "Lotte Mart Gunsan Branch",
+    "name": "롯데마트 군산점",
     "address": "전북 군산시 수송로 185",
     "lat": 35.9649831,
     "lng": 126.7164235,
@@ -4746,7 +5048,7 @@
   },
   {
     "id": "hongdae-033",
-    "name": "Inomono",
+    "name": "아이노모노",
     "address": "서울 마포구 신촌로4길 22-8",
     "lat": 37.5571371,
     "lng": 126.9279373,
@@ -4763,7 +5065,7 @@
   },
   {
     "id": "chungbuk-005",
-    "name": "Toysrus Lotte Mart Chungju Branch",
+    "name": "토이저러스 롯데마트 충주점",
     "address": "충북 충주시 봉계1길 49",
     "lat": 36.981585,
     "lng": 127.914375,
@@ -4777,7 +5079,7 @@
   },
   {
     "id": "gyeongbuk-006",
-    "name": "Samdeok Market",
+    "name": "삼덕마켓",
     "address": "경북 경주시 포석로 1077-2",
     "lat": 35.8373582,
     "lng": 129.2096176,
@@ -4795,8 +5097,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "LotteMart ZetaplexSeoulStation Branch",
+    "id": "seouletc-030",
+    "name": "롯데마트 제타플렉스 서울역점",
     "address": "서울 중구 한강대로 405",
     "lat": 37.5555979,
     "lng": 126.9706874,
@@ -4815,7 +5117,7 @@
   },
   {
     "id": "songpa-005",
-    "name": "Dotori Sup Jamsil Lotte World Mall Branch",
+    "name": "도토리숲 잠실 롯데월드몰점",
     "address": "서울 송파구 올림픽로 300",
     "lat": 37.513446,
     "lng": 127.1033999,
@@ -4834,7 +5136,7 @@
   },
   {
     "id": "hongdae-034",
-    "name": "Pollalla store",
+    "name": "뽈랄라백화점",
     "address": "서울 마포구 와우산로29길 27",
     "lat": 37.5550924,
     "lng": 126.9282154,
@@ -4853,7 +5155,7 @@
   },
   {
     "id": "hongdae-035",
-    "name": "THE COCOGOODS",
+    "name": "더꼬꼬굿즈",
     "address": "서울 마포구 와우산로27길 68",
     "lat": 37.5553693,
     "lng": 126.9252926,
@@ -4872,7 +5174,7 @@
   },
   {
     "id": "hongdae-036",
-    "name": "TheKU",
+    "name": "더쿠 연트럴파크점",
     "address": "서울 마포구 양화로21길 17",
     "lat": 37.558998,
     "lng": 126.9249122,
@@ -4891,7 +5193,7 @@
   },
   {
     "id": "incheon-011",
-    "name": "Figurepop",
+    "name": "피규어팝",
     "address": "인천 부평구 장제로249번길 20",
     "lat": 37.5079579,
     "lng": 126.730073,
@@ -4910,7 +5212,7 @@
   },
   {
     "id": "jeonbuk-014",
-    "name": "IROA",
+    "name": "이로아",
     "address": "전라북도 군산시 구영6길 134-3",
     "lat": 35.989447,
     "lng": 126.7120878,
@@ -4929,7 +5231,7 @@
   },
   {
     "id": "chungbuk-006",
-    "name": "samterbookstore",
+    "name": "샘터서적",
     "address": "충북 청주시 흥덕구 가로수로 1330-1",
     "lat": 36.6326167,
     "lng": 127.4412303,
@@ -4948,7 +5250,7 @@
   },
   {
     "id": "chungbuk-007",
-    "name": "Kikiki Figurine Goods Shop Geumcheon Main Branch",
+    "name": "키키키 피규어 굿즈샵 금천본점",
     "address": "충북 청주시 상당구 쇠내로 82",
     "lat": 36.6248202,
     "lng": 127.5028247,
@@ -4967,7 +5269,7 @@
   },
   {
     "id": "gyeonggi-064",
-    "name": "Haha gacha",
+    "name": "캡슐토이 하하가챠",
     "address": "경기 군포시 산본로323번길 16-12",
     "lat": 37.3594733,
     "lng": 126.932215,
@@ -4986,7 +5288,7 @@
   },
   {
     "id": "gyeonggi-065",
-    "name": "Kidult Park",
+    "name": "어른이대공원",
     "address": "경기 군포시 산본천로 230",
     "lat": 37.371926,
     "lng": 126.9426047,
@@ -5003,7 +5305,7 @@
   },
   {
     "id": "gyeonggi-066",
-    "name": "Jay's computer",
+    "name": "제이컴퓨터",
     "address": "경기 평택시 팽성읍 안정쇼핑로 9",
     "lat": 36.9594049,
     "lng": 127.0438205,
@@ -5017,7 +5319,7 @@
   },
   {
     "id": "gangwon-005",
-    "name": "Hantoy Chuncheon Branch",
+    "name": "한토이 춘천점",
     "address": "강원 춘천시 옛경춘로 516",
     "lat": 37.844838,
     "lng": 127.713784,
@@ -5036,7 +5338,7 @@
   },
   {
     "id": "gwangju-008",
-    "name": "Hantoy",
+    "name": "한토이 광주점",
     "address": "경기 광주시 능평로 132-6",
     "lat": 37.3487915,
     "lng": 127.1716266,
@@ -5055,7 +5357,7 @@
   },
   {
     "id": "gwangju-009",
-    "name": "Happy Pulse",
+    "name": "해피펄스",
     "address": "경기 광주시 초월읍 경충대로 913-13",
     "lat": 37.3626577,
     "lng": 127.3117512,
@@ -5074,7 +5376,7 @@
   },
   {
     "id": "chungnam-014",
-    "name": "OFFICETOYMALL",
+    "name": "오피스토이몰 천안아산점",
     "address": "충남 천안시 동남구 천안천변길 25",
     "lat": 36.7823765,
     "lng": 127.1139385,
@@ -5093,7 +5395,7 @@
   },
   {
     "id": "chungnam-015",
-    "name": "Biktoi Toy Store",
+    "name": "빅토이장난감백화점",
     "address": "충남 천안시 서북구 번영로 531",
     "lat": 36.8475311,
     "lng": 127.1222257,
@@ -5112,7 +5414,7 @@
   },
   {
     "id": "jeonnam-005",
-    "name": "figu awesome",
+    "name": "피규어썸",
     "address": "전남 여수시 문수로 118",
     "lat": 34.7552192,
     "lng": 127.7075631,
@@ -5131,7 +5433,7 @@
   },
   {
     "id": "gyeongbuk-007",
-    "name": "code-g gumi",
+    "name": "코드지 구미점",
     "address": "경북 구미시 여헌로 36",
     "lat": 36.1045474,
     "lng": 128.4256308,
@@ -5150,7 +5452,7 @@
   },
   {
     "id": "gangwon-006",
-    "name": "GBASE",
+    "name": "지베이스",
     "address": "강원 강릉시 금성로56번길 6",
     "lat": 37.7524469,
     "lng": 128.8951212,
@@ -5169,7 +5471,7 @@
   },
   {
     "id": "gangwon-007",
-    "name": "TOYOULET WONJU",
+    "name": "토이아울렛 원주점",
     "address": "강원 원주시 지정면 무릉로 15",
     "lat": 37.3749167,
     "lng": 127.8747362,
@@ -5188,7 +5490,7 @@
   },
   {
     "id": "gangwon-008",
-    "name": "nice toyz",
+    "name": "나이스토이",
     "address": "강원 원주시 시청로 82",
     "lat": 37.3365896,
     "lng": 127.9277371,
@@ -5207,7 +5509,7 @@
   },
   {
     "id": "gangwon-009",
-    "name": "Boseong Tools",
+    "name": "보성종합공구",
     "address": "강원 춘천시 망대길 5",
     "lat": 37.8769896,
     "lng": 127.7238644,
@@ -5226,7 +5528,7 @@
   },
   {
     "id": "gyeongbuk-008",
-    "name": "Capsule Toy Shop",
+    "name": "캡슐토이샵",
     "address": "경북 포항시 북구 중앙상가2길 20",
     "lat": 36.0364331,
     "lng": 129.3642691,
@@ -5245,7 +5547,7 @@
   },
   {
     "id": "gyeongbuk-009",
-    "name": "Gachyasyap Pohang Branch",
+    "name": "가챠샵 포항점",
     "address": "경북 포항시 북구 중앙상가길 28-2",
     "lat": 36.037684,
     "lng": 129.3637278,
@@ -5263,7 +5565,7 @@
   },
   {
     "id": "gyeongnam-003",
-    "name": "Pigyueoreul Channeun Saramdeul",
+    "name": "피규어를 찾는 사람들",
     "address": "경남 창원시 성산구 비음로27번길 46-6",
     "lat": 35.2307209,
     "lng": 128.7035378,
@@ -5282,7 +5584,7 @@
   },
   {
     "id": "gyeongnam-004",
-    "name": "Robot",
+    "name": "로보트",
     "address": "경남 진주시 금산면 월아산로 1918",
     "lat": 35.2143673,
     "lng": 128.1340923,
@@ -5300,7 +5602,7 @@
   },
   {
     "id": "gyeongnam-005",
-    "name": "POWER OTAKING",
+    "name": "파워덕질+경키덜공방",
     "address": "경남 진주시 중앙시장길 27-16",
     "lat": 35.1946299,
     "lng": 128.0848107,
@@ -5319,7 +5621,7 @@
   },
   {
     "id": "gyeonggi-067",
-    "name": "Toy Outlet Mokkam Main Branch",
+    "name": "토이아울렛 목감본점",
     "address": "경기 시흥시 수인로 2311",
     "lat": 37.3852772,
     "lng": 126.8637183,
@@ -5338,7 +5640,7 @@
   },
   {
     "id": "gwangju-010",
-    "name": "Toy Outlet Gwangju Branch",
+    "name": "토이아울렛 광주점",
     "address": "광주 광산구 임방울대로826번길 30",
     "lat": 35.216195,
     "lng": 126.8484064,
@@ -5357,7 +5659,7 @@
   },
   {
     "id": "gwangju-011",
-    "name": "DOORIJOY",
+    "name": "두리조이",
     "address": "광주 동구 중앙로160번길 31-12",
     "lat": 35.1467009,
     "lng": 126.9166817,
@@ -5376,7 +5678,7 @@
   },
   {
     "id": "gwangju-012",
-    "name": "Any Meraendeu",
+    "name": "애니메랜드",
     "address": "광주 동구 중앙로160번길 16-7",
     "lat": 35.1468139,
     "lng": 126.9146622,
@@ -5390,7 +5692,7 @@
   },
   {
     "id": "gwangju-013",
-    "name": "Sujeong Game",
+    "name": "수정게임",
     "address": "광주 북구 우치로126번길 9",
     "lat": 35.1787547,
     "lng": 126.9127074,
@@ -5400,11 +5702,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "36183990"
+    "naverPlaceId": "36183990",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20210711_280/1625998271161uIqXh_JPEG/EyX50jVU86JOpAaBADIRa3KI.jpg",
+      "https://ldb-phinf.pstatic.net/20210711_152/1625998271240BbEta_JPEG/_6UTvGovJnHsNiIQTnVBSI-z.jpg",
+      "https://ldb-phinf.pstatic.net/20210711_300/16259982711348KfRi_JPEG/KPScbU9d2nUDwSlQeNTQdGG7.jpg"
+    ]
   },
   {
     "id": "jeju-005",
-    "name": "Toy market",
+    "name": "토이마켓 제주점",
     "address": "제주 제주시 동문로 192",
     "lat": 33.5118671,
     "lng": 126.5462973,
@@ -5414,11 +5721,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "37288893"
+    "naverPlaceId": "37288893",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240828_29/1724825251660Is7Gg_JPEG/%C1%A6%B8%F1%C0%BB-%C0%D4%B7%C2%C7%D8%C1%D6%BC%BC%BF%E4_-001.jpg",
+      "https://ldb-phinf.pstatic.net/20250408_257/1744105767885g9SUN_JPEG/KakaoTalk_20250408_184055866_08.jpg",
+      "https://ldb-phinf.pstatic.net/20250408_154/17441062555884lgwv_JPEG/KakaoTalk_20250408_185649798_06.jpg"
+    ]
   },
   {
     "id": "chungbuk-008",
-    "name": "Toy Market",
+    "name": "토이마켓 청주점",
     "address": "충북 청주시 상당구 월평로 311",
     "lat": 36.6018072,
     "lng": 127.5144347,
@@ -5428,11 +5740,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1225661973"
+    "naverPlaceId": "1225661973",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20211204_145/16385893254210NGJy_JPEG/671FF76C-5DDE-40A2-8093-3A95A615ED5A.jpeg",
+      "https://ldb-phinf.pstatic.net/20240226_285/1708935892371gghJ1_JPEG/1.jpg",
+      "https://ldb-phinf.pstatic.net/20240226_102/1708935889513yGj49_JPEG/3.jpg"
+    ]
   },
   {
     "id": "busan-015",
-    "name": "Gachyasyap Seo-myeon Branch",
+    "name": "가챠샵 서면점",
     "address": "부산 부산진구 중앙대로702번길 23",
     "lat": 35.1554741,
     "lng": 129.060475,
@@ -5442,11 +5759,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "38767060"
+    "naverPlaceId": "38767060",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20161028_226/1477629409268TvOlc_JPEG/176971573254383_0.jpeg",
+      "https://ldb-phinf.pstatic.net/20161028_13/1477629409374HfrRv_JPEG/176971573254383_1.jpeg",
+      "https://ldb-phinf.pstatic.net/20161028_103/1477629409532jBIRa_JPEG/176971573254383_2.jpeg"
+    ]
   },
   {
     "id": "hongdae-037",
-    "name": "Capsule Shop Anseodang 3rd Branch",
+    "name": "캡슐샵안서당 3호점",
     "address": "서울 마포구 신촌로2안길 52",
     "lat": 37.5564851,
     "lng": 126.9297634,
@@ -5456,11 +5778,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1937102656"
+    "naverPlaceId": "1937102656",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20220330_103/1648616637499nxvD2_JPEG/20220327_122632.jpg",
+      "https://ldb-phinf.pstatic.net/20220328_106/1648462630890y4kxR_JPEG/20220327_122613.jpg"
+    ]
   },
   {
     "id": "hongdae-038",
-    "name": "I Love Toys Hongik Univ. Branch",
+    "name": "아이러브토이즈 홍대점",
     "address": "서울 마포구 와우산로27길 32",
     "lat": 37.5545531,
     "lng": 126.9268388,
@@ -5470,11 +5796,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1680135546"
+    "naverPlaceId": "1680135546",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20220715_154/1657821199984TMhMI_JPEG/C47A0109-33CB-482F-9BDA-31D7C8D7588B.jpeg",
+      "https://ldb-phinf.pstatic.net/20220715_144/1657821199964M3K12_JPEG/B82167F2-B5CD-4973-9D33-BD3E3C967347.jpeg",
+      "https://ldb-phinf.pstatic.net/20220715_215/1657821200147tOMr0_JPEG/8F5E795F-984A-4947-B66A-B6FBB4378A89.jpeg"
+    ]
   },
   {
     "id": "hongdae-039",
-    "name": "CIH SHOP K Books",
+    "name": "CIH SHOP 케이북스",
     "address": "서울 마포구 양화로 161",
     "lat": 37.5568461,
     "lng": 126.9232096,
@@ -5488,7 +5819,7 @@
   },
   {
     "id": "songpa-006",
-    "name": "kujinyang",
+    "name": "쿠지냥",
     "address": "서울 송파구 백제고분로7길 15",
     "lat": 37.5106308,
     "lng": 127.0805297,
@@ -5498,11 +5829,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1907057648"
+    "naverPlaceId": "1907057648",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20220113_239/1642001550133LiWug_PNG/%B7%CE%B0%ED.png",
+      "https://ldb-phinf.pstatic.net/20230226_166/1677397488404WdRpK_JPEG/KakaoTalk_20220414_205614969.jpg",
+      "https://ldb-phinf.pstatic.net/20230226_36/16773975416110BbdY_JPEG/KakaoTalk_20230226_001617853_03.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "xxing's figure Hanyang Uni branch",
+    "id": "seouletc-031",
+    "name": "씽스피규어 한양대점",
     "address": "서울 성동구 마조로7길 9",
     "lat": 37.5607013,
     "lng": 127.0402425,
@@ -5512,11 +5848,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1003622530"
+    "naverPlaceId": "1003622530",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20221006_72/1665031490372jBxjf_JPEG/89EF6B67-F6E2-4C0A-8D6F-54DA395A53A7.JPG",
+      "https://ldb-phinf.pstatic.net/20230103_270/1672735361947TLY6l_JPEG/IMG_4476.jpg",
+      "https://ldb-phinf.pstatic.net/20230103_150/1672735362825egfDr_JPEG/IMG_4477.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "XXINGSFIGURE",
+    "id": "seouletc-032",
+    "name": "씽스피규어",
     "address": "서울 성동구 왕십리광장로 17",
     "lat": 37.5614086,
     "lng": 127.0384812,
@@ -5526,11 +5867,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1313162966"
+    "naverPlaceId": "1313162966",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20211215_225/1639558448807Ii9bU_JPEG/IMG_0078.jpg",
+      "https://ldb-phinf.pstatic.net/20220517_225/1652759135036k7djv_JPEG/IMG_1850.jpg"
+    ]
   },
   {
     "id": "chungbuk-009",
-    "name": "Aenimongttang Cheongju Seongan Branch",
+    "name": "애니몽땅 청주성안점",
     "address": "충북 청주시 상당구 성안로 29",
     "lat": 36.6341983,
     "lng": 127.4892125,
@@ -5540,11 +5885,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1697114538"
+    "naverPlaceId": "1697114538",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240913_122/1726208764802JWVfU_JPEG/KakaoTalk_20240905_154604218_22.jpg",
+      "https://ldb-phinf.pstatic.net/20240913_259/1726208764982yd7uk_JPEG/KakaoTalk_20240905_154604218_11.jpg",
+      "https://ldb-phinf.pstatic.net/20240913_176/1726208764935HPNAo_JPEG/KakaoTalk_20240905_154604218_18.jpg"
+    ]
   },
   {
     "id": "busan-016",
-    "name": "brothergoods",
+    "name": "브라더굿즈 서면점",
     "address": "부산 부산진구 중앙대로680번길 680",
     "lat": 35.1535032,
     "lng": 129.0595001,
@@ -5554,11 +5904,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1186903090"
+    "naverPlaceId": "1186903090",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20241109_65/1731123353133dvniM_JPEG/KakaoTalk_20241109_123220297.jpg",
+      "https://ldb-phinf.pstatic.net/20241109_151/1731123373225u8E8a_JPEG/KakaoTalk_20241109_123220297_02.jpg",
+      "https://ldb-phinf.pstatic.net/20230307_136/16781709233627Q1dN_JPEG/20230307_153348.jpg"
+    ]
   },
   {
     "id": "busan-017",
-    "name": "Gundam Mall",
+    "name": "건담몰",
     "address": "부산 사하구 낙동대로 511",
     "lat": 35.1098159,
     "lng": 128.9657853,
@@ -5568,11 +5923,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "37384160"
+    "naverPlaceId": "37384160",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20210501_280/1619861855536kQHMJ_JPEG/-17Bd3TCI8xh_QC4oc6uom9r.jpg",
+      "https://ldb-phinf.pstatic.net/20210501_144/1619861860987MCP9n_JPEG/5HK8krArXURV4eUApaOd2EJm.jpg",
+      "https://ldb-phinf.pstatic.net/20210501_65/16198618654211lJYF_JPEG/06SBUxGzRzSZqgz-2hioAnIy.jpg"
+    ]
   },
   {
     "id": "gyeonggi-068",
-    "name": "TOYCHINGU",
+    "name": "토이친구",
     "address": "경기 안양시 동안구 부림로 121",
     "lat": 37.3941457,
     "lng": 126.9644677,
@@ -5582,11 +5942,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1829028484"
+    "naverPlaceId": "1829028484",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20191201_298/1575184654380DKNW6_JPEG/ozmHgkdooIF8iuXLvj-SMgBr.jpeg.jpg",
+      "https://ldb-phinf.pstatic.net/20191201_233/1575184719887DJ7td_JPEG/2Spcgto8dFIu1eUF5U-IHb1N.jpeg.jpg",
+      "https://ldb-phinf.pstatic.net/20171002_96/1506919676034WWhBD_JPEG/n1LZpSSYdclSmtGoDTXdT6aN.jpg"
+    ]
   },
   {
     "id": "gyeonggi-069",
-    "name": "Omo Cha Land Ilsan Branch",
+    "name": "오모차랜드 일산점",
     "address": "경기 고양시 일산서구 송산로 499-28",
     "lat": 37.6898114,
     "lng": 126.7326839,
@@ -5596,11 +5961,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1310751456"
+    "naverPlaceId": "1310751456",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20221212_49/16708254592474lSVQ_JPEG/KakaoTalk_20221212_145829315.jpg",
+      "https://ldb-phinf.pstatic.net/20221212_248/1670825459292xcFPg_JPEG/KakaoTalk_20221212_145830028.jpg",
+      "https://ldb-phinf.pstatic.net/20221212_264/1670825459331OPTFS_JPEG/KakaoTalk_20221212_145830383.jpg"
+    ]
   },
   {
     "id": "busan-018",
-    "name": "Omocha Land Busan Branch",
+    "name": "오모차랜드 부산점",
     "address": "부산 부산진구 중앙대로680번길 45-5",
     "lat": 35.1537431,
     "lng": 129.0616223,
@@ -5610,11 +5980,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1236154095"
+    "naverPlaceId": "1236154095",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20220128_196/1643352860834m3JrP_PNG/1643253294188.png"
+    ]
   },
   {
     "id": "gyeongnam-006",
-    "name": "J Goods Changwon Branch",
+    "name": "제이굿즈 창원점",
     "address": "경남 창원시 성산구 원이대로 672",
     "lat": 35.2234036,
     "lng": 128.6866526,
@@ -5628,7 +6001,7 @@
   },
   {
     "id": "etc-009",
-    "name": "jgoods us",
+    "name": "제이굿즈 울산성남점",
     "address": "울산 중구 젊음의2거리 29",
     "lat": 35.5533005,
     "lng": 129.3197883,
@@ -5638,11 +6011,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1859579722"
+    "naverPlaceId": "1859579722",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20200413_300/1586779851096OPQ0j_JPEG/LJFtjUHUMOm95x7uPOxSgle-.jpg",
+      "https://ldb-phinf.pstatic.net/20250328_1/1743142471855f0dAh_JPEG/KakaoTalk_20250328_151400984_03.jpg",
+      "https://ldb-phinf.pstatic.net/20250328_10/1743142471804fMDY7_JPEG/KakaoTalk_20250328_151400984_04.jpg"
+    ]
   },
   {
     "id": "gangwon-010",
-    "name": "Won Figures",
+    "name": "원피규어",
     "address": "강원 속초시 청봉로 167",
     "lat": 38.166438,
     "lng": 128.5292198,
@@ -5652,11 +6030,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1978606484"
+    "naverPlaceId": "1978606484",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240519_176/1716096310844kF4hJ_JPEG/20240519_142447.jpg",
+      "https://ldb-phinf.pstatic.net/20240519_93/1716096226417lL1MR_JPEG/20240519_142324.jpg",
+      "https://ldb-phinf.pstatic.net/20240519_93/1716096086921TVpDv_JPEG/20240519_121148.jpg"
+    ]
   },
   {
     "id": "gwangju-014",
-    "name": "onefigure gwangju",
+    "name": "원피규어 광주충장로점",
     "address": "광주 동구 중앙로160번길 34",
     "lat": 35.1463034,
     "lng": 126.9160143,
@@ -5666,11 +6049,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1113282566"
+    "naverPlaceId": "1113282566",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240701_102/1719818358911cWL5a_JPEG/%BF%F8%C7%C7%B1%D4%BE%EE_%B1%A4%C1%D6_%BF%DC%BA%CE%BB%E7%C1%F8.jpg",
+      "https://ldb-phinf.pstatic.net/20240701_86/1719818338654d0C1b_JPEG/KakaoTalk_20240701_142427033.jpg",
+      "https://ldb-phinf.pstatic.net/20240701_229/1719818338543RDF2E_JPEG/KakaoTalk_20240701_142427033_01.jpg"
+    ]
   },
   {
     "id": "busan-019",
-    "name": "Onefigure_Busan",
+    "name": "원피규어",
     "address": "부산 부산진구 신천대로50번길 66",
     "lat": 35.1536581,
     "lng": 129.0600609,
@@ -5688,7 +6076,7 @@
   },
   {
     "id": "incheon-012",
-    "name": "OMOCHA STORE",
+    "name": "오모차상점",
     "address": "인천 부평구 부평문화로66번길 30",
     "lat": 37.4927435,
     "lng": 126.7236789,
@@ -5707,7 +6095,7 @@
   },
   {
     "id": "incheon-013",
-    "name": "Figure flex",
+    "name": "피규어플렉스",
     "address": "인천 부평구 시장로29번길 8",
     "lat": 37.4937787,
     "lng": 126.7253714,
@@ -5726,7 +6114,7 @@
   },
   {
     "id": "gyeonggi-070",
-    "name": "TOYGOODS",
+    "name": "토이굿즈",
     "address": "경기 안산시 단원구 고잔1길 40",
     "lat": 37.3180496,
     "lng": 126.8377128,
@@ -5744,8 +6132,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "GOGO SHOP",
+    "id": "seouletc-033",
+    "name": "고고가챠",
     "address": "서울 동작구 노량진로16길 14",
     "lat": 37.5129371,
     "lng": 126.9436656,
@@ -5762,7 +6150,7 @@
   },
   {
     "id": "gyeonggi-071",
-    "name": "GAMERS",
+    "name": "플레이스테이션 게이머즈",
     "address": "경기 오산시 오산로 374",
     "lat": 37.1601364,
     "lng": 127.0663068,
@@ -5781,7 +6169,7 @@
   },
   {
     "id": "daejeon-017",
-    "name": "Bong Figures Shop",
+    "name": "봉피규어샵",
     "address": "대전 동구 계족로368번길 84",
     "lat": 36.3445573,
     "lng": 127.4383835,
@@ -5800,7 +6188,7 @@
   },
   {
     "id": "busan-020",
-    "name": "Any Gio",
+    "name": "애니지오",
     "address": "부산 부산진구 중앙대로680번길 21",
     "lat": 35.1535538,
     "lng": 129.060439,
@@ -5819,7 +6207,7 @@
   },
   {
     "id": "chungnam-016",
-    "name": "PLAYCAPSULETOY",
+    "name": "플레이캡슐토이",
     "address": "충남 아산시 염치읍 방현동길 75-21",
     "lat": 36.8194293,
     "lng": 127.0157405,
@@ -5838,7 +6226,7 @@
   },
   {
     "id": "etc-010",
-    "name": "Play capsule toy",
+    "name": "플레이캡슐토이 세종점",
     "address": "세종  도움1로 108",
     "lat": 36.5026384,
     "lng": 127.247577,
@@ -5857,7 +6245,7 @@
   },
   {
     "id": "gyeonggi-072",
-    "name": "psbdongtan",
+    "name": "박서방 동탄점",
     "address": "경기 화성시 동탄대로5길 21",
     "lat": 37.1669449,
     "lng": 127.1055944,
@@ -5876,7 +6264,7 @@
   },
   {
     "id": "gyeonggi-073",
-    "name": "ToyTok",
+    "name": "가챠샵 토이톡",
     "address": "경기 김포시 김포한강2로 41",
     "lat": 37.640191,
     "lng": 126.6784208,
@@ -5892,8 +6280,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "DeokuNews",
+    "id": "seouletc-034",
+    "name": "더쿠통신",
     "address": "경기 시흥시 서울대학로278번길 61",
     "lat": 37.3681662,
     "lng": 126.730675,
@@ -5911,7 +6299,7 @@
   },
   {
     "id": "busan-021",
-    "name": "Toychingu",
+    "name": "토이친구",
     "address": "부산 해운대구 좌동순환로433번길 30-1",
     "lat": 35.1622805,
     "lng": 129.1795464,
@@ -5930,7 +6318,7 @@
   },
   {
     "id": "gyeonggi-074",
-    "name": "ytheshop",
+    "name": "와이더샵",
     "address": "경기 안양시 만안구 안양로323번길 20",
     "lat": 37.400069,
     "lng": 126.9187357,
@@ -5949,7 +6337,7 @@
   },
   {
     "id": "gyeonggi-075",
-    "name": "ToysRus Lotte Mart Gimpo Hangang Branch",
+    "name": "토이저러스 롯데마트김포한강점",
     "address": "경기 김포시 김포한강2로 41",
     "lat": 37.6400955,
     "lng": 126.6771639,
@@ -5963,7 +6351,7 @@
   },
   {
     "id": "hongdae-040",
-    "name": "Rasinban Seoul 1st Branch",
+    "name": "라신반 서울 1호점",
     "address": "서울 마포구 와우산로 100",
     "lat": 37.5528791,
     "lng": 126.9246305,
@@ -5982,7 +6370,7 @@
   },
   {
     "id": "gyeonggi-076",
-    "name": "gamemon (nintendo & playstation & goods)",
+    "name": "게임몬 플스&닌텐도샵",
     "address": "경기 용인시 기흥구 동백5로 22",
     "lat": 37.2757561,
     "lng": 127.1517691,
@@ -6001,7 +6389,7 @@
   },
   {
     "id": "gyeonggi-077",
-    "name": "Pokemon Korea Inc.",
+    "name": "포켓몬코리아",
     "address": "경기 용인시 수지구 신수로 801",
     "lat": 37.3417612,
     "lng": 127.102185,
@@ -6018,7 +6406,7 @@
   },
   {
     "id": "gyeonggi-078",
-    "name": "DENDEN LABEL",
+    "name": "덴덴레이블",
     "address": "경기 성남시 분당구 서현로210번길 20",
     "lat": 37.3858675,
     "lng": 127.1240236,
@@ -6037,7 +6425,7 @@
   },
   {
     "id": "jeonbuk-015",
-    "name": "Lotte Mart Jeongeup Branch",
+    "name": "롯데마트 정읍점",
     "address": "전북 정읍시 벚꽃로 85",
     "lat": 35.5795307,
     "lng": 126.8396803,
@@ -6054,7 +6442,7 @@
   },
   {
     "id": "gyeonggi-079",
-    "name": "Lotte Mart Maseok Branch",
+    "name": "롯데마트 마석점",
     "address": "경기 남양주시 화도읍 경춘로 1992",
     "lat": 37.6504152,
     "lng": 127.3094347,
@@ -6073,7 +6461,7 @@
   },
   {
     "id": "jeonbuk-016",
-    "name": "ToysRus Jeonju Branch",
+    "name": "토이저러스 전주점",
     "address": "전북 전주시 완산구 우전로 240",
     "lat": 35.8164158,
     "lng": 127.1025299,
@@ -6090,7 +6478,7 @@
   },
   {
     "id": "chungbuk-010",
-    "name": "ToysRus",
+    "name": "토이저러스",
     "address": "충북 청주시 흥덕구 2순환로 1004",
     "lat": 36.6447379,
     "lng": 127.4218562,
@@ -6104,7 +6492,7 @@
   },
   {
     "id": "daejeon-018",
-    "name": "ToysRus Daeduck Branch",
+    "name": "토이저러스 대덕점",
     "address": "대전 유성구 테크노중앙로 14",
     "lat": 36.4269285,
     "lng": 127.3869233,
@@ -6118,7 +6506,7 @@
   },
   {
     "id": "gyeongbuk-010",
-    "name": "ToysRus Gumi Branch",
+    "name": "토이저러스 구미점",
     "address": "경북 구미시 구미대로22길 11",
     "lat": 36.113764,
     "lng": 128.3651919,
@@ -6132,7 +6520,7 @@
   },
   {
     "id": "gyeongnam-007",
-    "name": "Toysrus Lotte Mart Yangdeok Branch",
+    "name": "토이저러스 롯데마트 양덕점",
     "address": "경남 창원시 마산회원구 삼호로 80",
     "lat": 35.2249013,
     "lng": 128.5853419,
@@ -6146,7 +6534,7 @@
   },
   {
     "id": "gyeongnam-008",
-    "name": "Lotte Mart Gimhae Branch",
+    "name": "롯데마트 김해점",
     "address": "경남 김해시 김해대로 2330",
     "lat": 35.2255196,
     "lng": 128.8820997,
@@ -6165,7 +6553,7 @@
   },
   {
     "id": "busan-022",
-    "name": "Lotte Mart Sasang Branch",
+    "name": "롯데마트 사상점",
     "address": "부산 사상구 낙동대로 733",
     "lat": 35.1273822,
     "lng": 128.9683,
@@ -6184,7 +6572,7 @@
   },
   {
     "id": "busan-023",
-    "name": "ToysRus Kids Mart Busan Branch",
+    "name": "토이저러스 키즈마트부산점",
     "address": "부산 부산진구 신천대로 241",
     "lat": 35.1633331,
     "lng": 129.0495444,
@@ -6198,7 +6586,7 @@
   },
   {
     "id": "busan-024",
-    "name": "ToysRus Lotte Mart Dongnae Branch",
+    "name": "토이저러스 롯데마트 동래점",
     "address": "부산 동래구 중앙대로 1393",
     "lat": 35.2119986,
     "lng": 129.077186,
@@ -6215,7 +6603,7 @@
   },
   {
     "id": "busan-025",
-    "name": "Lotte Mart Gwangbok Store",
+    "name": "롯데마트 광복점",
     "address": "부산 중구 중앙대로 2",
     "lat": 35.0972623,
     "lng": 129.0364888,
@@ -6234,7 +6622,7 @@
   },
   {
     "id": "gyeonggi-080",
-    "name": "Toysrus Pyeongchon",
+    "name": "토이저러스 평촌점",
     "address": "경기 안양시 동안구 시민대로160번길 20",
     "lat": 37.3885176,
     "lng": 126.9504435,
@@ -6253,7 +6641,7 @@
   },
   {
     "id": "gyeonggi-081",
-    "name": "Toysrus Icheon",
+    "name": "토이저러스 이천점",
     "address": "경기 이천시 프리미엄아울렛로 177-74",
     "lat": 37.2433018,
     "lng": 127.3995171,
@@ -6267,7 +6655,7 @@
   },
   {
     "id": "gyeonggi-082",
-    "name": "Toysrus Lotte Premium Outlet Giheung Branch",
+    "name": "토이저러스롯데프리미엄아울렛기흥점",
     "address": "경기 용인시 기흥구 신고매로 124",
     "lat": 37.2256653,
     "lng": 127.1217944,
@@ -6286,7 +6674,7 @@
   },
   {
     "id": "gyeonggi-083",
-    "name": "Toysrus Ansan Branch",
+    "name": "토이저러스 안산점",
     "address": "경기 안산시 상록구 항가울로 422",
     "lat": 37.3181406,
     "lng": 126.8463705,
@@ -6300,7 +6688,7 @@
   },
   {
     "id": "incheon-014",
-    "name": "Lotte Mart Cheongna Branch",
+    "name": "롯데마트 청라점",
     "address": "인천 서구 청라커낼로 252",
     "lat": 37.5312955,
     "lng": 126.6487132,
@@ -6317,7 +6705,7 @@
   },
   {
     "id": "incheon-015",
-    "name": "ToysRus",
+    "name": "토이저러스",
     "address": "인천 연수구 컨벤시아대로 177",
     "lat": 37.3882221,
     "lng": 126.6436163,
@@ -6331,7 +6719,7 @@
   },
   {
     "id": "incheon-016",
-    "name": "Toysrus Gyeyang Branch",
+    "name": "토이저러스 계양점",
     "address": "인천 계양구 장제로 822",
     "lat": 37.5410941,
     "lng": 126.7361153,
@@ -6344,8 +6732,8 @@
     "naverPlaceId": "31111442"
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Toysrus Seoul Yangpyeong Branch",
+    "id": "seouletc-035",
+    "name": "토이저러스 서울양평점",
     "address": "서울 영등포구 선유로 138",
     "lat": 37.5260659,
     "lng": 126.891572,
@@ -6362,7 +6750,7 @@
   },
   {
     "id": "dongdaemun-001",
-    "name": "Toysrus Cheongnyang-ri Branch",
+    "name": "토이저러스 청량리점",
     "address": "서울 동대문구 왕산로 214",
     "lat": 37.5802329,
     "lng": 127.0485951,
@@ -6372,11 +6760,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "31111416"
+    "naverPlaceId": "31111416",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20251128_9/1764318915142GNhMT_JPEG/1000034909.jpg",
+      "https://ldb-phinf.pstatic.net/20200623_229/15928624856124PrqU_JPEG/eVC7432mJqDLtIKupqDoNK2X.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Toysrus Lotte Mart Junggye Branch",
+    "id": "seouletc-036",
+    "name": "토이저러스 롯데마트중계점",
     "address": "서울 노원구 노원로 330",
     "lat": 37.6467599,
     "lng": 127.0710038,
@@ -6390,7 +6782,7 @@
   },
   {
     "id": "songpa-007",
-    "name": "TRU",
+    "name": "토이저러스 잠실점",
     "address": "서울 송파구 올림픽로 240",
     "lat": 37.5115839,
     "lng": 127.0964922,
@@ -6400,11 +6792,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "21723992"
+    "naverPlaceId": "21723992",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20250504_157/17463623331391KtnU_JPEG/20250125_101041.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Toysrus Lotte Mart Gimpo International Airport Branch",
+    "id": "seouletc-037",
+    "name": "토이저러스롯데마트김포공항점",
     "address": "서울 강서구 하늘길 77",
     "lat": 37.5633899,
     "lng": 126.8030929,
@@ -6418,7 +6813,7 @@
   },
   {
     "id": "incheon-017",
-    "name": "Gachyasyap Chinatown Branch",
+    "name": "가챠샵 차이나타운점",
     "address": "인천 중구 차이나타운로44번길 28-1",
     "lat": 37.4756854,
     "lng": 126.617855,
@@ -6428,11 +6823,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "869462896"
+    "naverPlaceId": "869462896",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20190822_116/1566433762498kqfbg_JPEG/KrCx2Klcpomav42rIagbpPg6.jpeg.jpg",
+      "https://ldb-phinf.pstatic.net/20200812_36/1597197890187oedKm_JPEG/i82prM8v_aI4oUBRf765s5W_.jpg"
+    ]
   },
   {
     "id": "incheon-018",
-    "name": "The Goods Incheon Bupyeong",
+    "name": "더굿즈 인천부평",
     "address": "인천 부평구 부평문화로80번길 13",
     "lat": 37.4936189,
     "lng": 126.7250522,
@@ -6442,11 +6841,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1981664249"
+    "naverPlaceId": "1981664249",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20241217_286/1734369512943WBoQ1_JPEG/%B4%D9%BF%EE%B7%CE%B5%E5.jpeg",
+      "https://ldb-phinf.pstatic.net/20240208_234/17073826486452syKC_JPEG/1707382595204.jpg"
+    ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Toy Floor",
+    "id": "seouletc-038",
+    "name": "토이마루",
     "address": "서울 동작구 상도로 106",
     "lat": 37.5004957,
     "lng": 126.9322777,
@@ -6456,11 +6859,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "11613832"
+    "naverPlaceId": "11613832",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20151216_105/1450252232194FS5RJ_JPEG/167166568052063_0.jpeg",
+      "https://ldb-phinf.pstatic.net/20151216_238/1450252232338QzI8w_JPEG/11613832_0.jpg"
+    ]
   },
   {
     "id": "incheon-019",
-    "name": "Jayu Market",
+    "name": "자유장터",
     "address": "인천 부평구 마장로426번길 33",
     "lat": 37.5162592,
     "lng": 126.7060616,
@@ -6470,11 +6877,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1463357367"
+    "naverPlaceId": "1463357367",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20231108_95/169937283852159tPj_JPEG/1636437936337.jpg",
+      "https://ldb-phinf.pstatic.net/20231108_75/1699371731806hGYF2_JPEG/1699366395570.jpg",
+      "https://ldb-phinf.pstatic.net/20231108_292/1699371731737I43jw_JPEG/1699366395337.jpg"
+    ]
   },
   {
     "id": "gyeonggi-084",
-    "name": "hobbycarnival",
+    "name": "하비카니발",
     "address": "경기 안산시 단원구 다리간2길 74",
     "lat": 37.3131737,
     "lng": 126.8250183,
@@ -6484,11 +6896,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1053805833"
+    "naverPlaceId": "1053805833",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20190712_246/1562917793715GeFnB_JPEG/KvhSwH97hyGp2-HYsf3fn8D3.jpg",
+      "https://ldb-phinf.pstatic.net/20190712_191/1562917816306tEHeE_JPEG/jVjxfh9S3tDKHu-y5eQvIVnO.jpg",
+      "https://ldb-phinf.pstatic.net/20190712_266/1562917821594ubEeV_JPEG/MxPdsL0Wc432aWMNF5L8XEYF.jpg"
+    ]
   },
   {
     "id": "gyeonggi-085",
-    "name": "GOLDEN GAME MARKET",
+    "name": "골든게임마켓",
     "address": "경기 화성시 금반1길 6",
     "lat": 37.1887916,
     "lng": 127.0709675,
@@ -6498,11 +6915,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1818246426"
+    "naverPlaceId": "1818246426",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20240524_251/1716480557364G6EBN_JPEG/KakaoTalk_20240524_010839343_04.jpg",
+      "https://ldb-phinf.pstatic.net/20240524_44/1716480557317vcdBt_JPEG/KakaoTalk_20240524_010839343.jpg",
+      "https://ldb-phinf.pstatic.net/20231116_246/1700098911564MKYU4_JPEG/1000022073.jpg"
+    ]
   },
   {
     "id": "gyeonggi-086",
-    "name": "J Goods",
+    "name": "제이굿즈 수원역점",
     "address": "경기 수원시 팔달구 갓매산로55번길 18",
     "lat": 37.2689659,
     "lng": 127.0036633,
@@ -6512,11 +6934,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "141588373"
+    "naverPlaceId": "141588373",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20210328_156/1616896060673prdRn_JPEG/717w2F5_e0Ex7cWcsrxBZ5mz.jpeg.jpg",
+      "https://ldb-phinf.pstatic.net/20220617_119/1655467708938IUF5n_JPEG/D4755D8F-45A3-421A-9F44-83C1522CC1DB.jpeg"
+    ]
   },
   {
     "id": "jongno-004",
-    "name": "Toy Store",
+    "name": "장난감가게",
     "address": "서울 종로구 종로52길 39",
     "lat": 37.5714013,
     "lng": 127.0147837,
@@ -6530,7 +6956,7 @@
   },
   {
     "id": "jongno-005",
-    "name": "Seungjin Toys",
+    "name": "승진완구",
     "address": "서울 종로구 종로52길 30",
     "lat": 37.5713413,
     "lng": 127.0141946,
@@ -6540,11 +6966,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "11691969"
+    "naverPlaceId": "11691969",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20190130_248/1548820807598BVmDV_JPEG/7nSr5RzI_FKC-23npcixIE-w.jpg",
+      "https://ldb-phinf.pstatic.net/20150831_134/1441021029503OYFOc_JPEG/11691969_0.jpg",
+      "https://ldb-phinf.pstatic.net/20200708_86/1594172325990lyu0d_JPEG/wMMfSdfehXFBcjKjgGaUn8Zi.jpg"
+    ]
   },
   {
     "id": "gyeonggi-087",
-    "name": "Kkomjirak Hobby Shop",
+    "name": "꼼지락 하비샵",
     "address": "경기 고양시 덕양구 백양로 84",
     "lat": 37.6329909,
     "lng": 126.8341989,
@@ -6554,11 +6985,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1781000024"
+    "naverPlaceId": "1781000024",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20230515_244/1684144967235Vy8JW_JPEG/1684144932108.jpg",
+      "https://ldb-phinf.pstatic.net/20230515_15/1684144929887686AU_JPEG/1684144912137.jpg",
+      "https://ldb-phinf.pstatic.net/20230515_126/1684144908852nSWfL_JPEG/1684144897518.jpg"
+    ]
   },
   {
     "id": "gyeonggi-088",
-    "name": "Toygunpra",
+    "name": "토이건프라",
     "address": "경기 고양시 일산동구 고봉로 276",
     "lat": 37.6839281,
     "lng": 126.7782296,
@@ -6568,11 +7004,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1001163670"
+    "naverPlaceId": "1001163670",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20211120_168/1637360747166S8JFt_JPEG/20210531_193634.jpg",
+      "https://ldb-phinf.pstatic.net/20211119_213/1637273427346P2viY_JPEG/20211118_202940.jpg",
+      "https://ldb-phinf.pstatic.net/20211119_252/1637273427341JXYjS_JPEG/20211118_202924.jpg"
+    ]
   },
   {
     "id": "gyeonggi-089",
-    "name": "Toy Focus",
+    "name": "토이포커스",
     "address": "경기 고양시 일산동구 장항로 76-3",
     "lat": 37.6320667,
     "lng": 126.7865829,
@@ -6582,11 +7023,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "13362529"
+    "naverPlaceId": "13362529",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20190819_262/1566200064367xlz1m_JPEG/BWs5As6dYIpjUtzReeI9Y1dZ.jpg"
+    ]
   },
   {
     "id": "gyeonggi-090",
-    "name": "Goods market",
+    "name": "굿즈 피규어샵 리퍼마켓",
     "address": "경기 고양시 일산동구 중앙로1275번길 38-31",
     "lat": 37.6604454,
     "lng": 126.7696038,
@@ -6596,11 +7040,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1216576186"
+    "naverPlaceId": "1216576186",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20230331_8/1680230124344eAvQg_JPEG/KakaoTalk_20230331_112349990.jpg",
+      "https://ldb-phinf.pstatic.net/20230331_5/1680230124222l8gp4_JPEG/KakaoTalk_20230331_112349990_01.jpg",
+      "https://ldb-phinf.pstatic.net/20230331_265/1680230124255lsgoS_JPEG/KakaoTalk_20230331_112349990_02.jpg"
+    ]
   },
   {
     "id": "gyeonggi-091",
-    "name": "Aeniraendeu Lafesta D Dong Branch",
+    "name": "애니랜드 라페스타D동점",
     "address": "경기 고양시 일산동구 중앙로 1305-56",
     "lat": 37.6610979,
     "lng": 126.7683634,
@@ -6610,11 +7059,14 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "36693571"
+    "naverPlaceId": "36693571",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20190131_57/1548867871861zYOvS_JPEG/kdsopvOVSM6X_FlSHTCMRbCr.jpg"
+    ]
   },
   {
     "id": "gyeonggi-092",
-    "name": "FIGUREBOX",
+    "name": "피규어박스",
     "address": "경기 고양시 일산서구 중앙로 1443",
     "lat": 37.6704049,
     "lng": 126.7598285,
@@ -6624,11 +7076,15 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "1550704973"
+    "naverPlaceId": "1550704973",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20180208_190/1518061996021aBtGo_JPEG/Hlv-EAEsUGKZ05rV7AjYjjbX.jpg",
+      "https://ldb-phinf.pstatic.net/20220925_241/1664074216638DCXe4_JPEG/20220925_073214.jpg"
+    ]
   },
   {
     "id": "busan-026",
-    "name": "GUNDAMBOOM",
+    "name": "건담붐",
     "address": "부산 사상구 백양대로 555",
     "lat": 35.1574233,
     "lng": 128.9932986,
@@ -6638,11 +7094,16 @@
     "type": "independent",
     "source": "naver-shared",
     "lastVerified": "2026-03-04",
-    "naverPlaceId": "11549599"
+    "naverPlaceId": "11549599",
+    "thumbnailUrls": [
+      "https://ldb-phinf.pstatic.net/20160316_81/1458122090629Lt7Bd_JPEG/176266588467918_0.jpeg",
+      "https://ldb-phinf.pstatic.net/20160316_279/1458122090861mUaYY_JPEG/176266588467918_1.jpeg",
+      "https://ldb-phinf.pstatic.net/20160316_270/1458122091414Nl3EQ_JPEG/176266588467918_2.jpeg"
+    ]
   },
   {
     "id": "busan-027",
-    "name": "animate busan",
+    "name": "애니메이트 부산점",
     "address": "부산 부산진구 중앙대로 672",
     "lat": 35.1529929,
     "lng": 129.0595559,
@@ -6659,7 +7120,7 @@
   },
   {
     "id": "busan-028",
-    "name": "Aeni Plus Busan Seo-myeon Branch",
+    "name": "애니플러스 부산서면점",
     "address": "부산 부산진구 중앙대로 672",
     "lat": 35.1529881,
     "lng": 129.0596392,
@@ -6676,7 +7137,7 @@
   },
   {
     "id": "busan-029",
-    "name": "J Goods Busan Branch",
+    "name": "제이굿즈 부산점",
     "address": "부산 부산진구 신천대로50번길 65",
     "lat": 35.1536904,
     "lng": 129.0597776,
@@ -6690,7 +7151,7 @@
   },
   {
     "id": "busan-030",
-    "name": "Seo-myeon Aenime Club",
+    "name": "서면애니메클럽",
     "address": "부산 부산진구 중앙대로 682-1",
     "lat": 35.1536464,
     "lng": 129.0593776,
@@ -6709,7 +7170,7 @@
   },
   {
     "id": "daejeon-019",
-    "name": "anisekai",
+    "name": "애니세카이",
     "address": "대전 중구 대종로480번길 30",
     "lat": 36.3278354,
     "lng": 127.4282384,
@@ -6726,7 +7187,7 @@
   },
   {
     "id": "daejeon-020",
-    "name": "UNPLUGMALL",
+    "name": "언플러그몰",
     "address": "대전 중구 보문로291번길 12",
     "lat": 36.3282691,
     "lng": 127.4200224,
@@ -6745,7 +7206,7 @@
   },
   {
     "id": "daegu-022",
-    "name": "Comic Plaza",
+    "name": "코믹프라자",
     "address": "대구 중구 경상감영길 184",
     "lat": 35.871872,
     "lng": 128.5973274,
@@ -6764,7 +7225,7 @@
   },
   {
     "id": "daegu-023",
-    "name": "Hobby Land",
+    "name": "하비랜드",
     "address": "대구 중구 중앙대로 434",
     "lat": 35.8717749,
     "lng": 128.5944133,
@@ -6783,7 +7244,7 @@
   },
   {
     "id": "gyeonggi-093",
-    "name": "hiddentoy ilsan",
+    "name": "히든토이 일산점",
     "address": "경기 고양시 덕양구 화중로 98",
     "lat": 37.6357813,
     "lng": 126.8314987,
@@ -6802,7 +7263,7 @@
   },
   {
     "id": "daejeon-021",
-    "name": "HiddenToy daejeon 2",
+    "name": "히든토이 대전2호점",
     "address": "대전 중구 대종로480번길 26",
     "lat": 36.327763,
     "lng": 127.4280874,
@@ -6819,7 +7280,7 @@
   },
   {
     "id": "daejeon-022",
-    "name": "Gat & Toy",
+    "name": "갓앤토이",
     "address": "대전 중구 용두로 4",
     "lat": 36.3252799,
     "lng": 127.4110026,
@@ -6837,7 +7298,7 @@
   },
   {
     "id": "daejeon-023",
-    "name": "HOBBY FIGURE",
+    "name": "하비피규어",
     "address": "대전 서구 문정로150번길 15",
     "lat": 36.347722,
     "lng": 127.3961933,
@@ -6856,7 +7317,7 @@
   },
   {
     "id": "daejeon-024",
-    "name": "Bakseobang Daejeon Main Branch",
+    "name": "박서방 대전본점",
     "address": "대전 서구 계룡로 616",
     "lat": 36.3398068,
     "lng": 127.3906402,
@@ -6875,7 +7336,7 @@
   },
   {
     "id": "daegu-024",
-    "name": "Gongteo Figurine Any Goods Shop",
+    "name": "공터피규어애니 굿즈샵",
     "address": "대구 중구 교동2길 39",
     "lat": 35.87258,
     "lng": 128.597815,
@@ -6892,7 +7353,7 @@
   },
   {
     "id": "daegu-025",
-    "name": "TOYDO",
+    "name": "토이도",
     "address": "대구 중구 동성로1길 29-27",
     "lat": 35.8676663,
     "lng": 128.5951806,
@@ -6911,7 +7372,7 @@
   },
   {
     "id": "daegu-026",
-    "name": "AnimaGoods",
+    "name": "아니메굿즈",
     "address": "대구 중구 동성로 1-1",
     "lat": 35.8674024,
     "lng": 128.5938966,
@@ -6928,7 +7389,7 @@
   },
   {
     "id": "daegu-027",
-    "name": "Won Figures",
+    "name": "원피규어",
     "address": "대구 중구 동성로 8-1",
     "lat": 35.8677193,
     "lng": 128.5945022,
@@ -6947,7 +7408,7 @@
   },
   {
     "id": "gangnam-012",
-    "name": "WouldyouGacha",
+    "name": "우주가챠",
     "address": "서울 강남구 봉은사로2길 13",
     "lat": 37.5036949,
     "lng": 127.0258686,
@@ -6966,7 +7427,7 @@
   },
   {
     "id": "hongdae-041",
-    "name": "bias ani goods",
+    "name": "최애굿즈 홍대점",
     "address": "서울 마포구 신촌로4길 5-21",
     "lat": 37.5573451,
     "lng": 126.9295137,
@@ -6985,7 +7446,7 @@
   },
   {
     "id": "hongdae-042",
-    "name": "Brother Goods Hongik Univ.",
+    "name": "브라더굿즈 홍대",
     "address": "서울 마포구 신촌로6길 24",
     "lat": 37.556316,
     "lng": 126.9297705,
@@ -7004,7 +7465,7 @@
   },
   {
     "id": "hongdae-043",
-    "name": "Onefigure",
+    "name": "원피규어",
     "address": "서울 마포구 홍익로6길 14",
     "lat": 37.5551488,
     "lng": 126.9227994,
@@ -7023,7 +7484,7 @@
   },
   {
     "id": "hongdae-044",
-    "name": "JS STORE",
+    "name": "제이에스스토어",
     "address": "서울 마포구 와우산로29길 48-24",
     "lat": 37.5563199,
     "lng": 126.9280222,
@@ -7042,7 +7503,7 @@
   },
   {
     "id": "hongdae-045",
-    "name": "HELLO SUMIKO",
+    "name": "헬로수미코",
     "address": "서울 마포구 월드컵북로1길 26-13",
     "lat": 37.5549901,
     "lng": 126.9192629,
@@ -7061,7 +7522,7 @@
   },
   {
     "id": "hongdae-046",
-    "name": "omochaland",
+    "name": "오모차랜드 홍대2호점",
     "address": "서울 마포구 양화로 156",
     "lat": 37.5560982,
     "lng": 126.9234581,
@@ -7080,7 +7541,7 @@
   },
   {
     "id": "hongdae-047",
-    "name": "omochaland",
+    "name": "오모차랜드 홍대점",
     "address": "서울 마포구 홍익로5길 36",
     "lat": 37.5536198,
     "lng": 126.9204596,
@@ -7099,7 +7560,7 @@
   },
   {
     "id": "hongdae-048",
-    "name": "ASD",
+    "name": "안서당",
     "address": "서울 마포구 신촌로6길 17",
     "lat": 37.5565494,
     "lng": 126.9300029,
@@ -7118,7 +7579,7 @@
   },
   {
     "id": "hongdae-049",
-    "name": "Hoe Market Hongik Univ. Branch",
+    "name": "호에마켓 홍대점",
     "address": "서울 마포구 와우산로29길 48-14",
     "lat": 37.5560423,
     "lng": 126.9277672,
@@ -7132,7 +7593,7 @@
   },
   {
     "id": "hongdae-050",
-    "name": "The KU",
+    "name": "더쿠 홍대입구점",
     "address": "서울 마포구 홍익로6길 38",
     "lat": 37.5558601,
     "lng": 126.9237639,
@@ -7149,7 +7610,7 @@
   },
   {
     "id": "hongdae-051",
-    "name": "Figurepresso",
+    "name": "피규어프레소 홍대점",
     "address": "서울 마포구 잔다리로6길 25",
     "lat": 37.5523668,
     "lng": 126.9205769,
@@ -7168,7 +7629,7 @@
   },
   {
     "id": "hongdae-052",
-    "name": "FIGUREPRESSO FP",
+    "name": "피규어프레소 에프피점",
     "address": "서울 마포구 와우산로29길 48-11",
     "lat": 37.5560209,
     "lng": 126.9276153,
@@ -7187,7 +7648,7 @@
   },
   {
     "id": "hongdae-053",
-    "name": "figurefriends",
+    "name": "피규어프렌즈",
     "address": "서울 마포구 양화로18안길 8",
     "lat": 37.5566267,
     "lng": 126.9250845,
@@ -7205,8 +7666,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Techno Mart",
+    "id": "seouletc-039",
+    "name": "테크노마트",
     "address": "서울 구로구 새말로 97",
     "lat": 37.5070439,
     "lng": 126.8902273,
@@ -7224,8 +7685,8 @@
     ]
   },
   {
-    "id": "etc-seoul-001",
-    "name": "Comic Zone Daerimsa",
+    "id": "seouletc-040",
+    "name": "코믹존 대림사",
     "address": "서울 관악구 신림로 300",
     "lat": 37.481124,
     "lng": 126.930282,
@@ -7243,7 +7704,7 @@
   },
   {
     "id": "hongdae-054",
-    "name": "AK PLAZA HONGDAE",
+    "name": "AK PLAZA 홍대",
     "address": "서울 마포구 양화로 188",
     "lat": 37.5581871,
     "lng": 126.9260949,
@@ -7260,7 +7721,7 @@
   },
   {
     "id": "hongdae-055",
-    "name": "ANIPLUS SEOUL",
+    "name": "애니플러스 서울합정점",
     "address": "서울 마포구 월드컵로3길 14",
     "lat": 37.5509672,
     "lng": 126.9121646,
@@ -7277,7 +7738,7 @@
   },
   {
     "id": "hongdae-056",
-    "name": "RabbitsCompany",
+    "name": "래빗츠컴퍼니",
     "address": "서울 마포구 희우정로 112",
     "lat": 37.5548702,
     "lng": 126.901044,
