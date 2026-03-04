@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import type { Store } from "@/types/store";
 import { genreLabels } from "@/types/store";
 import { buildNaverMapUrl, buildDirectionsAppUrl, buildDirectionsWebUrl } from "@/lib/report-urls";
+import { sanitizeUrl } from "@/lib/sanitize";
 import { useGeolocation } from "@/hooks/useGeolocation";
 import FreshnessBadge from "./FreshnessBadge";
 import MiniMap from "./MiniMap";
@@ -130,7 +131,7 @@ export default function StoreDetail({ store, onBack, onReport }: StoreDetailProp
             <div className="flex items-start gap-2">
               <span className="text-gray-400 shrink-0 w-14">웹사이트</span>
               <a
-                href={store.website}
+                href={sanitizeUrl(store.website)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-600 truncate"

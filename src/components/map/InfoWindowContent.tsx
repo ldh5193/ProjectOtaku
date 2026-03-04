@@ -2,6 +2,7 @@ import type { Store } from "@/types/store";
 import { genreLabels } from "@/types/store";
 import { buildNaverMapUrl } from "@/lib/report-urls";
 import { getFreshness, freshnessConfig, formatVerifiedDate } from "@/lib/freshness";
+import { escapeHtml } from "@/lib/sanitize";
 
 export function buildInfoWindowHTML(store: Store): string {
   const tags = store.genre
@@ -17,12 +18,12 @@ export function buildInfoWindowHTML(store: Store): string {
 
   return `
     <div style="padding:12px;min-width:200px;max-width:280px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
-      <h3 style="margin:0 0 6px;font-size:15px;font-weight:700;color:#111;">${store.name}</h3>
-      <p style="margin:0 0 6px;font-size:13px;color:#555;">${store.address}</p>
+      <h3 style="margin:0 0 6px;font-size:15px;font-weight:700;color:#111;">${escapeHtml(store.name)}</h3>
+      <p style="margin:0 0 6px;font-size:13px;color:#555;">${escapeHtml(store.address)}</p>
       <div style="margin-bottom:6px;">${tags}</div>
-      ${store.openingHours ? `<p style="margin:0 0 4px;font-size:12px;color:#666;">🕐 ${store.openingHours}</p>` : ""}
-      ${store.phone ? `<p style="margin:0 0 4px;font-size:12px;color:#666;">📞 ${store.phone}</p>` : ""}
-      ${store.description ? `<p style="margin:0 0 4px;font-size:12px;color:#888;">${store.description}</p>` : ""}
+      ${store.openingHours ? `<p style="margin:0 0 4px;font-size:12px;color:#666;">🕐 ${escapeHtml(store.openingHours)}</p>` : ""}
+      ${store.phone ? `<p style="margin:0 0 4px;font-size:12px;color:#666;">📞 ${escapeHtml(store.phone)}</p>` : ""}
+      ${store.description ? `<p style="margin:0 0 4px;font-size:12px;color:#888;">${escapeHtml(store.description)}</p>` : ""}
       <p style="margin:0 0 4px;font-size:11px;color:${fc.inlineColor};">
         <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${fc.inlineColor};margin-right:4px;vertical-align:middle;"></span>
         ${formatVerifiedDate(store.lastVerified)}

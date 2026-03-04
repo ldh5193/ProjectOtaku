@@ -1,5 +1,24 @@
 import { NextRequest, NextResponse } from "next/server";
 
+const ALLOWED_HOSTS = new Set([
+  "naver.me",
+  "map.naver.com",
+  "m.map.naver.com",
+  "place.naver.com",
+  "m.place.naver.com",
+  "pages.map.naver.com",
+]);
+
+function isValidNaverUrl(url: string): boolean {
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== "https:" && parsed.protocol !== "http:") return false;
+    return ALLOWED_HOSTS.has(parsed.hostname);
+  } catch {
+    return false;
+  }
+}
+
 interface ImportResult {
   name: string;
   address: string;
@@ -16,7 +35,7 @@ async function resolveNaverUrl(url: string): Promise<string> {
     try {
       const res = await fetch(url, { redirect: "manual" });
       const location = res.headers.get("location");
-      if (location) return location;
+      if (location && isValidNaverUrl(location)) return location;
     } catch {
       // fallback to original
     }
@@ -111,11 +130,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (
-      !url.includes("naver.me/") &&
-      !url.includes("map.naver.com/") &&
-      !url.includes("place.naver.com/")
-    ) {
+    if (!isValidNaverUrl(url)) {
       return NextResponse.json(
         { error: "네이버 지도 URL이 아닙니다" },
         { status: 400 }

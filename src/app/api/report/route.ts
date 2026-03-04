@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createGitHubIssue } from "@/lib/github-api";
+import { createRateLimiter } from "@/lib/rate-limit";
+
+const checkRateLimit = createRateLimiter(5, 60_000);
 
 interface ReportBody {
   type: "report" | "suggestion";
@@ -15,6 +18,16 @@ interface ReportBody {
 
 export async function POST(request: NextRequest) {
   try {
+    // 레이트리밋
+    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+    const rl = checkRateLimit(ip);
+    if (!rl.ok) {
+      return NextResponse.json(
+        { error: "요청이 너무 많습니다. 잠시 후 다시 시도해주세요." },
+        { status: 429 }
+      );
+    }
+
     const body: ReportBody = await request.json();
 
     if (!body.type || !body.details) {
