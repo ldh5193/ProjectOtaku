@@ -12,6 +12,7 @@ interface PlaceData {
   phone?: string;
   originalUrl: string;
   naverPlaceId?: string;
+  imageUrl?: string;
 }
 
 interface ImportModalProps {
@@ -24,9 +25,8 @@ export default function ImportModal({ onClose }: ImportModalProps) {
   const [error, setError] = useState<string | null>(null);
   const [place, setPlace] = useState<PlaceData | null>(null);
 
-  // Suggestion form state
+  // Submission state
   const [selectedGenres, setSelectedGenres] = useState<Set<Genre>>(new Set());
-  const [details, setDetails] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
@@ -57,25 +57,23 @@ export default function ImportModal({ onClose }: ImportModalProps) {
     setError(null);
 
     try {
-      const res = await fetch("/api/report", {
+      const res = await fetch("/api/url-import", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          type: "suggestion",
-          suggestedName: place.name,
-          suggestedAddress: place.address,
-          naverMapUrl: url,
-          genres: Array.from(selectedGenres).map((g) => genreLabels[g]),
-          details:
-            details ||
-            `네이버 지도 URL로 자동 추출된 매장입니다.\n좌표: ${place.lat}, ${place.lng}${place.phone ? `\n전화: ${place.phone}` : ""}`,
+          name: place.name,
+          address: place.address,
+          lat: place.lat,
+          lng: place.lng,
+          phone: place.phone,
+          naverPlaceId: place.naverPlaceId,
+          imageUrl: place.imageUrl,
+          genres: Array.from(selectedGenres),
         }),
       });
 
-      if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.error || "전송에 실패했습니다");
-      }
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
       setSubmitted(true);
     } catch (err) {
       setError(err instanceof Error ? err.message : "오류가 발생했습니다");
@@ -116,10 +114,10 @@ export default function ImportModal({ onClose }: ImportModalProps) {
           {submitted ? (
             <div className="py-6 text-center">
               <p className="text-green-600 font-medium">
-                매장 추가 제안이 접수되었습니다!
+                매장이 추가되었습니다!
               </p>
               <p className="text-sm text-gray-500 mt-2">
-                관리자 확인 후 반영됩니다.
+                페이지를 새로고침하면 지도에 표시됩니다.
               </p>
               <button
                 onClick={onClose}
@@ -131,6 +129,17 @@ export default function ImportModal({ onClose }: ImportModalProps) {
           ) : !place ? (
             /* URL input step */
             <>
+              {/* 안내 문구 */}
+              <div className="bg-blue-50 rounded-lg p-3 text-xs text-blue-700 space-y-1.5">
+                <p className="font-medium">사용 방법</p>
+                <ol className="list-decimal list-inside space-y-1 text-blue-600">
+                  <li>네이버 지도 앱/웹에서 매장을 검색합니다</li>
+                  <li>매장 상세 페이지에서 <span className="font-semibold">공유</span> 버튼을 누릅니다</li>
+                  <li><span className="font-semibold">링크 복사</span>를 선택합니다</li>
+                  <li>복사된 URL을 아래에 붙여넣으세요</li>
+                </ol>
+              </div>
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   네이버 지도 URL
@@ -143,9 +152,6 @@ export default function ImportModal({ onClose }: ImportModalProps) {
                   className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm"
                   onKeyDown={(e) => e.key === "Enter" && handleResolve()}
                 />
-                <p className="mt-1 text-xs text-gray-400">
-                  네이버 지도에서 매장의 공유 링크를 붙여넣으세요
-                </p>
               </div>
               {error && <p className="text-sm text-red-500">{error}</p>}
               <button
@@ -160,15 +166,21 @@ export default function ImportModal({ onClose }: ImportModalProps) {
             /* Preview + genre selection step */
             <>
               {/* Preview card */}
-              <div className="bg-gray-50 rounded-lg p-3 space-y-1">
-                <p className="font-medium text-gray-900">{place.name}</p>
-                <p className="text-sm text-gray-500">{place.address}</p>
-                {place.phone && (
-                  <p className="text-sm text-gray-500">{place.phone}</p>
+              <div className="bg-gray-50 rounded-lg overflow-hidden">
+                {place.imageUrl && (
+                  <img
+                    src={place.imageUrl}
+                    alt={place.name}
+                    className="w-full h-40 object-cover"
+                  />
                 )}
-                <p className="text-xs text-gray-400">
-                  좌표: {place.lat.toFixed(4)}, {place.lng.toFixed(4)}
-                </p>
+                <div className="p-3 space-y-1">
+                  <p className="font-medium text-gray-900">{place.name}</p>
+                  <p className="text-sm text-gray-500">{place.address}</p>
+                  {place.phone && (
+                    <p className="text-sm text-gray-500">{place.phone}</p>
+                  )}
+                </div>
               </div>
 
               {/* Genre selection */}
@@ -194,20 +206,6 @@ export default function ImportModal({ onClose }: ImportModalProps) {
                 </div>
               </div>
 
-              {/* Optional memo */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  추가 메모 (선택)
-                </label>
-                <textarea
-                  value={details}
-                  onChange={(e) => setDetails(e.target.value)}
-                  rows={2}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm resize-none"
-                  placeholder="이 매장에 대해 알고 계신 추가 정보"
-                />
-              </div>
-
               {error && <p className="text-sm text-red-500">{error}</p>}
 
               <div className="flex gap-2">
@@ -225,7 +223,7 @@ export default function ImportModal({ onClose }: ImportModalProps) {
                   disabled={submitting || selectedGenres.size === 0}
                   className="flex-1 py-2.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 disabled:opacity-50 transition-colors"
                 >
-                  {submitting ? "전송 중..." : "매장 추가 제안"}
+                  {submitting ? "저장 중..." : "매장 추가"}
                 </button>
               </div>
             </>

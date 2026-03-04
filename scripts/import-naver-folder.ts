@@ -122,6 +122,7 @@ const HEADERS = {
   "User-Agent":
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
   Referer: "https://pages.map.naver.com/save-pages/",
+  "Accept-Language": "ko",
 };
 
 async function resolveShareId(input: string): Promise<string> {

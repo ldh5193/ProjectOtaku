@@ -8,6 +8,7 @@ interface ImportResult {
   phone?: string;
   originalUrl: string;
   naverPlaceId?: string;
+  imageUrl?: string;
 }
 
 async function resolveNaverUrl(url: string): Promise<string> {
@@ -23,91 +24,80 @@ async function resolveNaverUrl(url: string): Promise<string> {
   return url;
 }
 
-function extractPlaceInfo(url: string): {
-  placeId?: string;
-  query?: string;
-} {
+function extractPlaceId(url: string): string | null {
   try {
     const urlObj = new URL(url);
     const path = urlObj.pathname;
 
     // /p/entry/place/{placeId}
     const entryMatch = path.match(/\/p\/entry\/place\/(\d+)/);
-    if (entryMatch) return { placeId: entryMatch[1] };
+    if (entryMatch) return entryMatch[1];
 
     // /p/search/{query}/place/{placeId}
-    const searchPlaceMatch = path.match(
-      /\/p\/search\/([^/]+)\/place\/(\d+)/
-    );
-    if (searchPlaceMatch)
-      return {
-        query: decodeURIComponent(searchPlaceMatch[1]),
-        placeId: searchPlaceMatch[2],
-      };
+    const searchPlaceMatch = path.match(/\/p\/search\/[^/]+\/place\/(\d+)/);
+    if (searchPlaceMatch) return searchPlaceMatch[1];
 
-    // /p/search/{query}
-    const searchMatch = path.match(/\/p\/search\/([^/]+)/);
-    if (searchMatch)
-      return { query: decodeURIComponent(searchMatch[1]) };
+    // /place/{placeId} (m.place.naver.com)
+    const mPlaceMatch = path.match(/\/place\/(\d+)/);
+    if (mPlaceMatch) return mPlaceMatch[1];
 
     // v5 patterns
     const v5Entry = path.match(/\/v5\/entry\/place\/(\d+)/);
-    if (v5Entry) return { placeId: v5Entry[1] };
-
-    const v5Search = path.match(/\/v5\/search\/([^/]+)/);
-    if (v5Search) return { query: decodeURIComponent(v5Search[1]) };
+    if (v5Entry) return v5Entry[1];
   } catch {
     // URL parsing failed
-  }
-  return {};
-}
-
-async function tryExtractTitleFromPage(url: string): Promise<string | null> {
-  try {
-    const res = await fetch(url, {
-      headers: { "User-Agent": "Mozilla/5.0" },
-    });
-    const html = await res.text();
-    const ogTitle = html.match(
-      /<meta\s+property="og:title"\s+content="([^"]+)"/
-    );
-    if (ogTitle) {
-      return ogTitle[1].replace(/ : 네이버 지도$/, "").trim();
-    }
-    const titleTag = html.match(/<title>([^<]+)<\/title>/);
-    if (titleTag) {
-      return titleTag[1].replace(/ : 네이버 지도$/, "").trim();
-    }
-  } catch {
-    // page fetch failed
   }
   return null;
 }
 
-async function searchKakao(query: string): Promise<ImportResult | null> {
-  const apiKey = process.env.KAKAO_REST_API_KEY;
-  if (!apiKey) throw new Error("KAKAO_REST_API_KEY is not configured");
+async function fetchPlaceData(
+  placeId: string
+): Promise<ImportResult | null> {
+  try {
+    const res = await fetch(`https://m.place.naver.com/place/${placeId}`, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15",
+      },
+    });
+    const html = await res.text();
 
-  const params = new URLSearchParams({ query, size: "1" });
-  const res = await fetch(
-    `https://dapi.kakao.com/v2/local/search/keyword.json?${params}`,
-    { headers: { Authorization: `KakaoAK ${apiKey}` } }
-  );
+    // 첫 번째 매칭만 추출 (해당 매장의 정보)
+    const nameMatch = html.match(/"name":"([^"]+)"/);
+    const roadAddrMatch = html.match(/"roadAddress":"([^"]+)"/);
+    const addrMatch = html.match(/"address":"([^"]+)"/);
+    const xMatch = html.match(/"x":"([0-9.]+)"/);
+    const yMatch = html.match(/"y":"([0-9.]+)"/);
+    const phoneMatch = html.match(/"phone":"([^"]+)"/);
 
-  if (!res.ok) throw new Error(`Kakao API error: ${res.status}`);
+    const name = nameMatch?.[1];
+    const address = roadAddrMatch?.[1] ?? addrMatch?.[1];
+    const lng = xMatch?.[1] ? parseFloat(xMatch[1]) : null;
+    const lat = yMatch?.[1] ? parseFloat(yMatch[1]) : null;
 
-  const data = await res.json();
-  if (data.documents.length === 0) return null;
+    if (!name || !address || lat == null || lng == null) return null;
 
-  const place = data.documents[0];
-  return {
-    name: place.place_name,
-    address: place.road_address_name || place.address_name,
-    lat: parseFloat(place.y),
-    lng: parseFloat(place.x),
-    phone: place.phone || undefined,
-    originalUrl: "",
-  };
+    // og:image
+    const ogImage = html.match(
+      /<meta\s+[^>]*property="og:image"\s+content="([^"]+)"/
+    );
+    const imageUrl = ogImage
+      ? ogImage[1].replace(/&amp;/g, "&")
+      : undefined;
+
+    return {
+      name,
+      address,
+      lat,
+      lng,
+      phone: phoneMatch?.[1] || undefined,
+      originalUrl: "",
+      naverPlaceId: placeId,
+      imageUrl,
+    };
+  } catch {
+    return null;
+  }
 }
 
 export async function POST(request: NextRequest) {
@@ -121,7 +111,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!url.includes("naver.me/") && !url.includes("map.naver.com/")) {
+    if (
+      !url.includes("naver.me/") &&
+      !url.includes("map.naver.com/") &&
+      !url.includes("place.naver.com/")
+    ) {
       return NextResponse.json(
         { error: "네이버 지도 URL이 아닙니다" },
         { status: 400 }
@@ -131,37 +125,27 @@ export async function POST(request: NextRequest) {
     // Step 1: Resolve short URL
     const resolvedUrl = await resolveNaverUrl(url);
 
-    // Step 2: Extract place info from URL
-    const { placeId, query } = extractPlaceInfo(resolvedUrl);
+    // Step 2: Extract place ID from URL
+    const placeId = extractPlaceId(resolvedUrl);
 
-    // Step 3: Determine search query
-    let finalQuery = query;
-
-    if (!finalQuery && placeId) {
-      finalQuery = (await tryExtractTitleFromPage(resolvedUrl)) ?? undefined;
-    }
-
-    if (!finalQuery) {
+    if (!placeId) {
       return NextResponse.json(
-        {
-          error:
-            "URL에서 매장 정보를 추출할 수 없습니다. 매장명을 직접 입력해주세요.",
-        },
+        { error: "URL에서 매장 ID를 추출할 수 없습니다." },
         { status: 422 }
       );
     }
 
-    // Step 4: Search via Kakao API
-    const result = await searchKakao(finalQuery);
+    // Step 3: Fetch place data from m.place.naver.com
+    const result = await fetchPlaceData(placeId);
+
     if (!result) {
       return NextResponse.json(
-        { error: `"${finalQuery}" 검색 결과가 없습니다` },
+        { error: "매장 정보를 가져올 수 없습니다." },
         { status: 404 }
       );
     }
 
     result.originalUrl = url;
-    result.naverPlaceId = placeId;
 
     return NextResponse.json({ success: true, place: result });
   } catch (err) {

@@ -27,7 +27,16 @@ export default function NaverMapProvider({
       <Script
         src={`https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${clientId}`}
         strategy="afterInteractive"
-        onLoad={() => setLoaded(true)}
+        onLoad={() => {
+          if (typeof naver !== "undefined" && naver.maps) {
+            setLoaded(true);
+          } else {
+            console.error("네이버맵 SDK 로드 실패: naver.maps 객체 없음");
+          }
+        }}
+        onError={() => {
+          console.error("네이버맵 SDK 스크립트 로드 실패");
+        }}
       />
       {children}
     </NaverMapContext.Provider>

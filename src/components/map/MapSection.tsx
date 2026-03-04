@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useCallback, type MutableRefObject } from "react";
+import { useEffect, useRef, useState, useCallback, type MutableRefObject, type RefObject } from "react";
 import { useNaverMapLoaded } from "@/components/NaverMapProvider";
 import { buildInfoWindowHTML } from "./InfoWindowContent";
 import type { Store } from "@/types/store";
@@ -12,12 +12,14 @@ export interface MapAction {
 interface MapSectionProps {
   stores: Store[];
   actionRef?: MutableRefObject<MapAction | null>;
+  onMapClick?: () => void;
   className?: string;
 }
 
 export default function MapSection({
   stores,
   actionRef,
+  onMapClick,
   className,
 }: MapSectionProps) {
   const mapLoaded = useNaverMapLoaded();
@@ -27,6 +29,9 @@ export default function MapSection({
   const infoWindowRef = useRef<naver.maps.InfoWindow | null>(null);
   const activeStoreIdRef = useRef<string | null>(null);
   const storesMapRef = useRef<Map<string, Store>>(new Map());
+  const [mapError, setMapError] = useState(false);
+  const onMapClickRef: RefObject<(() => void) | undefined> = useRef(onMapClick);
+  onMapClickRef.current = onMapClick;
 
   // Keep storesMap in sync
   useEffect(() => {
@@ -88,19 +93,30 @@ export default function MapSection({
 
   // Initialize map
   useEffect(() => {
-    if (!mapLoaded || !mapRef.current || mapInstanceRef.current) return;
+    if (!mapLoaded || !mapRef.current || mapInstanceRef.current || mapError) return;
 
-    const map = new naver.maps.Map(mapRef.current, {
-      center: new naver.maps.LatLng(37.5563, 126.9234),
-      zoom: 13,
-      zoomControl: true,
-      zoomControlOptions: {
-        position: naver.maps.Position.TOP_RIGHT,
-      },
-    });
+    try {
+      const map = new naver.maps.Map(mapRef.current, {
+        center: new naver.maps.LatLng(37.5563, 126.9234),
+        zoom: 13,
+        zoomControl: true,
+        zoomControlOptions: {
+          position: naver.maps.Position.TOP_RIGHT,
+        },
+      });
 
-    mapInstanceRef.current = map;
-  }, [mapLoaded]);
+      naver.maps.Event.addListener(map, "click", () => {
+        infoWindowRef.current?.close();
+        activeStoreIdRef.current = null;
+        onMapClickRef.current?.();
+      });
+
+      mapInstanceRef.current = map;
+    } catch (e) {
+      console.error("네이버맵 초기화 실패:", e);
+      setMapError(true);
+    }
+  }, [mapLoaded, mapError]);
 
   // Diff-based marker management
   useEffect(() => {
@@ -148,12 +164,19 @@ export default function MapSection({
     }
   }, [mapLoaded, stores, handleMarkerClick]);
 
-  if (!mapLoaded) {
+  if (!mapLoaded || mapError) {
     return (
       <div
-        className={`flex-1 flex items-center justify-center bg-gray-100 ${className ?? ""}`}
+        className={`flex-1 flex flex-col items-center justify-center bg-gray-100 gap-2 ${className ?? ""}`}
       >
-        <p className="text-gray-500">지도를 불러오는 중...</p>
+        {mapError ? (
+          <>
+            <p className="text-gray-600 font-medium">지도를 불러올 수 없습니다</p>
+            <p className="text-xs text-gray-400">네이버맵 API 인증을 확인해주세요</p>
+          </>
+        ) : (
+          <p className="text-gray-500">지도를 불러오는 중...</p>
+        )}
       </div>
     );
   }

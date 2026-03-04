@@ -11,7 +11,7 @@ const ADDRESS_TO_AREA: [string[], Area][] = [
   [["송파구"], "songpa"],
   [["광진구"], "gwangjin"],
   // 서울 기타 (위 매칭 안 된 서울)
-  [["서울"], "etc-seoul"],
+  [["서울"], "seouletc"],
   // 광역시
   [["부산"], "busan"],
   [["대구"], "daegu"],

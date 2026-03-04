@@ -59,7 +59,7 @@ export type Area =
   | "yongsan"
   | "songpa"
   | "gwangjin"
-  | "etc-seoul"
+  | "seouletc"
   | "gyeonggi"
   | "incheon"
   | "busan"
@@ -85,7 +85,7 @@ export const areaLabels: Record<Area, string> = {
   yongsan: "용산",
   songpa: "송파",
   gwangjin: "광진",
-  "etc-seoul": "서울(기타)",
+  seouletc: "서울(기타)",
   gyeonggi: "경기",
   incheon: "인천",
   busan: "부산",
