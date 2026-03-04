@@ -1,6 +1,6 @@
 # ProjectOtaku (오덕로드)
 
-오프라인 굿즈샵 지도 웹 서비스 - 설치 없이 브라우저에서 사용 가능한 정적 웹 기반 지도 서비스
+오프라인 굿즈샵 지도 웹 서비스 - 설치 없이 브라우저에서 사용 가능한 PWA 기반 지도 서비스
 
 ## 프로젝트 구조
 
@@ -30,35 +30,51 @@ ProjectOtaku/
 │       ├── id-generator.ts             # 매장 ID 생성 ({area}-{NNN})
 │       └── merger.ts                   # 기존 데이터와 병합 (중복 방지)
 ├── public/
+│   ├── manifest.json                   # PWA 매니페스트
+│   ├── icons/                          # PWA 아이콘 (192, 512)
 │   └── data/
 │       ├── stores.json                 # 매장 데이터 (정적 JSON)
 │       └── scraped-candidates.json     # 스크래퍼 발견 후보 (자동 생성)
 └── src/
     ├── app/
-    │   ├── layout.tsx                  # 루트 레이아웃 (NaverMapProvider 적용)
+    │   ├── layout.tsx                  # 루트 레이아웃 (PWA 메타태그, NaverMapProvider)
     │   ├── page.tsx                    # 홈 - stores.json → HomeClient 전달
-    │   └── globals.css                 # 글로벌 스타일 + scrollbar-hide 유틸
+    │   ├── globals.css                 # 글로벌 스타일 + scrollbar-hide 유틸
+    │   └── api/
+    │       ├── report/route.ts         # POST: 제보/제안 → GitHub Issue 자동 생성
+    │       └── naver-import/route.ts   # POST: 네이버 지도 URL → 장소 데이터 해석
     ├── hooks/
-    │   └── useStoreFilter.ts           # 장르 필터 + 검색 상태/로직 (filteredStores, groupedStores)
+    │   ├── useStoreFilter.ts           # 장르 필터 + 검색 상태/로직
+    │   └── useHashRouter.ts            # URL hash 기반 라우팅 (#store, #suggest, #import)
     ├── lib/
-    │   └── report-urls.ts              # GitHub Issue 링크 빌더 (제보/제안)
+    │   ├── report-urls.ts              # 네이버 지도 URL 빌더
+    │   ├── freshness.ts                # 데이터 신선도 계산 (fresh/aging/stale)
+    │   └── github-api.ts               # GitHub Issue 생성 서버 유틸
     ├── components/
     │   ├── NaverMapProvider.tsx         # "use client" - 네이버맵 SDK 로딩
-    │   ├── Header.tsx                  # 서비스명 표시
-    │   ├── HomeClient.tsx              # "use client" - 메인 오케스트레이터 (필터/지도/리스트 조합)
+    │   ├── Header.tsx                  # 서비스명 + 매장 추가/URL 추가 버튼
+    │   ├── HomeClient.tsx              # "use client" - 메인 오케스트레이터
     │   ├── filter/
     │   │   ├── GenreFilterBar.tsx      # 장르 칩 토글 버튼 (8종, 멀티선택, 초기화)
     │   │   └── SearchBar.tsx           # 검색 입력 (300ms 디바운스)
     │   ├── list/
-    │   │   └── StoreListPanel.tsx      # 지역 그룹별 매장 리스트 + 빈 결과 상태
+    │   │   └── StoreListPanel.tsx      # 지역 그룹별 매장 리스트 + 신선도 뱃지
+    │   ├── detail/
+    │   │   ├── StoreDetail.tsx         # 매장 상세 패널 (미니맵, 전체정보, 네이버맵 링크)
+    │   │   ├── FreshnessBadge.tsx      # 신선도 뱃지 (녹/황/적 dot + 날짜)
+    │   │   └── MiniMap.tsx             # 상세 뷰 미니 네이버맵
+    │   ├── report/
+    │   │   └── ReportModal.tsx         # 사이트 내 제보/제안 모달 폼
+    │   ├── import/
+    │   │   └── ImportModal.tsx         # 네이버 지도 URL 임포트 모달
     │   ├── layout/
     │   │   ├── MobileBottomSheet.tsx   # 모바일 슬라이드업 하단 시트 (55vh)
     │   │   └── DesktopSidePanel.tsx    # 데스크톱 사이드 패널 (md+, 360px)
     │   └── map/
-    │       ├── MapSection.tsx          # "use client" - 지도 렌더링, diff 기반 마커 관리, actionRef
-    │       └── InfoWindowContent.tsx   # 정보창 HTML 빌더 + 제보 링크
+    │       ├── MapSection.tsx          # "use client" - 지도 렌더링, diff 기반 마커 관리
+    │       └── InfoWindowContent.tsx   # 정보창 HTML (신선도 표시, 상세 보기 링크)
     └── types/
-        ├── store.ts                    # Store, Genre, StoreType, Area 타입 + genreLabels, areaLabels, 헬퍼
+        ├── store.ts                    # Store, Genre, StoreType, Area 타입
         └── naver-maps.d.ts            # 네이버맵 SDK 타입 선언
 ```
 
@@ -66,8 +82,14 @@ ProjectOtaku/
 
 ### 지도 기반 매장 탐색
 - 네이버맵에 매장 마커 표시 및 정보창
-- 마커 클릭 시 매장 상세 정보 (장르 태그, 운영시간, 전화번호 등)
-- 정보창에서 "잘못된 정보 신고하기" → GitHub Issue로 제보
+- 마커 클릭 시 간략 정보 → "자세히 보기"로 상세 패널 전환
+- 상세 패널에서 미니맵, 영업시간, 전화번호, 네이버 지도 링크 제공
+
+### 매장 상세 뷰
+- 사이드패널/바텀시트에서 리스트 ↔ 상세 모드 전환
+- 미니 네이버맵으로 위치 확인
+- "네이버 지도에서 보기" 버튼으로 외부 네이버맵 연동
+- 데이터 신선도 표시 (녹색: 최근 확인, 황색: 확인 필요, 적색: 오래된 정보)
 
 ### 카테고리 필터
 - 8개 장르 칩 버튼으로 필터링 (애니/피규어/굿즈/만화/게임/아이돌/TCG/가챠)
@@ -80,17 +102,22 @@ ProjectOtaku/
 
 ### 매장 리스트
 - 지역별 그룹 헤더로 정리된 리스트 뷰
-- 리스트에서 매장 클릭 → 지도 이동 + 정보창 열림
-- 빈 결과 시 안내 메시지
+- 리스트에서 매장 클릭 → 지도 이동 + 상세 뷰
+- 신선도 뱃지로 데이터 신뢰도 확인
 
-### 반응형 레이아웃
-- **모바일**: 헤더 → 검색바+목록 토글 → 장르 칩 → 지도 (리스트는 하단 슬라이드업 시트)
-- **데스크톱(md+)**: 헤더 → [좌측 사이드패널(검색+필터+리스트) | 우측 지도]
+### 사이트 내 제보
+- **정보 수정**: 매장 상세 뷰에서 "정보 수정 제보" → 모달 폼 → GitHub Issue 자동 생성
+- **매장 추가 제안**: 헤더의 "매장 추가" → 모달 폼 → GitHub Issue 자동 생성
+- **네이버 지도 URL 임포트**: 헤더의 "URL 추가" → 네이버맵 URL 붙여넣기 → 자동 정보 추출 → 제안
+
+### PWA (모바일 지원)
+- 모바일 "홈 화면에 추가" 지원
+- 반응형 레이아웃 (모바일 바텀시트 / 데스크톱 사이드패널)
 
 ### 데이터 관리
 - **스크래퍼**: Kakao Local API 기반 자동 매장 검색 (`npm run scrape`)
 - **GitHub Actions**: 매주 일요일 자동 실행 → 새 매장 발견 시 자동 커밋
-- **유저 제보**: GitHub Issue 템플릿 (정보 수정 / 매장 추가 제안)
+- **데이터 신선도**: 매장별 lastVerified 날짜로 정보 신뢰도 판단
 
 ## 기술 스택
 
@@ -100,6 +127,7 @@ ProjectOtaku/
 | Styling | Tailwind CSS 4 |
 | Map SDK | 네이버맵 JS SDK v3 (직접 로딩) |
 | Data | Static JSON (`public/data/stores.json`) |
+| API Routes | Next.js Route Handlers (제보, URL 임포트) |
 | Scraper | Kakao Local API + tsx |
 | CI/CD | GitHub Actions (주간 스크래핑) |
 | Hosting | Vercel |
@@ -117,7 +145,13 @@ ProjectOtaku/
 
 ```bash
 cp .env.example .env.local
-# .env.local 파일을 열어 Client ID를 입력
+```
+
+`.env.local` 필수 항목:
+```
+NEXT_PUBLIC_NAVER_MAP_CLIENT_ID=xxx   # 네이버맵 표시
+KAKAO_REST_API_KEY=xxx                # 스크래퍼 + URL 임포트
+GITHUB_TOKEN=xxx                      # 사이트 내 제보 → Issue 생성
 ```
 
 ### 실행
@@ -153,7 +187,9 @@ npm start
   "type": "franchise",
   "phone": "02-000-0000",
   "openingHours": "12:00 - 22:00",
-  "description": "매장 설명"
+  "description": "매장 설명",
+  "source": "manual",
+  "lastVerified": "2026-03-04"
 }
 ```
 
@@ -161,21 +197,21 @@ npm start
 **매장 유형:** franchise, independent, popup
 **지역 코드:** hongdae, gangnam, sinchon, jongno, dongdaemun, yongsan, etc
 
+### 네이버 지도 URL로 매장 추가
+
+1. 네이버 지도에서 매장 페이지를 열고 공유 링크를 복사
+2. 사이트 헤더의 "URL 추가" 클릭
+3. URL 붙여넣기 → 자동으로 매장 정보 추출
+4. 장르 선택 후 제안 전송 → GitHub Issue 생성 → 관리자 반영
+
 ### 스크래퍼 실행
 
-Kakao Local API를 사용하여 서울 주요 지역의 굿즈샵을 자동 검색합니다.
-
 ```bash
-# Kakao REST API 키 필요 (https://developers.kakao.com)
 KAKAO_REST_API_KEY=your_key npm run scrape
 ```
 
-- 기존 수동 데이터는 절대 덮어쓰지 않음 (새 매장만 추가)
-- 이름+주소 정규화로 중복 방지
-- `scraped-candidates.json`에 후보 매장 별도 저장
+### 사이트 내 제보
 
-### 유저 제보
-
-GitHub Issue를 통해 제보를 받습니다:
-- **정보 수정 요청**: 매장 정보창의 "잘못된 정보 신고하기" 링크 또는 Issue 템플릿
-- **매장 추가 제안**: Issue 템플릿에서 새 매장 정보 제출
+- **정보 수정**: 매장 상세 뷰 → "정보 수정 제보" 버튼
+- **매장 추가**: 헤더 → "매장 추가" 버튼
+- 모든 제보는 자동으로 GitHub Issue로 생성됩니다

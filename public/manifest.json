@@ -1,0 +1,24 @@
+{
+  "name": "오덕로드 - 오프라인 굿즈샵 지도",
+  "short_name": "오덕로드",
+  "description": "서울 지역 애니메이션, 피규어, 만화, 아이돌 굿즈샵 지도",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4338ca",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

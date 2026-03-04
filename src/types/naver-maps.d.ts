@@ -10,6 +10,12 @@ declare namespace naver.maps {
     zoom?: number;
     zoomControl?: boolean;
     zoomControlOptions?: { position?: number };
+    draggable?: boolean;
+    scrollWheel?: boolean;
+    keyboardShortcuts?: boolean;
+    disableDoubleTapZoom?: boolean;
+    disableDoubleClickZoom?: boolean;
+    disableTwoFingerTapZoom?: boolean;
   }
 
   class LatLng {

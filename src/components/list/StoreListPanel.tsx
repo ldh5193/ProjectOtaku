@@ -2,6 +2,7 @@
 
 import type { Store } from "@/types/store";
 import { genreLabels, areaLabels } from "@/types/store";
+import FreshnessBadge from "@/components/detail/FreshnessBadge";
 
 interface StoreListPanelProps {
   groupedStores: Map<string, Store[]>;
@@ -50,7 +51,10 @@ export default function StoreListPanel({
               onClick={() => onStoreClick(store)}
               className="w-full text-left px-4 py-3 border-b border-gray-100 hover:bg-gray-50 transition-colors"
             >
-              <p className="text-sm font-medium text-gray-900">{store.name}</p>
+              <div className="flex items-center gap-1.5">
+                <p className="text-sm font-medium text-gray-900">{store.name}</p>
+                <FreshnessBadge lastVerified={store.lastVerified} compact />
+              </div>
               <p className="text-xs text-gray-500 mt-0.5">{store.address}</p>
               <div className="flex gap-1 mt-1.5 flex-wrap">
                 {store.genre.map((g) => (
