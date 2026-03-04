@@ -1,8 +1,10 @@
 "use client";
 
+import { useState, useCallback } from "react";
 import type { Store } from "@/types/store";
 import { genreLabels } from "@/types/store";
-import { buildNaverMapUrl } from "@/lib/report-urls";
+import { buildNaverMapUrl, buildDirectionsAppUrl, buildDirectionsWebUrl } from "@/lib/report-urls";
+import { useGeolocation } from "@/hooks/useGeolocation";
 import FreshnessBadge from "./FreshnessBadge";
 import MiniMap from "./MiniMap";
 
@@ -14,6 +16,41 @@ interface StoreDetailProps {
 
 export default function StoreDetail({ store, onBack, onReport }: StoreDetailProps) {
   const naverMapUrl = buildNaverMapUrl(store);
+  const [imgError, setImgError] = useState(false);
+  const hasThumbnail = store.thumbnailUrls && store.thumbnailUrls.length > 0 && !imgError;
+  const { loading: geoLoading, error: geoError, requestPosition } = useGeolocation();
+
+  const handleDirections = useCallback(async () => {
+    try {
+      const pos = await requestPosition();
+      const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+
+      if (isMobile) {
+        const appUrl = buildDirectionsAppUrl(store, pos.lat, pos.lng);
+        const webUrl = buildDirectionsWebUrl(store, pos.lat, pos.lng);
+
+        let appOpened = false;
+        const onVisibilityChange = () => {
+          if (document.hidden) appOpened = true;
+        };
+        document.addEventListener("visibilitychange", onVisibilityChange);
+
+        window.location.href = appUrl;
+
+        setTimeout(() => {
+          document.removeEventListener("visibilitychange", onVisibilityChange);
+          if (!appOpened) {
+            window.open(webUrl, "_blank");
+          }
+        }, 1500);
+      } else {
+        const webUrl = buildDirectionsWebUrl(store, pos.lat, pos.lng);
+        window.open(webUrl, "_blank");
+      }
+    } catch {
+      // error is already set in useGeolocation state
+    }
+  }, [store, requestPosition]);
 
   return (
     <div className="flex-1 overflow-y-auto">
@@ -29,7 +66,33 @@ export default function StoreDetail({ store, onBack, onReport }: StoreDetailProp
         </button>
       </div>
 
-      <MiniMap lat={store.lat} lng={store.lng} name={store.name} />
+      {hasThumbnail ? (
+        <a href={naverMapUrl} target="_blank" rel="noopener noreferrer" className="block relative">
+          <img
+            src={store.thumbnailUrls![0]}
+            alt={store.name}
+            className="w-full h-48 object-cover"
+            onError={() => setImgError(true)}
+          />
+          <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent px-3 py-2">
+            <span className="text-white text-xs font-medium">네이버 지도에서 보기</span>
+          </div>
+        </a>
+      ) : store.naverPlaceId ? (
+        <a
+          href={naverMapUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block bg-gray-100 h-32 flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors"
+        >
+          <svg className="w-5 h-5 text-[#03c75a]" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.273 12.845 7.376 24H0l8.852-11.076L1.224 0h7.205L13.899 8.41 21.932 0H24l-7.727 9.664L24 24h-7.2l-4.527-7.155z" />
+          </svg>
+          <span className="text-sm font-medium text-gray-700">네이버 지도에서 보기</span>
+        </a>
+      ) : (
+        <MiniMap lat={store.lat} lng={store.lng} name={store.name} />
+      )}
 
       <div className="px-4 py-4 space-y-4">
         <div>
@@ -94,6 +157,26 @@ export default function StoreDetail({ store, onBack, onReport }: StoreDetailProp
           >
             네이버 지도에서 보기
           </a>
+          <button
+            onClick={handleDirections}
+            disabled={geoLoading}
+            className="block w-full text-center py-2.5 bg-indigo-500 text-white rounded-lg text-sm font-medium hover:bg-indigo-600 disabled:opacity-60 transition-colors"
+          >
+            {geoLoading ? (
+              <span className="inline-flex items-center gap-2">
+                <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                </svg>
+                위치 확인 중...
+              </span>
+            ) : (
+              "길찾기"
+            )}
+          </button>
+          {geoError && (
+            <p className="text-xs text-red-500 text-center">{geoError}</p>
+          )}
           <button
             onClick={() => onReport(store)}
             className="block w-full text-center py-2.5 border border-gray-300 rounded-lg text-sm text-gray-600 hover:bg-gray-50 transition-colors"

@@ -36,20 +36,23 @@ ProjectOtaku/
 │   └── data/
 │       ├── stores-manual.json          # 수동 관리 매장 데이터
 │       ├── stores-naver.json           # 네이버 공유 폴더 동기화 매장 데이터
+│       ├── stores-url.json             # URL 임포트로 추가된 매장 데이터
 │       └── scraped-candidates.json     # 스크래퍼 발견 후보 (자동 생성)
 └── src/
     ├── app/
     │   ├── layout.tsx                  # 루트 레이아웃 (PWA 메타태그, NaverMapProvider)
-    │   ├── page.tsx                    # 홈 - manual+naver JSON 병합 → HomeClient 전달
+    │   ├── page.tsx                    # 홈 - manual+naver+url JSON 병합 → HomeClient 전달
     │   ├── globals.css                 # 글로벌 스타일 + scrollbar-hide 유틸
     │   └── api/
     │       ├── report/route.ts         # POST: 제보/제안 → GitHub Issue 자동 생성
-    │       └── naver-import/route.ts   # POST: 네이버 지도 URL → 장소 데이터 해석
+    │       ├── naver-import/route.ts   # POST: 네이버 지도 URL → 장소 데이터 추출
+    │       └── url-import/route.ts     # POST: URL 임포트 매장 → stores-url.json 저장
     ├── hooks/
     │   ├── useStoreFilter.ts           # 장르 필터 + 검색 상태/로직
-    │   └── useHashRouter.ts            # URL hash 기반 라우팅 (#store, #suggest, #import)
+    │   ├── useHashRouter.ts            # URL hash 기반 라우팅 (#store, #suggest, #import)
+    │   └── useGeolocation.ts           # 브라우저 Geolocation API 래핑 훅
     ├── lib/
-    │   ├── report-urls.ts              # 네이버 지도 URL 빌더
+    │   ├── report-urls.ts              # 네이버 지도 URL 빌더 + 길찾기 URL 빌더
     │   ├── freshness.ts                # 데이터 신선도 계산 (fresh/aging/stale)
     │   └── github-api.ts               # GitHub Issue 생성 서버 유틸
     ├── components/
@@ -62,7 +65,7 @@ ProjectOtaku/
     │   ├── list/
     │   │   └── StoreListPanel.tsx      # 지역 그룹별 매장 리스트 + 신선도 뱃지
     │   ├── detail/
-    │   │   ├── StoreDetail.tsx         # 매장 상세 패널 (미니맵, 전체정보, 네이버맵 링크)
+    │   │   ├── StoreDetail.tsx         # 매장 상세 패널 (미니맵, 전체정보, 네이버맵 링크, 길찾기)
     │   │   ├── FreshnessBadge.tsx      # 신선도 뱃지 (녹/황/적 dot + 날짜)
     │   │   └── MiniMap.tsx             # 상세 뷰 미니 네이버맵
     │   ├── report/
@@ -91,6 +94,7 @@ ProjectOtaku/
 - 사이드패널/바텀시트에서 리스트 ↔ 상세 모드 전환
 - 미니 네이버맵으로 위치 확인
 - "네이버 지도에서 보기" 버튼으로 외부 네이버맵 연동
+- "길찾기" 버튼 - 현재 위치 기반 네이버 지도 길찾기 (모바일 앱/웹 자동 전환)
 - 데이터 신선도 표시 (녹색: 최근 확인, 황색: 확인 필요, 적색: 오래된 정보)
 
 ### 카테고리 필터
@@ -131,7 +135,7 @@ ProjectOtaku/
 | Framework | Next.js 16 (App Router, TypeScript) |
 | Styling | Tailwind CSS 4 |
 | Map SDK | 네이버맵 JS SDK v3 (직접 로딩) |
-| Data | Static JSON (수동: `stores-manual.json`, 동기화: `stores-naver.json`) |
+| Data | Static JSON (수동: `stores-manual.json`, 동기화: `stores-naver.json`, URL: `stores-url.json`) |
 | API Routes | Next.js Route Handlers (제보, URL 임포트) |
 | Scraper | Kakao Local API + tsx |
 | CI/CD | GitHub Actions (주간 스크래핑) |
@@ -183,8 +187,9 @@ npm start
 |------|------|----------|
 | `stores-manual.json` | 수동 관리 매장 | 직접 편집 또는 스크래퍼 |
 | `stores-naver.json` | 네이버 공유 폴더 동기화 | `npm run import:naver` |
+| `stores-url.json` | URL 임포트로 추가된 매장 | 사이트 내 "URL 추가" 기능 |
 
-앱은 두 파일을 합쳐서 로드합니다. 중복 매장이 양쪽에 존재할 경우, 갱신 시 최신 갱신된 파일 쪽으로 자동 이동됩니다.
+앱은 세 파일을 합쳐서 로드합니다. 중복 매장이 다른 파일에 존재할 경우, 갱신 시 최신 갱신된 파일 쪽으로 자동 이동됩니다.
 
 ### 수동 편집
 
