@@ -1,9 +1,13 @@
 import Header from "@/components/Header";
 import HomeClient from "@/components/HomeClient";
 import type { Store } from "@/types/store";
-import storesData from "../../public/data/stores.json";
+import manualData from "../../public/data/stores-manual.json";
+import naverData from "../../public/data/stores-naver.json";
 
-const stores: Store[] = storesData as Store[];
+const stores: Store[] = [
+  ...(manualData as Store[]),
+  ...(naverData as Store[]),
+];
 
 export default function Home() {
   return (

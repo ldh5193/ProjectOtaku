@@ -22,23 +22,25 @@ ProjectOtaku/
 │   └── workflows/
 │       └── scrape-stores.yml           # 주간 스크래퍼 자동화 (매주 일요일)
 ├── scripts/
+│   ├── import-naver-folder.ts          # 네이버 공유 폴더 → stores-naver.json 동기화
 │   └── scraper/
 │       ├── run.ts                      # 스크래퍼 메인 엔트리포인트
 │       ├── kakao-client.ts             # Kakao Local API 클라이언트
 │       ├── search-queries.ts           # 검색 키워드 & 지역 설정
 │       ├── genre-classifier.ts         # 장르 자동 분류
-│       ├── id-generator.ts             # 매장 ID 생성 ({area}-{NNN})
+│       ├── id-generator.ts             # 매장 ID 생성 + 지역 감지 (전국)
 │       └── merger.ts                   # 기존 데이터와 병합 (중복 방지)
 ├── public/
 │   ├── manifest.json                   # PWA 매니페스트
 │   ├── icons/                          # PWA 아이콘 (192, 512)
 │   └── data/
-│       ├── stores.json                 # 매장 데이터 (정적 JSON)
+│       ├── stores-manual.json          # 수동 관리 매장 데이터
+│       ├── stores-naver.json           # 네이버 공유 폴더 동기화 매장 데이터
 │       └── scraped-candidates.json     # 스크래퍼 발견 후보 (자동 생성)
 └── src/
     ├── app/
     │   ├── layout.tsx                  # 루트 레이아웃 (PWA 메타태그, NaverMapProvider)
-    │   ├── page.tsx                    # 홈 - stores.json → HomeClient 전달
+    │   ├── page.tsx                    # 홈 - manual+naver JSON 병합 → HomeClient 전달
     │   ├── globals.css                 # 글로벌 스타일 + scrollbar-hide 유틸
     │   └── api/
     │       ├── report/route.ts         # POST: 제보/제안 → GitHub Issue 자동 생성
@@ -115,8 +117,11 @@ ProjectOtaku/
 - 반응형 레이아웃 (모바일 바텀시트 / 데스크톱 사이드패널)
 
 ### 데이터 관리
+- **이중 데이터 소스**: 수동 관리(`stores-manual.json`)와 네이버 동기화(`stores-naver.json`) 분리
+- **네이버 폴더 동기화**: 공유 폴더 API로 매장 데이터 자동 임포트 (`npm run import:naver`)
 - **스크래퍼**: Kakao Local API 기반 자동 매장 검색 (`npm run scrape`)
 - **GitHub Actions**: 매주 일요일 자동 실행 → 새 매장 발견 시 자동 커밋
+- **중복 처리**: 수동/동기화 파일 간 중복 발생 시 최신 갱신 쪽으로 자동 이동
 - **데이터 신선도**: 매장별 lastVerified 날짜로 정보 신뢰도 판단
 
 ## 기술 스택
@@ -126,7 +131,7 @@ ProjectOtaku/
 | Framework | Next.js 16 (App Router, TypeScript) |
 | Styling | Tailwind CSS 4 |
 | Map SDK | 네이버맵 JS SDK v3 (직접 로딩) |
-| Data | Static JSON (`public/data/stores.json`) |
+| Data | Static JSON (수동: `stores-manual.json`, 동기화: `stores-naver.json`) |
 | API Routes | Next.js Route Handlers (제보, URL 임포트) |
 | Scraper | Kakao Local API + tsx |
 | CI/CD | GitHub Actions (주간 스크래핑) |
@@ -172,9 +177,18 @@ npm start
 
 ## 매장 데이터 관리
 
+### 데이터 파일 구조
+
+| 파일 | 설명 | 갱신 방법 |
+|------|------|----------|
+| `stores-manual.json` | 수동 관리 매장 | 직접 편집 또는 스크래퍼 |
+| `stores-naver.json` | 네이버 공유 폴더 동기화 | `npm run import:naver` |
+
+앱은 두 파일을 합쳐서 로드합니다. 중복 매장이 양쪽에 존재할 경우, 갱신 시 최신 갱신된 파일 쪽으로 자동 이동됩니다.
+
 ### 수동 편집
 
-`public/data/stores.json`을 직접 편집하여 매장 정보를 추가/수정할 수 있습니다.
+`public/data/stores-manual.json`을 직접 편집하여 매장 정보를 추가/수정할 수 있습니다.
 
 ```json
 {
@@ -195,7 +209,23 @@ npm start
 
 **장르 종류:** anime, figure, goods, manga, game, idol, tcg, gashapon
 **매장 유형:** franchise, independent, popup
-**지역 코드:** hongdae, gangnam, sinchon, jongno, dongdaemun, yongsan, etc
+**지역 코드:** hongdae, gangnam, sinchon, jongno, dongdaemun, yongsan, songpa, gwangjin, etc-seoul, gyeonggi, incheon, busan, daegu, daejeon, gwangju, chungnam, chungbuk, jeonbuk, jeonnam, gyeongbuk, gyeongnam, gangwon, jeju, etc
+
+### 네이버 공유 폴더 동기화
+
+```bash
+# 기본 공유 폴더에서 동기화
+npm run import:naver
+
+# 다른 공유 폴더 URL 지정
+npm run import:naver -- --url "https://naver.me/xxxxx"
+
+# 드라이런 (저장 없이 미리보기)
+npm run import:naver -- --dry-run
+
+# 썸네일 생략 (빠른 실행)
+npm run import:naver -- --skip-thumbnails
+```
 
 ### 네이버 지도 URL로 매장 추가
 

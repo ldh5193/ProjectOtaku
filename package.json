@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "scrape": "tsx scripts/scraper/run.ts"
+    "scrape": "tsx scripts/scraper/run.ts",
+    "import:naver": "tsx scripts/import-naver-folder.ts"
   },
   "dependencies": {
     "next": "16.1.6",

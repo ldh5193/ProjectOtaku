@@ -32,5 +32,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/stores.json public/data/scraped-candidates.json
+          git add public/data/stores-manual.json public/data/stores-naver.json public/data/scraped-candidates.json
           git diff --staged --quiet || git commit -m "chore: update stores data via scraper" && git push

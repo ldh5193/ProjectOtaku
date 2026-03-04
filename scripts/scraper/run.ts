@@ -7,7 +7,8 @@ import { generateId } from "./id-generator";
 import { mergeStores, type CandidateStore } from "./merger";
 import type { Store, Genre } from "../../src/types/store";
 
-const STORES_PATH = resolve(__dirname, "../../public/data/stores.json");
+const MANUAL_PATH = resolve(__dirname, "../../public/data/stores-manual.json");
+const NAVER_PATH = resolve(__dirname, "../../public/data/stores-naver.json");
 const CANDIDATES_PATH = resolve(__dirname, "../../public/data/scraped-candidates.json");
 
 function delay(ms: number): Promise<void> {
@@ -21,10 +22,11 @@ async function main() {
     process.exit(1);
   }
 
-  // 1. Load existing stores
-  const existingRaw = readFileSync(STORES_PATH, "utf-8");
-  const existingStores: Store[] = JSON.parse(existingRaw);
-  console.log(`기존 매장 수: ${existingStores.length}`);
+  // 1. Load existing stores (both files)
+  const manualStores: Store[] = JSON.parse(readFileSync(MANUAL_PATH, "utf-8"));
+  const naverStores: Store[] = JSON.parse(readFileSync(NAVER_PATH, "utf-8"));
+  const existingStores: Store[] = [...manualStores, ...naverStores];
+  console.log(`기존 매장 수: manual=${manualStores.length}, naver=${naverStores.length}`);
 
   // 2. Search Kakao API for all region × keyword combinations
   const allPlaces = new Map<string, { place: KakaoPlace; genres: Set<Genre> }>();
@@ -109,9 +111,9 @@ async function main() {
     allStores.push(newStore);
   }
 
-  // 6. Save
-  writeFileSync(STORES_PATH, JSON.stringify(allStores, null, 2) + "\n", "utf-8");
-  console.log(`stores.json 저장 완료 (총 ${allStores.length}개 매장)`);
+  // 6. Save — scraped 매장은 manual 파일에 저장
+  writeFileSync(MANUAL_PATH, JSON.stringify(allStores, null, 2) + "\n", "utf-8");
+  console.log(`stores-manual.json 저장 완료 (총 ${allStores.length}개 매장)`);
 
   // Save candidates separately for review
   writeFileSync(CANDIDATES_PATH, JSON.stringify(newCandidates, null, 2) + "\n", "utf-8");

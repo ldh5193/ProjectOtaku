@@ -22,8 +22,10 @@ export interface Store {
   openingHours?: string;
   website?: string;
   description?: string;
-  source?: "manual" | "scraped";
+  source?: "manual" | "scraped" | "naver-shared";
   lastVerified?: string;
+  naverPlaceId?: string;
+  thumbnailUrls?: string[];
 }
 
 export const genreLabels: Record<Genre, string> = {
@@ -55,6 +57,23 @@ export type Area =
   | "jongno"
   | "dongdaemun"
   | "yongsan"
+  | "songpa"
+  | "gwangjin"
+  | "etc-seoul"
+  | "gyeonggi"
+  | "incheon"
+  | "busan"
+  | "daegu"
+  | "daejeon"
+  | "gwangju"
+  | "chungnam"
+  | "chungbuk"
+  | "jeonbuk"
+  | "jeonnam"
+  | "gyeongbuk"
+  | "gyeongnam"
+  | "gangwon"
+  | "jeju"
   | "etc";
 
 export const areaLabels: Record<Area, string> = {
@@ -64,6 +83,23 @@ export const areaLabels: Record<Area, string> = {
   jongno: "종로",
   dongdaemun: "동대문",
   yongsan: "용산",
+  songpa: "송파",
+  gwangjin: "광진",
+  "etc-seoul": "서울(기타)",
+  gyeonggi: "경기",
+  incheon: "인천",
+  busan: "부산",
+  daegu: "대구",
+  daejeon: "대전",
+  gwangju: "광주",
+  chungnam: "충남",
+  chungbuk: "충북",
+  jeonbuk: "전북",
+  jeonnam: "전남",
+  gyeongbuk: "경북",
+  gyeongnam: "경남",
+  gangwon: "강원",
+  jeju: "제주",
   etc: "기타",
 };
 
