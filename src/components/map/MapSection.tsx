@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useCallback, type MutableRefObject, type R
 import { useNaverMapLoaded } from "@/components/NaverMapProvider";
 import { buildInfoWindowHTML } from "./InfoWindowContent";
 import type { Store } from "@/types/store";
+import { getPopupStatus } from "@/lib/popup-status";
 
 declare global {
   // eslint-disable-next-line no-var
@@ -47,6 +48,36 @@ declare global {
   interface Window {
     __toggleFavorite?: (storeId: string) => void;
   }
+}
+
+function createPopupIcon(): naver.maps.HtmlIcon {
+  return {
+    content: `<div style="
+      position:relative;width:28px;height:36px;
+    ">
+      <svg viewBox="0 0 24 32" width="28" height="36">
+        <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 20 12 20s12-11 12-20C24 5.4 18.6 0 12 0z" fill="#8b5cf6" stroke="#fff" stroke-width="1.5"/>
+        <text x="12" y="15" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold" font-family="sans-serif">P</text>
+      </svg>
+    </div>`,
+    size: new naver.maps.Size(28, 36),
+    anchor: new naver.maps.Point(14, 36),
+  };
+}
+
+function createFavoriteIcon(): naver.maps.HtmlIcon {
+  return {
+    content: `<div style="
+      position:relative;width:28px;height:36px;
+    ">
+      <svg viewBox="0 0 24 32" width="28" height="36">
+        <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 20 12 20s12-11 12-20C24 5.4 18.6 0 12 0z" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+        <path d="M12 7l1.5 3 3.3.5-2.4 2.3.6 3.2L12 14.3 8.9 16l.6-3.2-2.4-2.3 3.3-.5z" fill="#fff"/>
+      </svg>
+    </div>`,
+    size: new naver.maps.Size(28, 36),
+    anchor: new naver.maps.Point(14, 36),
+  };
 }
 
 function createClusterIcons(): naver.maps.HtmlIcon[] {
@@ -255,13 +286,19 @@ export default function MapSection({
     }
 
     // Add markers for new stores (without map — clustering will manage visibility)
+    const favIcon = createFavoriteIcon();
+    const popupIcon = createPopupIcon();
     for (const store of stores) {
       if (existingIds.has(store.id)) continue;
 
+      const isFav = favorites?.has(store.id) ?? false;
+      const isPopup = getPopupStatus(store) !== "none";
+      const icon = isFav ? favIcon : isPopup ? popupIcon : undefined;
       const marker = new naver.maps.Marker({
         position: new naver.maps.LatLng(store.lat, store.lng),
         map: hasClusteringSupport ? null : map,
         title: store.name,
+        icon,
       });
 
       naver.maps.Event.addListener(marker, "click", () => {
@@ -311,8 +348,21 @@ export default function MapSection({
     };
   }, []);
 
-  // Refresh open info window when favorites change
+  // Update marker icons and refresh info window when favorites change
   useEffect(() => {
+    if (!mapLoaded) return;
+
+    // Update all marker icons based on favorite/popup status
+    const favIcon = createFavoriteIcon();
+    const popupIcon = createPopupIcon();
+    for (const [id, marker] of markerMapRef.current) {
+      const isFav = favorites?.has(id) ?? false;
+      const store = storesMapRef.current.get(id);
+      const isPopup = store ? getPopupStatus(store) !== "none" : false;
+      marker.setIcon(isFav ? favIcon : isPopup ? popupIcon : null);
+    }
+
+    // Refresh open info window
     const storeId = activeStoreIdRef.current;
     const marker = activeMarkerRef.current;
     const map = mapInstanceRef.current;
@@ -322,7 +372,7 @@ export default function MapSection({
     const isFav = favorites?.has(storeId) ?? false;
     infoWindowRef.current.setContent(buildInfoWindowHTML(store, isFav));
     infoWindowRef.current.open(map, marker);
-  }, [favorites]);
+  }, [favorites, mapLoaded]);
 
   // Cleanup clustering on unmount
   useEffect(() => {

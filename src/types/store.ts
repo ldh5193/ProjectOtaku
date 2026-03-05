@@ -10,6 +10,13 @@ export type Genre =
 
 export type StoreType = "franchise" | "independent" | "popup";
 
+export interface DayHours {
+  day: string;       // "월","화","수","목","금","토","일"
+  open: string;      // "13:00"
+  close: string;     // "21:00"
+  off?: boolean;     // 휴무일
+}
+
 export interface Store {
   id: string;
   name: string;
@@ -20,6 +27,7 @@ export interface Store {
   type: StoreType;
   phone?: string;
   openingHours?: string;
+  businessHours?: DayHours[];
   website?: string;
   description?: string;
   source?: "manual" | "scraped" | "naver-shared";
@@ -27,6 +35,8 @@ export interface Store {
   naverPlaceId?: string;
   thumbnailUrls?: string[];
   series?: string[];
+  popupStartDate?: string;  // "2026-03-01" (type: "popup" only)
+  popupEndDate?: string;    // "2026-03-31"
 }
 
 export const genreLabels: Record<Genre, string> = {

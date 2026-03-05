@@ -3,6 +3,8 @@
 import type { Store } from "@/types/store";
 import { genreLabels, areaLabels } from "@/types/store";
 import FreshnessBadge from "@/components/detail/FreshnessBadge";
+import { getBusinessStatus, statusConfig } from "@/lib/opening-hours";
+import { getPopupStatus, popupStatusConfig } from "@/lib/popup-status";
 
 interface StoreListPanelProps {
   groupedStores: Map<string, Store[]>;
@@ -51,6 +53,10 @@ export default function StoreListPanel({
           </div>
           {stores.map((store) => {
             const isFav = favorites?.has(store.id);
+            const biz = getBusinessStatus(store.openingHours, store.businessHours);
+            const bizCfg = statusConfig[biz];
+            const popup = getPopupStatus(store);
+            const popupCfg = popupStatusConfig[popup];
             return (
               <div
                 key={store.id}
@@ -62,6 +68,16 @@ export default function StoreListPanel({
                 >
                   <div className="flex items-center gap-1.5">
                     <p className="text-sm font-medium text-gray-900 truncate">{store.name}</p>
+                    {popup !== "none" && (
+                      <span className={`px-1.5 py-0.5 text-[10px] rounded font-medium ${popupCfg.color} ${popupCfg.bgColor}`}>
+                        {popupCfg.label}
+                      </span>
+                    )}
+                    {biz !== "unknown" && (
+                      <span className={`px-1.5 py-0.5 text-[10px] rounded font-medium ${bizCfg.color} ${bizCfg.bgColor}`}>
+                        {bizCfg.label}
+                      </span>
+                    )}
                     <FreshnessBadge lastVerified={store.lastVerified} compact />
                   </div>
                   <p className="text-xs text-gray-500 mt-0.5">{store.address}</p>

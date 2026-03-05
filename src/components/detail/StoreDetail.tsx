@@ -7,6 +7,8 @@ import { buildNaverMapUrl, buildDirectionsAppUrl, buildDirectionsWebUrl } from "
 import { sanitizeUrl } from "@/lib/sanitize";
 import FreshnessBadge from "./FreshnessBadge";
 import MiniMap from "./MiniMap";
+import { getBusinessStatus, statusConfig } from "@/lib/opening-hours";
+import { getPopupStatus, popupStatusConfig, formatPopupPeriod } from "@/lib/popup-status";
 
 interface StoreDetailProps {
   store: Store;
@@ -14,9 +16,10 @@ interface StoreDetailProps {
   onReport: (store: Store) => void;
   isFavorite?: boolean;
   onToggleFavorite?: (storeId: string) => void;
+  onFocusMap?: (store: Store) => void;
 }
 
-export default function StoreDetail({ store, onBack, onReport, isFavorite, onToggleFavorite }: StoreDetailProps) {
+export default function StoreDetail({ store, onBack, onReport, isFavorite, onToggleFavorite, onFocusMap }: StoreDetailProps) {
   const naverMapUrl = buildNaverMapUrl(store);
   const [imgError, setImgError] = useState(false);
   const hasThumbnail = store.thumbnailUrls && store.thumbnailUrls.length > 0 && !imgError;
@@ -37,7 +40,20 @@ export default function StoreDetail({ store, onBack, onReport, isFavorite, onTog
           </svg>
           목록으로
         </button>
-        {onToggleFavorite && (
+        <div className="flex items-center gap-1">
+          {onFocusMap && (
+            <button
+              onClick={() => onFocusMap(store)}
+              className="p-1.5 rounded-full hover:bg-gray-100 transition-colors"
+              aria-label="지도에서 위치 보기"
+            >
+              <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </button>
+          )}
+          {onToggleFavorite && (
           <button
             onClick={() => onToggleFavorite(store.id)}
             className="p-1.5 rounded-full hover:bg-gray-100 transition-colors"
@@ -53,6 +69,7 @@ export default function StoreDetail({ store, onBack, onReport, isFavorite, onTog
             </svg>
           </button>
         )}
+        </div>
       </div>
 
       {hasThumbnail ? (
@@ -85,8 +102,23 @@ export default function StoreDetail({ store, onBack, onReport, isFavorite, onTog
 
       <div className="px-4 py-4 space-y-4">
         <div>
-          <h2 className="text-lg font-bold text-gray-900">{store.name}</h2>
+          <div className="flex items-center gap-2">
+            <h2 className="text-lg font-bold text-gray-900">{store.name}</h2>
+            {(() => {
+              const popup = getPopupStatus(store);
+              if (popup === "none") return null;
+              const cfg = popupStatusConfig[popup];
+              return (
+                <span className={`px-2 py-0.5 text-xs rounded font-medium ${cfg.color} ${cfg.bgColor}`}>
+                  {cfg.label}
+                </span>
+              );
+            })()}
+          </div>
           <p className="text-sm text-gray-500 mt-1">{store.address}</p>
+          {store.type === "popup" && formatPopupPeriod(store) && (
+            <p className="text-xs text-gray-400 mt-0.5">{formatPopupPeriod(store)}</p>
+          )}
         </div>
 
         <div className="flex flex-wrap gap-1.5">
@@ -109,12 +141,23 @@ export default function StoreDetail({ store, onBack, onReport, isFavorite, onTog
         </div>
 
         <div className="space-y-2 text-sm">
-          {store.openingHours && (
-            <div className="flex items-start gap-2">
-              <span className="text-gray-400 shrink-0 w-14">영업시간</span>
-              <span className="text-gray-700">{store.openingHours}</span>
-            </div>
-          )}
+          {store.openingHours && (() => {
+            const biz = getBusinessStatus(store.openingHours, store.businessHours);
+            const cfg = statusConfig[biz];
+            return (
+              <div className="flex items-start gap-2">
+                <span className="text-gray-400 shrink-0 w-14">영업시간</span>
+                <span className="text-gray-700">
+                  {store.openingHours}
+                  {biz !== "unknown" && (
+                    <span className={`ml-2 px-1.5 py-0.5 text-[11px] rounded font-medium ${cfg.color} ${cfg.bgColor}`}>
+                      {cfg.label}
+                    </span>
+                  )}
+                </span>
+              </div>
+            );
+          })()}
           {store.phone && (
             <div className="flex items-start gap-2">
               <span className="text-gray-400 shrink-0 w-14">전화</span>

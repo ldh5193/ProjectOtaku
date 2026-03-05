@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "scrape": "tsx scripts/scraper/run.ts",
-    "import:naver": "tsx scripts/import-naver-folder.ts"
+    "import:naver": "tsx scripts/import-naver-folder.ts",
+    "fetch:hours": "tsx scripts/fetch-hours.ts"
   },
   "dependencies": {
     "next": "16.1.6",

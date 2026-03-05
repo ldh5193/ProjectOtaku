@@ -25,6 +25,7 @@ declare namespace naver.maps {
   class Marker {
     constructor(options: MarkerOptions);
     setMap(map: Map | null): void;
+    setIcon(icon: string | ImageIcon | HtmlIcon | null): void;
     getPosition(): LatLng;
     getElement(): HTMLElement;
   }

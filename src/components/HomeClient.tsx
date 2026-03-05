@@ -36,6 +36,10 @@ export default function HomeClient({ stores }: HomeClientProps) {
     setSearchQuery,
     favoritesOnly,
     toggleFavoritesOnly,
+    openNowOnly,
+    toggleOpenNowOnly,
+    showEndedPopups,
+    toggleShowEndedPopups,
   } = useStoreFilter(stores, favorites);
 
   const { route, selectStore, clearRoute } = useHashRouter();
@@ -76,6 +80,10 @@ export default function HomeClient({ stores }: HomeClientProps) {
     setReportStore(store);
   }, []);
 
+  const handleFocusMap = useCallback((store: Store) => {
+    mapActionRef.current?.panToStore(store);
+  }, []);
+
   const handleSearch = useCallback(
     (query: string) => {
       setSearchQuery(query);
@@ -93,6 +101,7 @@ export default function HomeClient({ stores }: HomeClientProps) {
       onReport={handleReport}
       isFavorite={isFavorite(selectedStore.id)}
       onToggleFavorite={toggleFavorite}
+      onFocusMap={handleFocusMap}
     />
   ) : (
     <>
@@ -109,6 +118,10 @@ export default function HomeClient({ stores }: HomeClientProps) {
           favoritesOnly={favoritesOnly}
           onToggleFavoritesOnly={toggleFavoritesOnly}
           hasFavorites={hasFavorites}
+          openNowOnly={openNowOnly}
+          onToggleOpenNowOnly={toggleOpenNowOnly}
+          showEndedPopups={showEndedPopups}
+          onToggleShowEndedPopups={toggleShowEndedPopups}
         />
       </div>
       <StoreListPanel
@@ -149,6 +162,10 @@ export default function HomeClient({ stores }: HomeClientProps) {
                 favoritesOnly={favoritesOnly}
                 onToggleFavoritesOnly={toggleFavoritesOnly}
                 hasFavorites={hasFavorites}
+                openNowOnly={openNowOnly}
+                onToggleOpenNowOnly={toggleOpenNowOnly}
+                showEndedPopups={showEndedPopups}
+                onToggleShowEndedPopups={toggleShowEndedPopups}
                 compact
                 listButton={
                   <button
@@ -203,6 +220,7 @@ export default function HomeClient({ stores }: HomeClientProps) {
               onReport={handleReport}
               isFavorite={isFavorite(selectedStore.id)}
               onToggleFavorite={toggleFavorite}
+              onFocusMap={handleFocusMap}
             />
           ) : (
             <StoreListPanel

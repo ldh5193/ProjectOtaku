@@ -2,6 +2,8 @@ import type { Store } from "@/types/store";
 import { genreLabels } from "@/types/store";
 import { buildNaverMapUrl, buildDirectionsWebUrl } from "@/lib/report-urls";
 import { getFreshness, freshnessConfig, formatVerifiedDate } from "@/lib/freshness";
+import { getBusinessStatus } from "@/lib/opening-hours";
+import { getPopupStatus, popupStatusConfig, formatPopupPeriod } from "@/lib/popup-status";
 import { escapeHtml } from "@/lib/sanitize";
 
 export function buildInfoWindowHTML(store: Store, isFavorite = false): string {
@@ -30,10 +32,22 @@ export function buildInfoWindowHTML(store: Store, isFavorite = false): string {
   const favFill = isFavorite ? "#facc15" : "none";
   const favStroke = isFavorite ? "#facc15" : "#9ca3af";
 
+  const popup = getPopupStatus(store);
+  const popupBadge = popup !== "none"
+    ? (() => {
+        const colors = { upcoming: "#1d4ed8;background:#eff6ff", active: "#15803d;background:#f0fdf4", ended: "#6b7280;background:#f3f4f6" };
+        const cfg = popupStatusConfig[popup];
+        return `<span style="margin-left:6px;padding:1px 6px;border-radius:4px;color:${colors[popup].split(";")[0]};${colors[popup].split(";")[1]};font-size:11px;font-weight:500;">${cfg.label}</span>`;
+      })()
+    : "";
+  const popupPeriod = store.type === "popup" && formatPopupPeriod(store)
+    ? `<p style="margin:0 0 4px;font-size:11px;color:#9ca3af;">${formatPopupPeriod(store)}</p>`
+    : "";
+
   return `
     <div style="padding:12px;min-width:200px;max-width:280px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;">
-        <h3 style="margin:0 0 6px;font-size:15px;font-weight:700;color:#111;flex:1;">${escapeHtml(store.name)}</h3>
+        <h3 style="margin:0 0 6px;font-size:15px;font-weight:700;color:#111;flex:1;">${escapeHtml(store.name)}${popupBadge}</h3>
         <button onclick="window.__toggleFavorite && window.__toggleFavorite('${store.id}')" style="background:none;border:none;cursor:pointer;padding:2px;flex-shrink:0;" aria-label="즐겨찾기">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="${favFill}" stroke="${favStroke}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
@@ -41,8 +55,19 @@ export function buildInfoWindowHTML(store: Store, isFavorite = false): string {
         </button>
       </div>
       <p style="margin:0 0 6px;font-size:13px;color:#555;">${escapeHtml(store.address)}</p>
+      ${popupPeriod}
       <div style="margin-bottom:6px;">${tags}</div>
-      ${store.openingHours ? `<p style="margin:0 0 4px;font-size:12px;color:#666;">🕐 ${escapeHtml(store.openingHours)}</p>` : ""}
+      ${store.openingHours ? (() => {
+        const biz = getBusinessStatus(store.openingHours, store.businessHours);
+        const bizBadge = biz === "open"
+          ? `<span style="margin-left:6px;padding:1px 6px;border-radius:4px;background:#f0fdf4;color:#15803d;font-size:11px;font-weight:500;">영업중</span>`
+          : biz === "closing-soon"
+          ? `<span style="margin-left:6px;padding:1px 6px;border-radius:4px;background:#fffbeb;color:#b45309;font-size:11px;font-weight:500;">곧 마감</span>`
+          : biz === "closed"
+          ? `<span style="margin-left:6px;padding:1px 6px;border-radius:4px;background:#fef2f2;color:#dc2626;font-size:11px;font-weight:500;">영업종료</span>`
+          : "";
+        return `<p style="margin:0 0 4px;font-size:12px;color:#666;">🕐 ${escapeHtml(store.openingHours)}${bizBadge}</p>`;
+      })() : ""}
       ${store.phone ? `<p style="margin:0 0 4px;font-size:12px;color:#666;">📞 ${escapeHtml(store.phone)}</p>` : ""}
       ${store.description ? `<p style="margin:0 0 4px;font-size:12px;color:#888;">${escapeHtml(store.description)}</p>` : ""}
       <p style="margin:0 0 4px;font-size:11px;color:${fc.inlineColor};">

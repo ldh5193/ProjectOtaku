@@ -3,12 +3,16 @@
 import { useState, useMemo, useCallback } from "react";
 import type { Store, Genre } from "@/types/store";
 import { getStoreArea, areaLabels } from "@/types/store";
+import { getBusinessStatus } from "@/lib/opening-hours";
+import { getPopupStatus } from "@/lib/popup-status";
 
 export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
   const [activeGenres, setActiveGenres] = useState<Set<Genre>>(new Set());
   const [activeSeries, setActiveSeries] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState("");
   const [favoritesOnly, setFavoritesOnly] = useState(false);
+  const [openNowOnly, setOpenNowOnly] = useState(false);
+  const [showEndedPopups, setShowEndedPopups] = useState(false);
 
   const toggleGenre = useCallback((genre: Genre) => {
     setActiveGenres((prev) => {
@@ -61,6 +65,14 @@ export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
     setFavoritesOnly((prev) => !prev);
   }, []);
 
+  const toggleOpenNowOnly = useCallback(() => {
+    setOpenNowOnly((prev) => !prev);
+  }, []);
+
+  const toggleShowEndedPopups = useCallback(() => {
+    setShowEndedPopups((prev) => !prev);
+  }, []);
+
   const filteredStores = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
 
@@ -68,6 +80,17 @@ export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
       // Favorites filter
       if (favoritesOnly && favorites && !favorites.has(store.id)) {
         return false;
+      }
+
+      // Hide ended popups by default
+      if (!showEndedPopups && getPopupStatus(store) === "ended") {
+        return false;
+      }
+
+      // Open now filter
+      if (openNowOnly) {
+        const status = getBusinessStatus(store.openingHours, store.businessHours);
+        if (status !== "open" && status !== "closing-soon") return false;
       }
 
       // Genre filter: if any genres selected, store must match at least one (OR)
@@ -94,7 +117,7 @@ export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
 
       return true;
     });
-  }, [allStores, activeGenres, activeSeries, searchQuery, favoritesOnly, favorites]);
+  }, [allStores, activeGenres, activeSeries, searchQuery, favoritesOnly, favorites, openNowOnly, showEndedPopups]);
 
   const groupedStores = useMemo(() => {
     const groups = new Map<string, Store[]>();
@@ -132,5 +155,9 @@ export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
     setSearchQuery,
     favoritesOnly,
     toggleFavoritesOnly,
+    openNowOnly,
+    toggleOpenNowOnly,
+    showEndedPopups,
+    toggleShowEndedPopups,
   };
 }

@@ -23,6 +23,7 @@ ProjectOtaku/
 │       └── scrape-stores.yml           # 주간 스크래퍼 자동화 (매주 일요일)
 ├── scripts/
 │   ├── import-naver-folder.ts          # 네이버 공유 폴더 → stores-naver.json 동기화
+│   ├── fetch-hours.ts                 # 네이버 지도에서 영업시간 일괄 수집
 │   └── scraper/
 │       ├── run.ts                      # 스크래퍼 메인 엔트리포인트
 │       ├── kakao-client.ts             # Kakao Local API 클라이언트
@@ -50,13 +51,16 @@ ProjectOtaku/
     │       ├── naver-import/route.ts   # POST: 네이버 지도 URL → 장소 데이터 추출
     │       └── url-import/route.ts     # POST: URL 임포트 매장 → stores-url.json 저장
     ├── hooks/
-    │   ├── useStoreFilter.ts           # 장르 + 시리즈 + 즐겨찾기 필터 + 검색 상태/로직
+    │   ├── useStoreFilter.ts           # 장르 + 시리즈 + 즐겨찾기 + 영업중 + 팝업 필터 + 검색
     │   ├── useFavorites.ts            # localStorage 기반 즐겨찾기 관리 훅
     │   ├── useHashRouter.ts            # URL hash 기반 라우팅 (#store, #suggest, #import)
     │   └── useGeolocation.ts           # 브라우저 Geolocation API 래핑 훅
     ├── lib/
     │   ├── report-urls.ts              # 네이버 지도 URL 빌더 + 길찾기 URL 빌더
+    │   ├── opening-hours.ts             # 영업시간 파싱 + 영업 상태 판단
+    │   ├── popup-status.ts             # 팝업스토어 상태 판단 (upcoming/active/ended)
     │   ├── freshness.ts                # 데이터 신선도 계산 (fresh/aging/stale)
+    │   ├── sanitize.ts                 # HTML 이스케이프 + URL 검증
     │   └── github-api.ts               # GitHub Issue 생성 서버 유틸
     ├── components/
     │   ├── NaverMapProvider.tsx         # "use client" - 네이버맵 SDK 로딩
@@ -124,9 +128,23 @@ ProjectOtaku/
 - **매장 추가 제안**: 헤더의 "매장 추가" → 모달 폼 → GitHub Issue 자동 생성
 - **네이버 지도 URL 임포트**: 헤더의 "URL 추가" → 네이버맵 URL 붙여넣기 → 자동 정보 추출 → 제안
 
+### "지금 영업중" 필터
+- 네이버 지도에서 구조화된 요일별 영업시간 자동 수집 (`npm run fetch:hours`)
+- "영업중" / "곧 마감" (마감 30분 전) / "영업종료" 상태 자동 판단
+- 매장 리스트, 상세 뷰, 지도 인포윈도우에서 상태 뱃지 표시
+- 필터 토글로 현재 영업중인 매장만 표시
+- 구조화 데이터 우선, 문자열 폴백 파싱 지원
+
+### 팝업스토어 트래커
+- 매장 type이 `popup`인 경우 `popupStartDate`/`popupEndDate` 기반 자동 상태 판단
+- 상태: 오픈 예정(파랑), 운영중(초록), 종료(회색)
+- 매장 리스트, 상세 뷰, 지도 인포윈도우에 상태 뱃지 + 기간 표시
+- 지도에서 팝업스토어는 보라색 "P" 핀으로 구분
+- 종료된 팝업은 기본 필터에서 숨김, "종료 팝업" 토글로 표시 가능
+
 ### 즐겨찾기
-- 매장 상세에서 별 아이콘으로 즐겨찾기 토글
-- 즐겨찾기한 매장은 리스트에 별 표시
+- 매장 상세, 매장 목록, 지도 인포윈도우에서 별 아이콘으로 즐겨찾기 토글
+- 즐겨찾기한 매장은 지도에서 별 핀 마커로 구분 표시
 - 필터 영역에서 즐겨찾기만 보기 토글 (즐겨찾기가 있을 때만 노출)
 - localStorage 기반으로 비로그인 상태에서도 유지
 

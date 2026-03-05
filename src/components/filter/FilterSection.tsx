@@ -18,6 +18,10 @@ interface FilterSectionProps {
   favoritesOnly?: boolean;
   onToggleFavoritesOnly?: () => void;
   hasFavorites?: boolean;
+  openNowOnly?: boolean;
+  onToggleOpenNowOnly?: () => void;
+  showEndedPopups?: boolean;
+  onToggleShowEndedPopups?: () => void;
   compact?: boolean;
   listButton?: ReactNode;
 }
@@ -34,6 +38,10 @@ export default function FilterSection({
   favoritesOnly = false,
   onToggleFavoritesOnly,
   hasFavorites = false,
+  openNowOnly = false,
+  onToggleOpenNowOnly,
+  showEndedPopups = false,
+  onToggleShowEndedPopups,
   compact = false,
   listButton,
 }: FilterSectionProps) {
@@ -43,6 +51,18 @@ export default function FilterSection({
         <div className="flex-1">
           <SearchBar onSearch={onSearch} />
         </div>
+        {onToggleOpenNowOnly && (
+          <button
+            onClick={onToggleOpenNowOnly}
+            className={`shrink-0 px-2.5 py-2 text-xs font-medium rounded-lg border transition-colors ${
+              openNowOnly
+                ? "bg-green-50 border-green-300 text-green-700"
+                : "bg-white border-gray-300 text-gray-600 hover:bg-gray-50"
+            }`}
+          >
+            영업중
+          </button>
+        )}
         {hasFavorites && onToggleFavoritesOnly && (
           <button
             onClick={onToggleFavoritesOnly}
@@ -61,6 +81,18 @@ export default function FilterSection({
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
             </svg>
+          </button>
+        )}
+        {onToggleShowEndedPopups && (
+          <button
+            onClick={onToggleShowEndedPopups}
+            className={`shrink-0 px-2.5 py-2 text-xs font-medium rounded-lg border transition-colors ${
+              showEndedPopups
+                ? "bg-purple-50 border-purple-300 text-purple-700"
+                : "bg-white border-gray-300 text-gray-600 hover:bg-gray-50"
+            }`}
+          >
+            종료 팝업
           </button>
         )}
         {listButton}
