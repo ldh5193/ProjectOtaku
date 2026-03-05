@@ -7,8 +7,7 @@ import type { Store } from "@/types/store";
 import type { MapAction } from "@/components/map/MapSection";
 import Header from "@/components/Header";
 import MapSection from "@/components/map/MapSection";
-import GenreFilterBar from "@/components/filter/GenreFilterBar";
-import SearchBar from "@/components/filter/SearchBar";
+import FilterSection from "@/components/filter/FilterSection";
 import StoreListPanel from "@/components/list/StoreListPanel";
 import StoreDetail from "@/components/detail/StoreDetail";
 import DesktopSidePanel from "@/components/layout/DesktopSidePanel";
@@ -23,10 +22,14 @@ interface HomeClientProps {
 export default function HomeClient({ stores }: HomeClientProps) {
   const {
     activeGenres,
+    activeSeries,
+    allSeries,
     filteredStores,
     groupedStores,
     toggleGenre,
     clearGenres,
+    toggleSeries,
+    clearSeries,
     setSearchQuery,
   } = useStoreFilter(stores);
 
@@ -84,12 +87,16 @@ export default function HomeClient({ stores }: HomeClientProps) {
     />
   ) : (
     <>
-      <div className="p-3 space-y-2 border-b border-gray-200">
-        <SearchBar onSearch={handleSearch} />
-        <GenreFilterBar
+      <div className="p-3 border-b border-gray-200">
+        <FilterSection
           activeGenres={activeGenres}
-          onToggle={toggleGenre}
-          onClear={clearGenres}
+          onToggleGenre={toggleGenre}
+          onClearGenres={clearGenres}
+          activeSeries={activeSeries}
+          allSeries={allSeries}
+          onToggleSeries={toggleSeries}
+          onClearSeries={clearSeries}
+          onSearch={handleSearch}
         />
       </div>
       <StoreListPanel
@@ -116,21 +123,24 @@ export default function HomeClient({ stores }: HomeClientProps) {
           {/* Mobile top bar */}
           {!selectedStore ? (
             <div className="md:hidden bg-white border-b border-gray-200 px-3 pt-2 pb-1 space-y-2">
-              <div className="flex gap-2 items-center">
-                <div className="flex-1">
-                  <SearchBar onSearch={handleSearch} />
-                </div>
-                <button
-                  onClick={() => setListOpen(true)}
-                  className="shrink-0 px-3 py-2 text-xs font-medium bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
-                >
-                  목록
-                </button>
-              </div>
-              <GenreFilterBar
+              <FilterSection
                 activeGenres={activeGenres}
-                onToggle={toggleGenre}
-                onClear={clearGenres}
+                onToggleGenre={toggleGenre}
+                onClearGenres={clearGenres}
+                activeSeries={activeSeries}
+                allSeries={allSeries}
+                onToggleSeries={toggleSeries}
+                onClearSeries={clearSeries}
+                onSearch={handleSearch}
+                compact
+                listButton={
+                  <button
+                    onClick={() => setListOpen(true)}
+                    className="shrink-0 px-3 py-2 text-xs font-medium bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                  >
+                    목록
+                  </button>
+                }
               />
             </div>
           ) : (

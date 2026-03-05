@@ -65,6 +65,19 @@ export default function StoreListPanel({
                     {genreLabels[g]}
                   </span>
                 ))}
+                {store.series?.slice(0, 3).map((s) => (
+                  <span
+                    key={s}
+                    className="px-1.5 py-0.5 text-[10px] rounded bg-pink-50 text-pink-600"
+                  >
+                    {s}
+                  </span>
+                ))}
+                {(store.series?.length ?? 0) > 3 && (
+                  <span className="px-1.5 py-0.5 text-[10px] rounded bg-gray-100 text-gray-500">
+                    +{store.series!.length - 3}
+                  </span>
+                )}
               </div>
             </button>
           ))}

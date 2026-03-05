@@ -6,6 +6,7 @@ import { getStoreArea, areaLabels } from "@/types/store";
 
 export function useStoreFilter(allStores: Store[]) {
   const [activeGenres, setActiveGenres] = useState<Set<Genre>>(new Set());
+  const [activeSeries, setActiveSeries] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState("");
 
   const toggleGenre = useCallback((genre: Genre) => {
@@ -24,26 +25,66 @@ export function useStoreFilter(allStores: Store[]) {
     setActiveGenres(new Set());
   }, []);
 
+  const toggleSeries = useCallback((series: string) => {
+    setActiveSeries((prev) => {
+      const next = new Set(prev);
+      if (next.has(series)) {
+        next.delete(series);
+      } else {
+        next.add(series);
+      }
+      return next;
+    });
+  }, []);
+
+  const clearSeries = useCallback(() => {
+    setActiveSeries(new Set());
+  }, []);
+
+  // Derive all unique series sorted by frequency
+  const allSeries = useMemo(() => {
+    const freq = new Map<string, number>();
+    for (const store of allStores) {
+      if (store.series) {
+        for (const s of store.series) {
+          freq.set(s, (freq.get(s) ?? 0) + 1);
+        }
+      }
+    }
+    return Array.from(freq.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([name]) => name);
+  }, [allStores]);
+
   const filteredStores = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
 
     return allStores.filter((store) => {
-      // Genre filter: if any genres selected, store must match at least one
+      // Genre filter: if any genres selected, store must match at least one (OR)
       if (activeGenres.size > 0) {
         const hasMatch = store.genre.some((g) => activeGenres.has(g));
         if (!hasMatch) return false;
       }
 
-      // Search filter: query must match name or address
+      // Series filter: if any series selected, store must match at least one (OR)
+      if (activeSeries.size > 0) {
+        const hasMatch = store.series?.some((s) => activeSeries.has(s));
+        if (!hasMatch) return false;
+      }
+
+      // Search filter: query must match name, address, or series
       if (query) {
         const inName = store.name.toLowerCase().includes(query);
         const inAddress = store.address.toLowerCase().includes(query);
-        if (!inName && !inAddress) return false;
+        const inSeries = store.series?.some((s) =>
+          s.toLowerCase().includes(query)
+        );
+        if (!inName && !inAddress && !inSeries) return false;
       }
 
       return true;
     });
-  }, [allStores, activeGenres, searchQuery]);
+  }, [allStores, activeGenres, activeSeries, searchQuery]);
 
   const groupedStores = useMemo(() => {
     const groups = new Map<string, Store[]>();
@@ -69,11 +110,15 @@ export function useStoreFilter(allStores: Store[]) {
 
   return {
     activeGenres,
+    activeSeries,
+    allSeries,
     searchQuery,
     filteredStores,
     groupedStores,
     toggleGenre,
     clearGenres,
+    toggleSeries,
+    clearSeries,
     setSearchQuery,
   };
 }

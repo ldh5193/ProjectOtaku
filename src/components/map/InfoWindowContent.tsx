@@ -1,18 +1,29 @@
 import type { Store } from "@/types/store";
 import { genreLabels } from "@/types/store";
-import { buildNaverMapUrl } from "@/lib/report-urls";
+import { buildNaverMapUrl, buildDirectionsWebUrl } from "@/lib/report-urls";
 import { getFreshness, freshnessConfig, formatVerifiedDate } from "@/lib/freshness";
 import { escapeHtml } from "@/lib/sanitize";
 
 export function buildInfoWindowHTML(store: Store): string {
-  const tags = store.genre
+  const genreTags = store.genre
     .map(
       (g) =>
         `<span style="display:inline-block;padding:2px 8px;margin:2px;border-radius:9999px;background:#eef2ff;color:#4338ca;font-size:12px;">${genreLabels[g]}</span>`
     )
     .join("");
 
+  const seriesTags = (store.series ?? [])
+    .slice(0, 2)
+    .map(
+      (s) =>
+        `<span style="display:inline-block;padding:2px 8px;margin:2px;border-radius:9999px;background:#fdf2f8;color:#db2777;font-size:12px;">${escapeHtml(s)}</span>`
+    )
+    .join("");
+
+  const tags = genreTags + seriesTags;
+
   const naverMapUrl = buildNaverMapUrl(store);
+  const directionsUrl = buildDirectionsWebUrl(store);
   const tier = getFreshness(store.lastVerified);
   const fc = freshnessConfig[tier];
 
@@ -28,9 +39,12 @@ export function buildInfoWindowHTML(store: Store): string {
         <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${fc.inlineColor};margin-right:4px;vertical-align:middle;"></span>
         ${formatVerifiedDate(store.lastVerified)}
       </p>
-      <div style="margin-top:8px;padding-top:8px;border-top:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center;">
-        <a href="${naverMapUrl}" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:#03c75a;text-decoration:none;font-weight:500;">네이버 지도에서 보기</a>
-        <a href="#store/${store.id}" style="font-size:12px;color:#4338ca;text-decoration:none;font-weight:500;">자세히 보기 &rarr;</a>
+      <div style="margin-top:8px;padding-top:8px;border-top:1px solid #e5e7eb;display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+        <a href="${directionsUrl}" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:#4338ca;text-decoration:none;font-weight:500;">길찾기</a>
+        <span style="color:#d1d5db;">|</span>
+        <a href="${naverMapUrl}" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:#03c75a;text-decoration:none;font-weight:500;">네이버 지도</a>
+        <span style="color:#d1d5db;">|</span>
+        <a href="#store/${store.id}" style="font-size:12px;color:#4338ca;text-decoration:none;font-weight:500;">자세히 &rarr;</a>
       </div>
     </div>
   `;

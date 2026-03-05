@@ -48,7 +48,7 @@ ProjectOtaku/
     │       ├── naver-import/route.ts   # POST: 네이버 지도 URL → 장소 데이터 추출
     │       └── url-import/route.ts     # POST: URL 임포트 매장 → stores-url.json 저장
     ├── hooks/
-    │   ├── useStoreFilter.ts           # 장르 필터 + 검색 상태/로직
+    │   ├── useStoreFilter.ts           # 장르 + 시리즈 필터 + 검색 상태/로직
     │   ├── useHashRouter.ts            # URL hash 기반 라우팅 (#store, #suggest, #import)
     │   └── useGeolocation.ts           # 브라우저 Geolocation API 래핑 훅
     ├── lib/
@@ -60,7 +60,9 @@ ProjectOtaku/
     │   ├── Header.tsx                  # 서비스명 + 매장 추가/URL 추가 버튼
     │   ├── HomeClient.tsx              # "use client" - 메인 오케스트레이터
     │   ├── filter/
+    │   │   ├── FilterSection.tsx       # 필터 래퍼 (SearchBar + Genre + Series, compact 모드)
     │   │   ├── GenreFilterBar.tsx      # 장르 칩 토글 버튼 (8종, 멀티선택, 초기화)
+    │   │   ├── SeriesFilterBar.tsx     # 시리즈 칩 필터 (핑크 테마, 접기/펼치기, 인라인 검색)
     │   │   └── SearchBar.tsx           # 검색 입력 (300ms 디바운스)
     │   ├── list/
     │   │   └── StoreListPanel.tsx      # 지역 그룹별 매장 리스트 + 신선도 뱃지
@@ -99,12 +101,13 @@ ProjectOtaku/
 
 ### 카테고리 필터
 - 8개 장르 칩 버튼으로 필터링 (애니/피규어/굿즈/만화/게임/아이돌/TCG/가챠)
-- 멀티 선택 가능 (OR 조건)
+- 작품/시리즈 칩 필터 (핑크 테마, 빈도순 정렬, 접기/펼치기)
+- 멀티 선택 가능 (장르 OR, 시리즈 OR, 장르×시리즈 AND)
 - 초기화 버튼으로 전체 복원
 
 ### 검색
-- 매장 이름/주소 검색 (300ms 디바운스)
-- 장르 필터와 AND 조합
+- 매장 이름/주소/시리즈 검색 (300ms 디바운스)
+- 장르·시리즈 필터와 AND 조합
 
 ### 매장 리스트
 - 지역별 그룹 헤더로 정리된 리스트 뷰
@@ -203,6 +206,7 @@ npm start
   "lat": 37.0000,
   "lng": 127.0000,
   "genre": ["anime", "figure", "goods"],
+  "series": ["원피스", "체인소맨"],
   "type": "franchise",
   "phone": "02-000-0000",
   "openingHours": "12:00 - 22:00",

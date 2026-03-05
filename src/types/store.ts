@@ -26,6 +26,7 @@ export interface Store {
   lastVerified?: string;
   naverPlaceId?: string;
   thumbnailUrls?: string[];
+  series?: string[];
 }
 
 export const genreLabels: Record<Genre, string> = {
