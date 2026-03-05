@@ -39,6 +39,14 @@ interface MapSectionProps {
   actionRef?: MutableRefObject<MapAction | null>;
   onMapClick?: () => void;
   className?: string;
+  favorites?: Set<string>;
+  onToggleFavorite?: (storeId: string) => void;
+}
+
+declare global {
+  interface Window {
+    __toggleFavorite?: (storeId: string) => void;
+  }
 }
 
 function createClusterIcons(): naver.maps.HtmlIcon[] {
@@ -103,6 +111,8 @@ export default function MapSection({
   actionRef,
   onMapClick,
   className,
+  favorites,
+  onToggleFavorite,
 }: MapSectionProps) {
   const mapLoaded = useNaverMapLoaded();
   const mapRef = useRef<HTMLDivElement>(null);
@@ -111,10 +121,15 @@ export default function MapSection({
   const clusterRef = useRef<MarkerClusteringInstance | null>(null);
   const infoWindowRef = useRef<naver.maps.InfoWindow | null>(null);
   const activeStoreIdRef = useRef<string | null>(null);
+  const activeMarkerRef = useRef<naver.maps.Marker | null>(null);
   const storesMapRef = useRef<Map<string, Store>>(new Map());
   const [mapError, setMapError] = useState(false);
   const onMapClickRef: RefObject<(() => void) | undefined> = useRef(onMapClick);
   onMapClickRef.current = onMapClick;
+  const favoritesRef = useRef(favorites);
+  favoritesRef.current = favorites;
+  const onToggleFavoriteRef = useRef(onToggleFavorite);
+  onToggleFavoriteRef.current = onToggleFavorite;
 
   // Keep storesMap in sync
   useEffect(() => {
@@ -139,9 +154,11 @@ export default function MapSection({
         });
       }
 
-      infoWindowRef.current.setContent(buildInfoWindowHTML(store));
+      const isFav = favoritesRef.current?.has(store.id) ?? false;
+      infoWindowRef.current.setContent(buildInfoWindowHTML(store, isFav));
       infoWindowRef.current.open(map, marker);
       activeStoreIdRef.current = store.id;
+      activeMarkerRef.current = marker;
     },
     []
   );
@@ -283,6 +300,29 @@ export default function MapSection({
       });
     }
   }, [mapLoaded, stores, handleMarkerClick]);
+
+  // Register global favorite toggle callback for info window buttons
+  useEffect(() => {
+    window.__toggleFavorite = (storeId: string) => {
+      onToggleFavoriteRef.current?.(storeId);
+    };
+    return () => {
+      delete window.__toggleFavorite;
+    };
+  }, []);
+
+  // Refresh open info window when favorites change
+  useEffect(() => {
+    const storeId = activeStoreIdRef.current;
+    const marker = activeMarkerRef.current;
+    const map = mapInstanceRef.current;
+    if (!storeId || !marker || !map || !infoWindowRef.current) return;
+    const store = storesMapRef.current.get(storeId);
+    if (!store) return;
+    const isFav = favorites?.has(storeId) ?? false;
+    infoWindowRef.current.setContent(buildInfoWindowHTML(store, isFav));
+    infoWindowRef.current.open(map, marker);
+  }, [favorites]);
 
   // Cleanup clustering on unmount
   useEffect(() => {

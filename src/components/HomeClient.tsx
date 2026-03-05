@@ -3,6 +3,7 @@
 import { useRef, useState, useCallback, useMemo, useEffect } from "react";
 import { useStoreFilter } from "@/hooks/useStoreFilter";
 import { useHashRouter } from "@/hooks/useHashRouter";
+import { useFavorites } from "@/hooks/useFavorites";
 import type { Store } from "@/types/store";
 import type { MapAction } from "@/components/map/MapSection";
 import Header from "@/components/Header";
@@ -20,6 +21,8 @@ interface HomeClientProps {
 }
 
 export default function HomeClient({ stores }: HomeClientProps) {
+  const { favorites, toggleFavorite, isFavorite } = useFavorites();
+
   const {
     activeGenres,
     activeSeries,
@@ -31,7 +34,9 @@ export default function HomeClient({ stores }: HomeClientProps) {
     toggleSeries,
     clearSeries,
     setSearchQuery,
-  } = useStoreFilter(stores);
+    favoritesOnly,
+    toggleFavoritesOnly,
+  } = useStoreFilter(stores, favorites);
 
   const { route, selectStore, clearRoute } = useHashRouter();
 
@@ -78,12 +83,16 @@ export default function HomeClient({ stores }: HomeClientProps) {
     [setSearchQuery]
   );
 
+  const hasFavorites = favorites.size > 0;
+
   // Side panel / bottom sheet content
   const panelContent = selectedStore ? (
     <StoreDetail
       store={selectedStore}
       onBack={handleBack}
       onReport={handleReport}
+      isFavorite={isFavorite(selectedStore.id)}
+      onToggleFavorite={toggleFavorite}
     />
   ) : (
     <>
@@ -97,12 +106,17 @@ export default function HomeClient({ stores }: HomeClientProps) {
           onToggleSeries={toggleSeries}
           onClearSeries={clearSeries}
           onSearch={handleSearch}
+          favoritesOnly={favoritesOnly}
+          onToggleFavoritesOnly={toggleFavoritesOnly}
+          hasFavorites={hasFavorites}
         />
       </div>
       <StoreListPanel
         groupedStores={groupedStores}
         totalCount={filteredStores.length}
         onStoreClick={handleStoreClick}
+        favorites={favorites}
+        onToggleFavorite={toggleFavorite}
       />
     </>
   );
@@ -132,6 +146,9 @@ export default function HomeClient({ stores }: HomeClientProps) {
                 onToggleSeries={toggleSeries}
                 onClearSeries={clearSeries}
                 onSearch={handleSearch}
+                favoritesOnly={favoritesOnly}
+                onToggleFavoritesOnly={toggleFavoritesOnly}
+                hasFavorites={hasFavorites}
                 compact
                 listButton={
                   <button
@@ -163,6 +180,8 @@ export default function HomeClient({ stores }: HomeClientProps) {
             actionRef={mapActionRef}
             onMapClick={handleBack}
             className="flex-1"
+            favorites={favorites}
+            onToggleFavorite={toggleFavorite}
           />
         </div>
 
@@ -182,12 +201,15 @@ export default function HomeClient({ stores }: HomeClientProps) {
                 setListOpen(false);
               }}
               onReport={handleReport}
+              isFavorite={isFavorite(selectedStore.id)}
+              onToggleFavorite={toggleFavorite}
             />
           ) : (
             <StoreListPanel
               groupedStores={groupedStores}
               totalCount={filteredStores.length}
               onStoreClick={handleStoreClick}
+              favorites={favorites}
             />
           )}
         </MobileBottomSheet>

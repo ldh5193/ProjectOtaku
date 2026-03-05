@@ -50,7 +50,8 @@ ProjectOtaku/
     │       ├── naver-import/route.ts   # POST: 네이버 지도 URL → 장소 데이터 추출
     │       └── url-import/route.ts     # POST: URL 임포트 매장 → stores-url.json 저장
     ├── hooks/
-    │   ├── useStoreFilter.ts           # 장르 + 시리즈 필터 + 검색 상태/로직
+    │   ├── useStoreFilter.ts           # 장르 + 시리즈 + 즐겨찾기 필터 + 검색 상태/로직
+    │   ├── useFavorites.ts            # localStorage 기반 즐겨찾기 관리 훅
     │   ├── useHashRouter.ts            # URL hash 기반 라우팅 (#store, #suggest, #import)
     │   └── useGeolocation.ts           # 브라우저 Geolocation API 래핑 훅
     ├── lib/
@@ -122,6 +123,12 @@ ProjectOtaku/
 - **정보 수정**: 매장 상세 뷰에서 "정보 수정 제보" → 모달 폼 → GitHub Issue 자동 생성
 - **매장 추가 제안**: 헤더의 "매장 추가" → 모달 폼 → GitHub Issue 자동 생성
 - **네이버 지도 URL 임포트**: 헤더의 "URL 추가" → 네이버맵 URL 붙여넣기 → 자동 정보 추출 → 제안
+
+### 즐겨찾기
+- 매장 상세에서 별 아이콘으로 즐겨찾기 토글
+- 즐겨찾기한 매장은 리스트에 별 표시
+- 필터 영역에서 즐겨찾기만 보기 토글 (즐겨찾기가 있을 때만 노출)
+- localStorage 기반으로 비로그인 상태에서도 유지
 
 ### PWA (모바일 지원)
 - 모바일 "홈 화면에 추가" 지원

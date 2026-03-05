@@ -12,9 +12,11 @@ interface StoreDetailProps {
   store: Store;
   onBack: () => void;
   onReport: (store: Store) => void;
+  isFavorite?: boolean;
+  onToggleFavorite?: (storeId: string) => void;
 }
 
-export default function StoreDetail({ store, onBack, onReport }: StoreDetailProps) {
+export default function StoreDetail({ store, onBack, onReport, isFavorite, onToggleFavorite }: StoreDetailProps) {
   const naverMapUrl = buildNaverMapUrl(store);
   const [imgError, setImgError] = useState(false);
   const hasThumbnail = store.thumbnailUrls && store.thumbnailUrls.length > 0 && !imgError;
@@ -25,7 +27,7 @@ export default function StoreDetail({ store, onBack, onReport }: StoreDetailProp
 
   return (
     <div className="flex-1 overflow-y-auto">
-      <div className="sticky top-0 bg-white border-b border-gray-200 px-4 py-3 z-10">
+      <div className="sticky top-0 bg-white border-b border-gray-200 px-4 py-3 z-10 flex items-center justify-between">
         <button
           onClick={onBack}
           className="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900"
@@ -35,6 +37,22 @@ export default function StoreDetail({ store, onBack, onReport }: StoreDetailProp
           </svg>
           목록으로
         </button>
+        {onToggleFavorite && (
+          <button
+            onClick={() => onToggleFavorite(store.id)}
+            className="p-1.5 rounded-full hover:bg-gray-100 transition-colors"
+            aria-label={isFavorite ? "즐겨찾기 해제" : "즐겨찾기 추가"}
+          >
+            <svg
+              className={`w-5 h-5 ${isFavorite ? "text-yellow-400 fill-yellow-400" : "text-gray-400"}`}
+              fill={isFavorite ? "currentColor" : "none"}
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+            </svg>
+          </button>
+        )}
       </div>
 
       {hasThumbnail ? (

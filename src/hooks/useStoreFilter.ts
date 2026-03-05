@@ -4,10 +4,11 @@ import { useState, useMemo, useCallback } from "react";
 import type { Store, Genre } from "@/types/store";
 import { getStoreArea, areaLabels } from "@/types/store";
 
-export function useStoreFilter(allStores: Store[]) {
+export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
   const [activeGenres, setActiveGenres] = useState<Set<Genre>>(new Set());
   const [activeSeries, setActiveSeries] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState("");
+  const [favoritesOnly, setFavoritesOnly] = useState(false);
 
   const toggleGenre = useCallback((genre: Genre) => {
     setActiveGenres((prev) => {
@@ -56,10 +57,19 @@ export function useStoreFilter(allStores: Store[]) {
       .map(([name]) => name);
   }, [allStores]);
 
+  const toggleFavoritesOnly = useCallback(() => {
+    setFavoritesOnly((prev) => !prev);
+  }, []);
+
   const filteredStores = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
 
     return allStores.filter((store) => {
+      // Favorites filter
+      if (favoritesOnly && favorites && !favorites.has(store.id)) {
+        return false;
+      }
+
       // Genre filter: if any genres selected, store must match at least one (OR)
       if (activeGenres.size > 0) {
         const hasMatch = store.genre.some((g) => activeGenres.has(g));
@@ -84,7 +94,7 @@ export function useStoreFilter(allStores: Store[]) {
 
       return true;
     });
-  }, [allStores, activeGenres, activeSeries, searchQuery]);
+  }, [allStores, activeGenres, activeSeries, searchQuery, favoritesOnly, favorites]);
 
   const groupedStores = useMemo(() => {
     const groups = new Map<string, Store[]>();
@@ -120,5 +130,7 @@ export function useStoreFilter(allStores: Store[]) {
     toggleSeries,
     clearSeries,
     setSearchQuery,
+    favoritesOnly,
+    toggleFavoritesOnly,
   };
 }
