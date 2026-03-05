@@ -19,6 +19,7 @@ export default function NaverMapProvider({
 }: {
   children: ReactNode;
 }) {
+  const [sdkLoaded, setSdkLoaded] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const clientId = process.env.NEXT_PUBLIC_NAVER_MAP_CLIENT_ID;
 
@@ -29,7 +30,7 @@ export default function NaverMapProvider({
         strategy="afterInteractive"
         onLoad={() => {
           if (typeof naver !== "undefined" && naver.maps) {
-            setLoaded(true);
+            setSdkLoaded(true);
           } else {
             console.error("네이버맵 SDK 로드 실패: naver.maps 객체 없음");
           }
@@ -38,6 +39,18 @@ export default function NaverMapProvider({
           console.error("네이버맵 SDK 스크립트 로드 실패");
         }}
       />
+      {sdkLoaded && (
+        <Script
+          src="/lib/MarkerClustering.js"
+          strategy="afterInteractive"
+          onLoad={() => setLoaded(true)}
+          onError={() => {
+            console.error("MarkerClustering 스크립트 로드 실패");
+            // Fallback: still mark as loaded so map works without clustering
+            setLoaded(true);
+          }}
+        />
+      )}
       {children}
     </NaverMapContext.Provider>
   );

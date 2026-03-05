@@ -26,17 +26,24 @@ declare namespace naver.maps {
     constructor(options: MarkerOptions);
     setMap(map: Map | null): void;
     getPosition(): LatLng;
+    getElement(): HTMLElement;
   }
 
   interface MarkerOptions {
     position: LatLng;
-    map?: Map;
+    map?: Map | null;
     title?: string;
-    icon?: string | ImageIcon;
+    icon?: string | ImageIcon | HtmlIcon;
   }
 
   interface ImageIcon {
     url: string;
+    size: Size;
+    anchor: Point;
+  }
+
+  interface HtmlIcon {
+    content: string;
     size: Size;
     anchor: Point;
   }

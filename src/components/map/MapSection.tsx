@@ -5,6 +5,31 @@ import { useNaverMapLoaded } from "@/components/NaverMapProvider";
 import { buildInfoWindowHTML } from "./InfoWindowContent";
 import type { Store } from "@/types/store";
 
+declare global {
+  // eslint-disable-next-line no-var
+  var MarkerClustering: new (options: MarkerClusteringOptions) => MarkerClusteringInstance;
+}
+
+interface MarkerClusteringOptions {
+  map: naver.maps.Map;
+  markers: naver.maps.Marker[];
+  disableClickZoom: boolean;
+  minClusterSize: number;
+  maxZoom: number;
+  gridSize: number;
+  icons: naver.maps.HtmlIcon[];
+  indexGenerator: number[];
+  stylingFunction: (clusterMarker: naver.maps.Marker, count: number) => void;
+}
+
+interface MarkerClusteringInstance {
+  setMap: (map: naver.maps.Map | null) => void;
+  getMap: () => naver.maps.Map | null;
+  setMarkers: (markers: naver.maps.Marker[]) => void;
+  getMarkers: () => naver.maps.Marker[];
+  _redraw: () => void;
+}
+
 export interface MapAction {
   panToStore: (store: Store) => void;
 }
@@ -14,6 +39,63 @@ interface MapSectionProps {
   actionRef?: MutableRefObject<MapAction | null>;
   onMapClick?: () => void;
   className?: string;
+}
+
+function createClusterIcons(): naver.maps.HtmlIcon[] {
+  return [
+    // Small cluster (2-9)
+    {
+      content: `<div style="
+        display:flex;align-items:center;justify-content:center;
+        width:36px;height:36px;border-radius:50%;
+        background:rgba(59,130,246,0.85);color:#fff;
+        font-size:13px;font-weight:700;
+        border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);
+        cursor:pointer;
+      "><span></span></div>`,
+      size: new naver.maps.Size(36, 36),
+      anchor: new naver.maps.Point(18, 18),
+    },
+    // Medium cluster (10-49)
+    {
+      content: `<div style="
+        display:flex;align-items:center;justify-content:center;
+        width:44px;height:44px;border-radius:50%;
+        background:rgba(245,158,11,0.85);color:#fff;
+        font-size:14px;font-weight:700;
+        border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);
+        cursor:pointer;
+      "><span></span></div>`,
+      size: new naver.maps.Size(44, 44),
+      anchor: new naver.maps.Point(22, 22),
+    },
+    // Large cluster (50-99)
+    {
+      content: `<div style="
+        display:flex;align-items:center;justify-content:center;
+        width:52px;height:52px;border-radius:50%;
+        background:rgba(239,68,68,0.85);color:#fff;
+        font-size:15px;font-weight:700;
+        border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);
+        cursor:pointer;
+      "><span></span></div>`,
+      size: new naver.maps.Size(52, 52),
+      anchor: new naver.maps.Point(26, 26),
+    },
+    // Very large cluster (100+)
+    {
+      content: `<div style="
+        display:flex;align-items:center;justify-content:center;
+        width:60px;height:60px;border-radius:50%;
+        background:rgba(139,92,246,0.85);color:#fff;
+        font-size:16px;font-weight:700;
+        border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);
+        cursor:pointer;
+      "><span></span></div>`,
+      size: new naver.maps.Size(60, 60),
+      anchor: new naver.maps.Point(30, 30),
+    },
+  ];
 }
 
 export default function MapSection({
@@ -26,6 +108,7 @@ export default function MapSection({
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<naver.maps.Map | null>(null);
   const markerMapRef = useRef<Map<string, naver.maps.Marker>>(new Map());
+  const clusterRef = useRef<MarkerClusteringInstance | null>(null);
   const infoWindowRef = useRef<naver.maps.InfoWindow | null>(null);
   const activeStoreIdRef = useRef<string | null>(null);
   const storesMapRef = useRef<Map<string, Store>>(new Map());
@@ -81,12 +164,21 @@ export default function MapSection({
     actionRef.current = {
       panToStore: (store: Store) => {
         const map = mapInstanceRef.current;
-        const marker = markerMapRef.current.get(store.id);
-        if (!map || !marker) return;
+        if (!map) return;
 
         map.setCenter(new naver.maps.LatLng(store.lat, store.lng));
         map.setZoom(15);
-        openInfoWindow(store, marker);
+
+        // At zoom 15, markers should be unclustered (maxZoom=13).
+        // Wait for idle event to ensure markers are rendered, then open info window.
+        const waitForMarker = () => {
+          const marker = markerMapRef.current.get(store.id);
+          if (marker) {
+            openInfoWindow(store, marker);
+          }
+        };
+        // Small delay to allow clustering redraw after zoom change
+        setTimeout(waitForMarker, 100);
       },
     };
   }, [actionRef, openInfoWindow]);
@@ -118,18 +210,20 @@ export default function MapSection({
     }
   }, [mapLoaded, mapError]);
 
-  // Diff-based marker management
+  // Marker + Clustering management
   useEffect(() => {
     if (!mapInstanceRef.current || !mapLoaded) return;
 
     const map = mapInstanceRef.current;
     const currentIds = new Set(stores.map((s) => s.id));
     const existingIds = new Set(markerMapRef.current.keys());
+    const hasClusteringSupport = typeof globalThis.MarkerClustering !== "undefined";
 
     // Remove markers that are no longer in the store list
     for (const id of existingIds) {
       if (!currentIds.has(id)) {
-        markerMapRef.current.get(id)!.setMap(null);
+        const marker = markerMapRef.current.get(id)!;
+        marker.setMap(null);
         markerMapRef.current.delete(id);
       }
     }
@@ -143,13 +237,13 @@ export default function MapSection({
       activeStoreIdRef.current = null;
     }
 
-    // Add markers for new stores
+    // Add markers for new stores (without map — clustering will manage visibility)
     for (const store of stores) {
       if (existingIds.has(store.id)) continue;
 
       const marker = new naver.maps.Marker({
         position: new naver.maps.LatLng(store.lat, store.lng),
-        map,
+        map: hasClusteringSupport ? null : map,
         title: store.name,
       });
 
@@ -162,7 +256,42 @@ export default function MapSection({
 
       markerMapRef.current.set(store.id, marker);
     }
+
+    // Update clustering
+    if (hasClusteringSupport) {
+      const allMarkers = Array.from(markerMapRef.current.values());
+
+      if (clusterRef.current) {
+        // Remove old clustering
+        clusterRef.current.setMap(null);
+      }
+
+      clusterRef.current = new globalThis.MarkerClustering({
+        map,
+        markers: allMarkers,
+        disableClickZoom: false,
+        minClusterSize: 2,
+        maxZoom: 13,
+        gridSize: 120,
+        icons: createClusterIcons(),
+        indexGenerator: [10, 50, 100],
+        stylingFunction: (clusterMarker: naver.maps.Marker, count: number) => {
+          const el = clusterMarker.getElement();
+          const span = el?.querySelector("span");
+          if (span) span.textContent = String(count);
+        },
+      });
+    }
   }, [mapLoaded, stores, handleMarkerClick]);
+
+  // Cleanup clustering on unmount
+  useEffect(() => {
+    return () => {
+      if (clusterRef.current) {
+        clusterRef.current.setMap(null);
+      }
+    };
+  }, []);
 
   if (!mapLoaded || mapError) {
     return (

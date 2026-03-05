@@ -33,6 +33,8 @@ ProjectOtaku/
 ├── public/
 │   ├── manifest.json                   # PWA 매니페스트
 │   ├── icons/                          # PWA 아이콘 (192, 512)
+│   ├── lib/
+│   │   └── MarkerClustering.js         # 네이버맵 마커 클러스터링 유틸 (Apache 2.0)
 │   └── data/
 │       ├── stores-manual.json          # 수동 관리 매장 데이터
 │       ├── stores-naver.json           # 네이버 공유 폴더 동기화 매장 데이터
@@ -78,7 +80,7 @@ ProjectOtaku/
     │   │   ├── MobileBottomSheet.tsx   # 모바일 슬라이드업 하단 시트 (55vh)
     │   │   └── DesktopSidePanel.tsx    # 데스크톱 사이드 패널 (md+, 360px)
     │   └── map/
-    │       ├── MapSection.tsx          # "use client" - 지도 렌더링, diff 기반 마커 관리
+    │       ├── MapSection.tsx          # "use client" - 지도 렌더링, 마커 클러스터링
     │       └── InfoWindowContent.tsx   # 정보창 HTML (신선도 표시, 상세 보기 링크)
     └── types/
         ├── store.ts                    # Store, Genre, StoreType, Area 타입
@@ -89,6 +91,8 @@ ProjectOtaku/
 
 ### 지도 기반 매장 탐색
 - 네이버맵에 매장 마커 표시 및 정보창
+- **마커 클러스터링**: 줌 레벨에 따라 인근 마커를 그룹화 (파랑→주황→빨강→보라 색상 단계)
+- 클러스터 클릭 시 자동 줌인, 줌 레벨 14 이상에서 개별 마커 노출
 - 마커 클릭 시 간략 정보 → "자세히 보기"로 상세 패널 전환
 - 상세 패널에서 미니맵, 영업시간, 전화번호, 네이버 지도 링크 제공
 
