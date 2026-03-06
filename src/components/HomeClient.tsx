@@ -16,11 +16,14 @@ import MobileBottomSheet from "@/components/layout/MobileBottomSheet";
 import ReportModal from "@/components/report/ReportModal";
 import ImportModal from "@/components/import/ImportModal";
 
+import type { Review } from "@/types/store";
+
 interface HomeClientProps {
   stores: Store[];
+  reviews?: Review[];
 }
 
-export default function HomeClient({ stores }: HomeClientProps) {
+export default function HomeClient({ stores, reviews = [] }: HomeClientProps) {
   const { favorites, toggleFavorite, isFavorite } = useFavorites();
 
   const {
@@ -106,6 +109,7 @@ export default function HomeClient({ stores }: HomeClientProps) {
       isFavorite={isFavorite(selectedStore.id)}
       onToggleFavorite={toggleFavorite}
       onFocusMap={handleFocusMap}
+      reviews={reviews}
     />
   ) : (
     <>
@@ -229,6 +233,7 @@ export default function HomeClient({ stores }: HomeClientProps) {
               isFavorite={isFavorite(selectedStore.id)}
               onToggleFavorite={toggleFavorite}
               onFocusMap={handleFocusMap}
+              reviews={reviews}
             />
           ) : (
             <StoreListPanel

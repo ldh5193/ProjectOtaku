@@ -24,6 +24,8 @@ ProjectOtaku/
 ├── scripts/
 │   ├── import-naver-folder.ts          # 네이버 공유 폴더 → stores-naver.json 동기화
 │   ├── fetch-hours.ts                 # 네이버 지도에서 영업시간 일괄 수집
+│   ├── fetch-reviews.ts               # GitHub Issues에서 승인된 리뷰 수집
+│   ├── tag-product-types.js           # 매장 상품 유형 일괄 태깅 스크립트
 │   └── scraper/
 │       ├── run.ts                      # 스크래퍼 메인 엔트리포인트
 │       ├── kakao-client.ts             # Kakao Local API 클라이언트
@@ -40,6 +42,7 @@ ProjectOtaku/
 │       ├── stores-manual.json          # 수동 관리 매장 데이터
 │       ├── stores-naver.json           # 네이버 공유 폴더 동기화 매장 데이터
 │       ├── stores-url.json             # URL 임포트로 추가된 매장 데이터
+│       ├── reviews.json                # 승인된 한줄 리뷰 데이터
 │       └── scraped-candidates.json     # 스크래퍼 발견 후보 (자동 생성)
 └── src/
     ├── app/
@@ -77,6 +80,7 @@ ProjectOtaku/
     │   ├── detail/
     │   │   ├── StoreDetail.tsx         # 매장 상세 패널 (미니맵, 전체정보, 네이버맵 링크, 길찾기)
     │   │   ├── FreshnessBadge.tsx      # 신선도 뱃지 (녹/황/적 dot + 날짜)
+    │   │   ├── ReviewSection.tsx       # 한줄 리뷰 표시 + 작성 폼
     │   │   └── MiniMap.tsx             # 상세 뷰 미니 네이버맵
     │   ├── report/
     │   │   └── ReportModal.tsx         # 사이트 내 제보/제안 모달 폼
@@ -149,6 +153,12 @@ ProjectOtaku/
 - 즐겨찾기한 매장은 지도에서 별 핀 마커로 구분 표시
 - 필터 영역에서 즐겨찾기만 보기 토글 (즐겨찾기가 있을 때만 노출)
 - localStorage 기반으로 비로그인 상태에서도 유지
+
+### 한줄 리뷰/팁
+- 매장 상세 뷰에서 한줄 리뷰 작성 (200자 제한, 닉네임 선택)
+- 리뷰 제출 → GitHub Issue 자동 생성 (`store-review` 라벨)
+- 관리자가 `approved` 라벨 추가 후 `npm run fetch:reviews`로 수집
+- 수집된 리뷰는 `public/data/reviews.json`에 저장, 매장 상세에 표시
 
 ### PWA (모바일 지원)
 - 모바일 "홈 화면에 추가" 지원

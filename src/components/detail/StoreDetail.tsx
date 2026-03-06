@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import type { Store } from "@/types/store";
+import type { Store, Review } from "@/types/store";
 import { genreLabels, productTypeLabels } from "@/types/store";
+import ReviewSection from "./ReviewSection";
 import { buildNaverMapUrl, buildDirectionsAppUrl, buildDirectionsWebUrl } from "@/lib/report-urls";
 import { sanitizeUrl } from "@/lib/sanitize";
 import FreshnessBadge from "./FreshnessBadge";
@@ -17,9 +18,10 @@ interface StoreDetailProps {
   isFavorite?: boolean;
   onToggleFavorite?: (storeId: string) => void;
   onFocusMap?: (store: Store) => void;
+  reviews?: Review[];
 }
 
-export default function StoreDetail({ store, onBack, onReport, isFavorite, onToggleFavorite, onFocusMap }: StoreDetailProps) {
+export default function StoreDetail({ store, onBack, onReport, isFavorite, onToggleFavorite, onFocusMap, reviews = [] }: StoreDetailProps) {
   const naverMapUrl = buildNaverMapUrl(store);
   const [imgError, setImgError] = useState(false);
   const hasThumbnail = store.thumbnailUrls && store.thumbnailUrls.length > 0 && !imgError;
@@ -194,6 +196,10 @@ export default function StoreDetail({ store, onBack, onReport, isFavorite, onTog
 
         <div className="pt-2 border-t border-gray-100">
           <FreshnessBadge lastVerified={store.lastVerified} />
+        </div>
+
+        <div className="pt-2 border-t border-gray-100">
+          <ReviewSection storeId={store.id} storeName={store.name} reviews={reviews} />
         </div>
 
         <div className="space-y-2 pt-2">

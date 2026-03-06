@@ -5,7 +5,7 @@ import { createRateLimiter } from "@/lib/rate-limit";
 const checkRateLimit = createRateLimiter(5, 60_000);
 
 interface ReportBody {
-  type: "report" | "suggestion";
+  type: "report" | "suggestion" | "review";
   storeId?: string;
   storeName?: string;
   reportType?: string;
@@ -14,6 +14,7 @@ interface ReportBody {
   suggestedAddress?: string;
   naverMapUrl?: string;
   genres?: string[];
+  nickname?: string;
 }
 
 export async function POST(request: NextRequest) {
@@ -41,7 +42,35 @@ export async function POST(request: NextRequest) {
     let issueBody: string;
     let labels: string[];
 
-    if (body.type === "report") {
+    if (body.type === "review") {
+      if (!body.storeId || !body.storeName || !body.details) {
+        return NextResponse.json(
+          { error: "storeId, storeName, and details are required for reviews" },
+          { status: 400 }
+        );
+      }
+      if (body.details.length > 200) {
+        return NextResponse.json(
+          { error: "리뷰는 200자 이내로 작성해주세요." },
+          { status: 400 }
+        );
+      }
+      const nick = body.nickname?.trim().slice(0, 20) || "익명";
+      title = `[리뷰] ${body.storeName}`;
+      issueBody = [
+        `## 매장 리뷰`,
+        `- **매장 ID**: ${body.storeId}`,
+        `- **매장명**: ${body.storeName}`,
+        `- **닉네임**: ${nick}`,
+        ``,
+        `## 리뷰 내용`,
+        body.details,
+        ``,
+        `---`,
+        `_이 이슈는 오덕로드 앱 내 리뷰 기능으로 자동 생성되었습니다._`,
+      ].join("\n");
+      labels = ["store-review"];
+    } else if (body.type === "report") {
       if (!body.storeId || !body.storeName) {
         return NextResponse.json(
           { error: "storeId and storeName are required for reports" },

@@ -156,6 +156,14 @@ export const areaLabels: Record<Area, string> = {
   etc: "기타",
 };
 
+export interface Review {
+  storeId: string;
+  nickname: string;
+  content: string;
+  date: string; // "2026-03-06"
+  issueNumber: number;
+}
+
 export function getStoreArea(store: Store): Area {
   const prefix = store.id.split("-")[0];
   if (prefix in areaLabels) return prefix as Area;
