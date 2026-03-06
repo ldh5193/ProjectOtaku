@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
-import type { Store, Genre } from "@/types/store";
+import type { Store, Genre, ProductType } from "@/types/store";
 import { getStoreArea, areaLabels } from "@/types/store";
 import { getBusinessStatus } from "@/lib/opening-hours";
 import { getPopupStatus } from "@/lib/popup-status";
@@ -9,6 +9,7 @@ import { getPopupStatus } from "@/lib/popup-status";
 export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
   const [activeGenres, setActiveGenres] = useState<Set<Genre>>(new Set());
   const [activeSeries, setActiveSeries] = useState<Set<string>>(new Set());
+  const [activeProductTypes, setActiveProductTypes] = useState<Set<ProductType>>(new Set());
   const [searchQuery, setSearchQuery] = useState("");
   const [favoritesOnly, setFavoritesOnly] = useState(false);
   const [openNowOnly, setOpenNowOnly] = useState(false);
@@ -45,6 +46,34 @@ export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
   const clearSeries = useCallback(() => {
     setActiveSeries(new Set());
   }, []);
+
+  const toggleProductType = useCallback((pt: ProductType) => {
+    setActiveProductTypes((prev) => {
+      const next = new Set(prev);
+      if (next.has(pt)) next.delete(pt);
+      else next.add(pt);
+      return next;
+    });
+  }, []);
+
+  const clearProductTypes = useCallback(() => {
+    setActiveProductTypes(new Set());
+  }, []);
+
+  // Derive all unique product types present in data
+  const allProductTypes = useMemo(() => {
+    const freq = new Map<ProductType, number>();
+    for (const store of allStores) {
+      if (store.productTypes) {
+        for (const pt of store.productTypes) {
+          freq.set(pt, (freq.get(pt) ?? 0) + 1);
+        }
+      }
+    }
+    return Array.from(freq.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([name]) => name);
+  }, [allStores]);
 
   // Derive all unique series sorted by frequency
   const allSeries = useMemo(() => {
@@ -105,6 +134,12 @@ export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
         if (!hasMatch) return false;
       }
 
+      // Product type filter: if any selected, store must match at least one (OR)
+      if (activeProductTypes.size > 0) {
+        const hasMatch = store.productTypes?.some((pt) => activeProductTypes.has(pt));
+        if (!hasMatch) return false;
+      }
+
       // Search filter: query must match name, address, or series
       if (query) {
         const inName = store.name.toLowerCase().includes(query);
@@ -117,7 +152,7 @@ export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
 
       return true;
     });
-  }, [allStores, activeGenres, activeSeries, searchQuery, favoritesOnly, favorites, openNowOnly, showEndedPopups]);
+  }, [allStores, activeGenres, activeSeries, activeProductTypes, searchQuery, favoritesOnly, favorites, openNowOnly, showEndedPopups]);
 
   const groupedStores = useMemo(() => {
     const groups = new Map<string, Store[]>();
@@ -145,6 +180,8 @@ export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
     activeGenres,
     activeSeries,
     allSeries,
+    activeProductTypes,
+    allProductTypes,
     searchQuery,
     filteredStores,
     groupedStores,
@@ -152,6 +189,8 @@ export function useStoreFilter(allStores: Store[], favorites?: Set<string>) {
     clearGenres,
     toggleSeries,
     clearSeries,
+    toggleProductType,
+    clearProductTypes,
     setSearchQuery,
     favoritesOnly,
     toggleFavoritesOnly,

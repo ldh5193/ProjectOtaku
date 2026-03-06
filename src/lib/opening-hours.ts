@@ -63,7 +63,7 @@ function getStatusFromString(text: string): BusinessStatus {
         startIdx <= endIdx
           ? dayIndex >= startIdx && dayIndex <= endIdx
           : dayIndex >= startIdx || dayIndex <= endIdx;
-      if (text.includes("휴무") && !inRange) return "closed";
+      if (text.includes("휴무") && inRange) return "closed";
     }
   }
 

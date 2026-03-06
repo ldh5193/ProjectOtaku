@@ -27,12 +27,16 @@ export default function HomeClient({ stores }: HomeClientProps) {
     activeGenres,
     activeSeries,
     allSeries,
+    activeProductTypes,
+    allProductTypes,
     filteredStores,
     groupedStores,
     toggleGenre,
     clearGenres,
     toggleSeries,
     clearSeries,
+    toggleProductType,
+    clearProductTypes,
     setSearchQuery,
     favoritesOnly,
     toggleFavoritesOnly,
@@ -114,6 +118,10 @@ export default function HomeClient({ stores }: HomeClientProps) {
           allSeries={allSeries}
           onToggleSeries={toggleSeries}
           onClearSeries={clearSeries}
+          activeProductTypes={activeProductTypes}
+          allProductTypes={allProductTypes}
+          onToggleProductType={toggleProductType}
+          onClearProductTypes={clearProductTypes}
           onSearch={handleSearch}
           favoritesOnly={favoritesOnly}
           onToggleFavoritesOnly={toggleFavoritesOnly}
@@ -228,6 +236,7 @@ export default function HomeClient({ stores }: HomeClientProps) {
               totalCount={filteredStores.length}
               onStoreClick={handleStoreClick}
               favorites={favorites}
+              onToggleFavorite={toggleFavorite}
             />
           )}
         </MobileBottomSheet>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { Store } from "@/types/store";
-import { genreLabels } from "@/types/store";
+import { genreLabels, productTypeLabels } from "@/types/store";
 import { buildNaverMapUrl, buildDirectionsAppUrl, buildDirectionsWebUrl } from "@/lib/report-urls";
 import { sanitizeUrl } from "@/lib/sanitize";
 import FreshnessBadge from "./FreshnessBadge";
@@ -136,6 +136,14 @@ export default function StoreDetail({ store, onBack, onReport, isFavorite, onTog
               className="px-2.5 py-1 text-xs rounded-full bg-pink-50 text-pink-600 font-medium"
             >
               {s}
+            </span>
+          ))}
+          {store.productTypes?.map((pt) => (
+            <span
+              key={pt}
+              className="px-2.5 py-1 text-xs rounded-full bg-teal-50 text-teal-600 font-medium"
+            >
+              {productTypeLabels[pt]}
             </span>
           ))}
         </div>

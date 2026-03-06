@@ -1,5 +1,5 @@
 import type { Store } from "@/types/store";
-import { genreLabels } from "@/types/store";
+import { genreLabels, productTypeLabels } from "@/types/store";
 import { buildNaverMapUrl, buildDirectionsWebUrl } from "@/lib/report-urls";
 import { getFreshness, freshnessConfig, formatVerifiedDate } from "@/lib/freshness";
 import { getBusinessStatus } from "@/lib/opening-hours";
@@ -22,7 +22,15 @@ export function buildInfoWindowHTML(store: Store, isFavorite = false): string {
     )
     .join("");
 
-  const tags = genreTags + seriesTags;
+  const productTags = (store.productTypes ?? [])
+    .slice(0, 2)
+    .map(
+      (pt) =>
+        `<span style="display:inline-block;padding:2px 8px;margin:2px;border-radius:9999px;background:#f0fdfa;color:#0d9488;font-size:12px;">${escapeHtml(productTypeLabels[pt])}</span>`
+    )
+    .join("");
+
+  const tags = genreTags + seriesTags + productTags;
 
   const naverMapUrl = buildNaverMapUrl(store);
   const directionsUrl = buildDirectionsWebUrl(store);
@@ -35,9 +43,14 @@ export function buildInfoWindowHTML(store: Store, isFavorite = false): string {
   const popup = getPopupStatus(store);
   const popupBadge = popup !== "none"
     ? (() => {
-        const colors = { upcoming: "#1d4ed8;background:#eff6ff", active: "#15803d;background:#f0fdf4", ended: "#6b7280;background:#f3f4f6" };
+        const colors: Record<string, { color: string; bg: string }> = {
+          upcoming: { color: "#1d4ed8", bg: "#eff6ff" },
+          active: { color: "#15803d", bg: "#f0fdf4" },
+          ended: { color: "#6b7280", bg: "#f3f4f6" },
+        };
         const cfg = popupStatusConfig[popup];
-        return `<span style="margin-left:6px;padding:1px 6px;border-radius:4px;color:${colors[popup].split(";")[0]};${colors[popup].split(";")[1]};font-size:11px;font-weight:500;">${cfg.label}</span>`;
+        const c = colors[popup];
+        return `<span style="margin-left:6px;padding:1px 6px;border-radius:4px;color:${c.color};background:${c.bg};font-size:11px;font-weight:500;">${cfg.label}</span>`;
       })()
     : "";
   const popupPeriod = store.type === "popup" && formatPopupPeriod(store)

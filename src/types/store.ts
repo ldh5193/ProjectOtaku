@@ -10,6 +10,47 @@ export type Genre =
 
 export type StoreType = "franchise" | "independent" | "popup";
 
+export type ProductType =
+  | "acrylstand"
+  | "blindbox"
+  | "figure-nendoroid"
+  | "figure-scale"
+  | "plush"
+  | "apparel"
+  | "photocard"
+  | "keychain"
+  | "stationery"
+  | "itabag"
+  | "poster";
+
+export const productTypeLabels: Record<ProductType, string> = {
+  acrylstand: "아크스탠드",
+  blindbox: "랜덤박스",
+  "figure-nendoroid": "넨도로이드",
+  "figure-scale": "스케일피규어",
+  plush: "봉제인형",
+  apparel: "의류",
+  photocard: "포토카드",
+  keychain: "키링",
+  stationery: "문구",
+  itabag: "이타백",
+  poster: "포스터",
+};
+
+export const ALL_PRODUCT_TYPES: ProductType[] = [
+  "acrylstand",
+  "blindbox",
+  "figure-nendoroid",
+  "figure-scale",
+  "plush",
+  "apparel",
+  "photocard",
+  "keychain",
+  "stationery",
+  "itabag",
+  "poster",
+];
+
 export interface DayHours {
   day: string;       // "월","화","수","목","금","토","일"
   open: string;      // "13:00"
@@ -35,6 +76,7 @@ export interface Store {
   naverPlaceId?: string;
   thumbnailUrls?: string[];
   series?: string[];
+  productTypes?: ProductType[];
   popupStartDate?: string;  // "2026-03-01" (type: "popup" only)
   popupEndDate?: string;    // "2026-03-31"
 }

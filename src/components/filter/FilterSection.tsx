@@ -1,10 +1,11 @@
 "use client";
 
 import type { ReactNode } from "react";
-import type { Genre } from "@/types/store";
+import type { Genre, ProductType } from "@/types/store";
 import SearchBar from "./SearchBar";
 import GenreFilterBar from "./GenreFilterBar";
 import SeriesFilterBar from "./SeriesFilterBar";
+import ProductTypeFilterBar from "./ProductTypeFilterBar";
 
 interface FilterSectionProps {
   activeGenres: Set<Genre>;
@@ -14,6 +15,10 @@ interface FilterSectionProps {
   allSeries: string[];
   onToggleSeries: (series: string) => void;
   onClearSeries: () => void;
+  activeProductTypes?: Set<ProductType>;
+  allProductTypes?: ProductType[];
+  onToggleProductType?: (pt: ProductType) => void;
+  onClearProductTypes?: () => void;
   onSearch: (query: string) => void;
   favoritesOnly?: boolean;
   onToggleFavoritesOnly?: () => void;
@@ -34,6 +39,10 @@ export default function FilterSection({
   allSeries,
   onToggleSeries,
   onClearSeries,
+  activeProductTypes,
+  allProductTypes,
+  onToggleProductType,
+  onClearProductTypes,
   onSearch,
   favoritesOnly = false,
   onToggleFavoritesOnly,
@@ -108,6 +117,14 @@ export default function FilterSection({
           activeSeries={activeSeries}
           onToggle={onToggleSeries}
           onClear={onClearSeries}
+        />
+      )}
+      {!compact && allProductTypes && allProductTypes.length > 0 && onToggleProductType && (
+        <ProductTypeFilterBar
+          allProductTypes={allProductTypes}
+          activeProductTypes={activeProductTypes ?? new Set()}
+          onToggle={onToggleProductType}
+          onClear={onClearProductTypes ?? (() => {})}
         />
       )}
     </div>

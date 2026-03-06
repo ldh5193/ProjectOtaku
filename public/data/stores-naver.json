@@ -59,7 +59,10 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "평일 13:00-21:00, 주말 12:00-21:00"
+    "openingHours": "평일 13:00-21:00, 주말 12:00-21:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "gyeonggi-001",
@@ -84,6 +87,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -109,6 +115,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -134,6 +143,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -160,6 +172,9 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -228,6 +243,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -248,6 +266,11 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "acrylstand",
+      "keychain"
     ]
   },
   {
@@ -341,6 +364,13 @@
       "치이카와",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -404,7 +434,10 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "평일 13:00-21:00, 주말 12:00-21:00"
+    "openingHours": "평일 13:00-21:00, 주말 12:00-21:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "gwangjin-002",
@@ -428,6 +461,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -493,7 +529,12 @@
         "close": "20:30"
       }
     ],
-    "openingHours": "평일 10:30-19:30, 주말 10:30-20:30"
+    "openingHours": "평일 10:30-19:30, 주말 10:30-20:30",
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "blindbox"
+    ]
   },
   {
     "id": "jeju-002",
@@ -517,6 +558,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -542,6 +586,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -604,7 +651,12 @@
         "close": "20:00"
       }
     ],
-    "openingHours": "11:00 - 20:00"
+    "openingHours": "11:00 - 20:00",
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "poster"
+    ]
   },
   {
     "id": "gyeonggi-011",
@@ -766,7 +818,10 @@
         "close": "23:00"
       }
     ],
-    "openingHours": "월 11:00-23:00, 화 11:00-23:00, 수 11:00-23:00, 목 11:00-23:00, 금 11:00-24:00, 토 11:00-24:00, 일 11:00-23:00"
+    "openingHours": "월 11:00-23:00, 화 11:00-23:00, 수 11:00-23:00, 목 11:00-23:00, 금 11:00-24:00, 토 11:00-24:00, 일 11:00-23:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "seouletc-002",
@@ -959,6 +1014,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -979,6 +1037,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -1037,7 +1098,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "평일 13:00-21:00, 주말 12:00-22:00"
+    "openingHours": "평일 13:00-21:00, 주말 12:00-22:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "etc-002",
@@ -1099,7 +1163,14 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "평일 12:30-21:00, 주말 11:00-21:00"
+    "openingHours": "평일 12:30-21:00, 주말 11:00-21:00",
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "acrylstand",
+      "keychain",
+      "blindbox"
+    ]
   },
   {
     "id": "gyeongbuk-002",
@@ -1119,6 +1190,11 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale",
+      "plush"
     ]
   },
   {
@@ -1143,6 +1219,9 @@
       "명탐정 코난",
       "포켓몬",
       "장송의 프리렌"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -1163,6 +1242,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -1280,7 +1362,10 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "12:00 - 21:00"
+    "openingHours": "12:00 - 21:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "busan-004",
@@ -1343,7 +1428,10 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "14:00 - 21:00 (월 휴무)"
+    "openingHours": "14:00 - 21:00 (월 휴무)",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "busan-005",
@@ -1363,6 +1451,11 @@
       "치이카와",
       "원피스",
       "주술회전"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -1499,6 +1592,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -1519,6 +1615,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -1561,6 +1660,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -1584,6 +1686,11 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale",
+      "plush"
     ]
   },
   {
@@ -1614,6 +1721,13 @@
       "치이카와",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -1784,6 +1898,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -1809,6 +1926,11 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale",
+      "plush"
     ]
   },
   {
@@ -1872,7 +1994,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "13:00 - 22:00"
+    "openingHours": "13:00 - 22:00",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "chungnam-005",
@@ -2002,7 +2127,11 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "12:00 - 22:00 (월 휴무)"
+    "openingHours": "12:00 - 22:00 (월 휴무)",
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
+    ]
   },
   {
     "id": "chungnam-007",
@@ -2088,6 +2217,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2113,6 +2245,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2156,6 +2291,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -2179,6 +2317,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -2204,6 +2347,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2229,6 +2375,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2376,6 +2525,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2437,7 +2589,10 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "평일 11:00-20:00, 주말 11:00-21:00"
+    "openingHours": "평일 11:00-20:00, 주말 11:00-21:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "hongdae-007",
@@ -2488,6 +2643,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2551,7 +2709,10 @@
         "close": "23:00"
       }
     ],
-    "openingHours": "평일 11:00-23:00, 주말 10:00-23:00"
+    "openingHours": "평일 11:00-23:00, 주말 10:00-23:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "seouletc-008",
@@ -2575,6 +2736,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2600,6 +2764,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2690,6 +2857,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2757,7 +2927,11 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "화 13:00-22:00, 수 13:00-22:00, 목 13:00-22:00, 금 13:00-22:00, 토 13:00-22:00, 일 17:00-22:00 (월 휴무)"
+    "openingHours": "화 13:00-22:00, 수 13:00-22:00, 목 13:00-22:00, 금 13:00-22:00, 토 13:00-22:00, 일 17:00-22:00 (월 휴무)",
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
+    ]
   },
   {
     "id": "gyeonggi-015",
@@ -2847,6 +3021,11 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "acrylstand",
+      "keychain"
     ]
   },
   {
@@ -2910,7 +3089,12 @@
         "close": "18:00"
       }
     ],
-    "openingHours": "평일 11:00-20:00, 주말 12:00-18:00 (토 휴무)"
+    "openingHours": "평일 11:00-20:00, 주말 12:00-18:00 (토 휴무)",
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "poster"
+    ]
   },
   {
     "id": "gyeonggi-018",
@@ -2935,6 +3119,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -2964,6 +3151,9 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -3010,6 +3200,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -3071,7 +3264,12 @@
         "close": "23:00"
       }
     ],
-    "openingHours": "평일 13:00-22:00, 주말 11:00-23:00"
+    "openingHours": "평일 13:00-22:00, 주말 11:00-23:00",
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
+    ]
   },
   {
     "id": "gyeonggi-021",
@@ -3131,7 +3329,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "화 12:00-22:00, 수 12:00-22:00, 목 12:00-22:00, 금 12:00-24:00, 토 12:00-24:00, 일 12:00-22:00 (월 휴무)"
+    "openingHours": "화 12:00-22:00, 수 12:00-22:00, 목 12:00-22:00, 금 12:00-24:00, 토 12:00-24:00, 일 12:00-22:00 (월 휴무)",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "gyeonggi-022",
@@ -3154,6 +3355,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -3179,6 +3385,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -3266,6 +3475,11 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "acrylstand",
+      "keychain"
     ]
   },
   {
@@ -3289,6 +3503,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -3312,6 +3531,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -3436,7 +3658,11 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "12:00 - 21:00"
+    "openingHours": "12:00 - 21:00",
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
+    ]
   },
   {
     "id": "daegu-001",
@@ -3461,6 +3687,11 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale",
+      "plush"
     ]
   },
   {
@@ -3484,6 +3715,11 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale",
+      "plush"
     ]
   },
   {
@@ -3541,7 +3777,12 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "10:30 - 21:00"
+    "openingHours": "10:30 - 21:00",
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
+    ]
   },
   {
     "id": "chungnam-008",
@@ -3603,7 +3844,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "13:00 - 22:00"
+    "openingHours": "13:00 - 22:00",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "hongdae-011",
@@ -3749,6 +3993,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -3813,7 +4060,10 @@
         "close": "20:00"
       }
     ],
-    "openingHours": "12:00 - 20:00 (월 휴무)"
+    "openingHours": "12:00 - 20:00 (월 휴무)",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "seouletc-011",
@@ -3838,6 +4088,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -3862,6 +4115,10 @@
       "산리오",
       "치이카와",
       "디즈니"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "blindbox"
     ]
   },
   {
@@ -3986,7 +4243,11 @@
         "close": "18:00"
       }
     ],
-    "openingHours": "평일 14:00-18:30, 주말 13:00-18:00 (수 휴무)"
+    "openingHours": "평일 14:00-18:30, 주말 13:00-18:00 (수 휴무)",
+    "productTypes": [
+      "figure-scale",
+      "blindbox"
+    ]
   },
   {
     "id": "gyeonggi-029",
@@ -4111,7 +4372,10 @@
         "close": "20:00"
       }
     ],
-    "openingHours": "평일 11:00-20:40, 주말 11:30-20:00"
+    "openingHours": "평일 11:00-20:40, 주말 11:30-20:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "etc-005",
@@ -4133,6 +4397,9 @@
     "series": [
       "건담",
       "에반게리온"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -4156,6 +4423,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -4226,7 +4496,11 @@
         "close": "20:00"
       }
     ],
-    "openingHours": "10:00 - 20:00"
+    "openingHours": "10:00 - 20:00",
+    "productTypes": [
+      "figure-scale",
+      "blindbox"
+    ]
   },
   {
     "id": "daegu-003",
@@ -4289,7 +4563,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "평일 12:00-21:00, 주말 11:00-22:00"
+    "openingHours": "평일 12:00-21:00, 주말 11:00-22:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "daegu-004",
@@ -4352,7 +4629,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "평일 12:00-21:00, 주말 11:00-22:00"
+    "openingHours": "평일 12:00-21:00, 주말 11:00-22:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "seouletc-014",
@@ -4416,7 +4696,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "12:00 - 22:00 (월 휴무)"
+    "openingHours": "12:00 - 22:00 (월 휴무)",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "hongdae-013",
@@ -4505,7 +4788,11 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "평일 13:00-21:00, 주말 12:00-22:00"
+    "openingHours": "평일 13:00-21:00, 주말 12:00-22:00",
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
+    ]
   },
   {
     "id": "hongdae-015",
@@ -4533,6 +4820,10 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -4553,6 +4844,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -4640,6 +4934,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -4686,6 +4983,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -4798,6 +5098,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -4862,7 +5165,10 @@
         "close": "20:00"
       }
     ],
-    "openingHours": "월 13:00-21:00, 화 13:00-21:00, 목 13:00-21:00, 금 13:00-21:00, 토 12:00-21:00, 일 13:00-20:00 (수 휴무)"
+    "openingHours": "월 13:00-21:00, 화 13:00-21:00, 목 13:00-21:00, 금 13:00-21:00, 토 12:00-21:00, 일 13:00-20:00 (수 휴무)",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "incheon-004",
@@ -4886,6 +5192,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -4934,6 +5243,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -4959,6 +5271,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -5042,7 +5357,11 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "평일 13:00-22:00, 주말 12:00-22:00"
+    "openingHours": "평일 13:00-22:00, 주말 12:00-22:00",
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
+    ]
   },
   {
     "id": "gyeonggi-031",
@@ -5129,6 +5448,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -5152,6 +5474,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -5198,6 +5523,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -5221,6 +5549,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -5349,7 +5680,10 @@
         "close": "19:00"
       }
     ],
-    "openingHours": "10:00 - 19:00 (월,화,수,목,금 휴무)"
+    "openingHours": "10:00 - 19:00 (월,화,수,목,금 휴무)",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "gyeonggi-039",
@@ -5369,6 +5703,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -5394,6 +5731,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -5523,7 +5863,11 @@
         "close": "24:00"
       }
     ],
-    "openingHours": "00:00 - 24:00"
+    "openingHours": "00:00 - 24:00",
+    "productTypes": [
+      "blindbox",
+      "figure-scale"
+    ]
   },
   {
     "id": "daegu-005",
@@ -5548,6 +5892,10 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale"
     ]
   },
   {
@@ -5611,7 +5959,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "평일 12:00-21:00, 주말 12:00-22:00 (화 휴무)"
+    "openingHours": "평일 12:00-21:00, 주말 12:00-22:00 (화 휴무)",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "daegu-007",
@@ -5636,6 +5987,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -5659,6 +6013,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -5721,7 +6078,10 @@
         "close": "20:00"
       }
     ],
-    "openingHours": "월 13:00-20:00, 화 13:00-20:00, 수 13:00-20:00, 목 13:00-20:00, 금 13:00-20:00, 토 12:00-21:00, 일 13:00-20:00"
+    "openingHours": "월 13:00-20:00, 화 13:00-20:00, 수 13:00-20:00, 목 13:00-20:00, 금 13:00-20:00, 토 12:00-21:00, 일 13:00-20:00",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "daegu-010",
@@ -5782,7 +6142,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "월 10:00-22:00, 화 10:00-22:00, 수 10:00-22:00, 목 10:00-22:00, 금 10:00-23:00, 토 10:00-23:00, 일 10:00-22:00"
+    "openingHours": "월 10:00-22:00, 화 10:00-22:00, 수 10:00-22:00, 목 10:00-22:00, 금 10:00-23:00, 토 10:00-23:00, 일 10:00-22:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "daegu-011",
@@ -5972,7 +6335,10 @@
         "close": "20:00"
       }
     ],
-    "openingHours": "월 12:00-20:00, 화 12:00-20:00, 수 12:00-20:00, 목 12:00-20:00, 금 12:00-20:30, 토 12:00-20:30, 일 12:00-20:00"
+    "openingHours": "월 12:00-20:00, 화 12:00-20:00, 수 12:00-20:00, 목 12:00-20:00, 금 12:00-20:30, 토 12:00-20:30, 일 12:00-20:00",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "busan-008",
@@ -5997,6 +6363,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6021,6 +6390,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6173,7 +6545,14 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "평일 12:00-21:00, 주말 11:00-21:00"
+    "openingHours": "평일 12:00-21:00, 주말 11:00-21:00",
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "acrylstand",
+      "keychain",
+      "blindbox"
+    ]
   },
   {
     "id": "gwangju-005",
@@ -6237,7 +6616,12 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "평일 12:00-22:00, 주말 11:00-22:00"
+    "openingHours": "평일 12:00-22:00, 주말 11:00-22:00",
+    "productTypes": [
+      "blindbox",
+      "acrylstand",
+      "keychain"
+    ]
   },
   {
     "id": "jeonbuk-001",
@@ -6283,6 +6667,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6308,6 +6695,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6333,6 +6723,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6420,6 +6813,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6445,6 +6841,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6491,6 +6890,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6579,6 +6981,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6604,6 +7009,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6627,6 +7035,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6652,6 +7063,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6733,6 +7147,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6753,6 +7170,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6773,6 +7193,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6793,6 +7216,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6818,6 +7244,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -6843,6 +7272,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -7014,7 +7446,10 @@
         "close": "23:00"
       }
     ],
-    "openingHours": "월 11:00-22:00, 화 11:00-22:00, 수 11:00-22:00, 목 11:00-22:00, 금 11:00-23:00, 토 11:00-23:00, 일 11:00-23:00"
+    "openingHours": "월 11:00-22:00, 화 11:00-22:00, 수 11:00-22:00, 목 11:00-22:00, 금 11:00-23:00, 토 11:00-23:00, 일 11:00-23:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "chungbuk-003",
@@ -7039,6 +7474,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -7064,6 +7502,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -7087,6 +7528,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -7112,6 +7556,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -7175,7 +7622,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "평일 12:00-21:00, 주말 12:00-22:00"
+    "openingHours": "평일 12:00-21:00, 주말 12:00-22:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "hongdae-018",
@@ -7229,6 +7679,10 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -7272,6 +7726,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -7297,6 +7754,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -7428,7 +7888,10 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "월 11:00-21:00, 화 11:00-21:00, 수 11:00-21:00, 목 11:00-21:00, 금 11:00-22:00, 토 11:00-22:00, 일 11:00-22:00"
+    "openingHours": "월 11:00-21:00, 화 11:00-21:00, 수 11:00-21:00, 목 11:00-21:00, 금 11:00-22:00, 토 11:00-22:00, 일 11:00-22:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "gyeonggi-042",
@@ -7447,6 +7910,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -7471,6 +7939,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -7577,6 +8049,9 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -7606,6 +8081,9 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -7669,7 +8147,12 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "월 12:00-21:00, 화 12:00-21:00, 수 12:00-21:00, 목 12:00-21:00, 금 12:00-21:00, 토 11:00-22:00, 일 11:00-21:00"
+    "openingHours": "월 12:00-21:00, 화 12:00-21:00, 수 12:00-21:00, 목 12:00-21:00, 금 12:00-21:00, 토 11:00-22:00, 일 11:00-21:00",
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
+    ]
   },
   {
     "id": "busan-009",
@@ -7732,7 +8215,12 @@
         "close": "22:00"
       }
     ],
-    "openingHours": "월 11:00-22:00, 화 11:00-22:00, 수 11:00-22:00, 목 11:00-22:00, 금 11:00-22:30, 토 11:00-22:30, 일 11:00-22:00"
+    "openingHours": "월 11:00-22:00, 화 11:00-22:00, 수 11:00-22:00, 목 11:00-22:00, 금 11:00-22:30, 토 11:00-22:30, 일 11:00-22:00",
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
+    ]
   },
   {
     "id": "gyeonggi-046",
@@ -7757,6 +8245,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -7828,7 +8319,11 @@
         "close": "21:00"
       }
     ],
-    "openingHours": "11:00 - 21:00"
+    "openingHours": "11:00 - 21:00",
+    "productTypes": [
+      "figure-scale",
+      "blindbox"
+    ]
   },
   {
     "id": "gangnam-007",
@@ -7982,6 +8477,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -8125,7 +8623,10 @@
         "close": "24:00"
       }
     ],
-    "openingHours": "00:00 - 24:00"
+    "openingHours": "00:00 - 24:00",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "gyeonggi-047",
@@ -8187,7 +8688,12 @@
         "close": "20:30"
       }
     ],
-    "openingHours": "월 10:30-20:00, 화 10:30-20:00, 수 10:30-20:00, 목 10:30-20:00, 금 10:30-20:30, 토 10:30-20:30, 일 10:30-20:30"
+    "openingHours": "월 10:30-20:00, 화 10:30-20:00, 수 10:30-20:00, 목 10:30-20:00, 금 10:30-20:30, 토 10:30-20:30, 일 10:30-20:30",
+    "productTypes": [
+      "blindbox",
+      "figure-scale",
+      "plush"
+    ]
   },
   {
     "id": "gyeonggi-048",
@@ -8211,6 +8717,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale",
+      "plush"
     ]
   },
   {
@@ -8233,6 +8744,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -8252,6 +8768,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -8274,6 +8795,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -8293,6 +8819,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -8322,6 +8853,10 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -8371,6 +8906,10 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale"
     ]
   },
   {
@@ -8540,6 +9079,9 @@
     "series": [
       "건담",
       "에반게리온"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -8570,6 +9112,10 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -8595,6 +9141,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -8688,6 +9237,9 @@
     "series": [
       "건담",
       "에반게리온"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -8713,6 +9265,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -8737,6 +9292,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -8761,6 +9319,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -8812,6 +9373,10 @@
       "드래곤볼",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -8837,6 +9402,11 @@
       "치이카와",
       "원피스",
       "주술회전"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -8862,6 +9432,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -8934,6 +9507,11 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "acrylstand",
+      "keychain"
     ]
   },
   {
@@ -8959,6 +9537,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -8989,6 +9570,9 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -9014,6 +9598,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -9040,6 +9627,11 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "acrylstand",
+      "keychain"
     ]
   },
   {
@@ -9186,6 +9778,13 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "poster",
+      "stationery",
+      "blindbox"
     ]
   },
   {
@@ -9271,6 +9870,9 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -9292,6 +9894,11 @@
     ],
     "series": [
       "지브리"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "keychain"
     ]
   },
   {
@@ -9315,6 +9922,9 @@
     ],
     "series": [
       "마블"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -9339,6 +9949,9 @@
     "series": [
       "디즈니",
       "산리오"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -9361,6 +9974,9 @@
     ],
     "series": [
       "건담"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -9391,6 +10007,10 @@
       "포켓몬",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "blindbox"
     ]
   },
   {
@@ -9412,6 +10032,12 @@
       "귀멸의 칼날",
       "주술회전",
       "산리오"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "figure-scale",
+      "blindbox"
     ]
   },
   {
@@ -9434,6 +10060,11 @@
     ],
     "series": [
       "지브리"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "keychain"
     ]
   },
   {
@@ -9456,6 +10087,9 @@
     ],
     "series": [
       "건담"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -9476,6 +10110,10 @@
       "드래곤볼",
       "원피스",
       "에반게리온"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -9501,6 +10139,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -9549,6 +10190,10 @@
       "드래곤볼",
       "원피스",
       "에반게리온"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -9591,6 +10236,9 @@
       "명탐정 코난",
       "포켓몬",
       "장송의 프리렌"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -9615,6 +10263,9 @@
       "명탐정 코난",
       "포켓몬",
       "장송의 프리렌"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -9637,6 +10288,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -9699,6 +10354,10 @@
       "드래곤볼",
       "원피스",
       "에반게리온"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -9718,6 +10377,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -9743,6 +10406,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -9810,6 +10476,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -9838,6 +10507,9 @@
       "디즈니",
       "장송의 프리렌",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -9911,6 +10583,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -9938,6 +10613,13 @@
       "원피스",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -9960,6 +10642,11 @@
       "산리오",
       "치이카와",
       "디즈니"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -9982,6 +10669,11 @@
       "산리오",
       "치이카와",
       "디즈니"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -10005,6 +10697,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -10045,6 +10741,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -10095,6 +10796,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -10117,6 +10822,11 @@
     ],
     "series": [
       "지브리"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "keychain"
     ]
   },
   {
@@ -10194,6 +10904,13 @@
       "치이카와",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -10218,6 +10935,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -10291,6 +11011,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -10316,6 +11039,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -10377,6 +11103,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -10400,6 +11131,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -10494,6 +11230,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -10562,6 +11301,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -10632,6 +11376,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -10656,6 +11403,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -10681,6 +11431,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -10751,6 +11504,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -10774,6 +11532,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -10863,6 +11626,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -10886,6 +11654,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -10911,6 +11684,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -10938,6 +11714,9 @@
       "원피스",
       "체인소맨",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -11042,6 +11821,10 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -11070,6 +11853,10 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -11122,6 +11909,11 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "acrylstand",
+      "keychain"
     ]
   },
   {
@@ -11145,6 +11937,9 @@
     ],
     "series": [
       "건담"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -11168,6 +11963,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -11194,6 +11994,11 @@
       "원피스",
       "드래곤볼",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -11218,6 +12023,11 @@
       "원피스",
       "드래곤볼",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -11237,6 +12047,11 @@
       "산리오",
       "치이카와",
       "원피스"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -11261,6 +12076,11 @@
       "산리오",
       "치이카와",
       "원피스"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -11288,6 +12108,10 @@
       "귀멸의 칼날",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -11315,6 +12139,10 @@
       "나루토",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -11341,6 +12169,10 @@
       "귀멸의 칼날",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -11391,6 +12223,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -11437,6 +12272,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -11485,6 +12323,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -11535,6 +12376,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -11560,6 +12404,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -11587,6 +12434,11 @@
       "에반게리온",
       "포켓몬",
       "가면라이더"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "blindbox"
     ]
   },
   {
@@ -11610,6 +12462,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -11657,6 +12512,11 @@
     "series": [
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -11699,6 +12559,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -11729,6 +12594,10 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -11819,6 +12688,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -11881,7 +12754,11 @@
         "close": "23:00"
       }
     ],
-    "openingHours": "10:00 - 23:00"
+    "openingHours": "10:00 - 23:00",
+    "productTypes": [
+      "blindbox",
+      "plush"
+    ]
   },
   {
     "id": "jeonbuk-016",
@@ -11903,6 +12780,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -11922,6 +12804,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -11941,6 +12828,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -11960,6 +12852,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -11979,6 +12876,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12003,6 +12905,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -12027,6 +12933,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -12046,6 +12956,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12068,6 +12983,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12092,6 +13012,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -12116,6 +13040,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12135,6 +13064,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12159,6 +13093,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12178,6 +13117,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12200,6 +13144,10 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush"
     ]
   },
   {
@@ -12219,6 +13167,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12238,6 +13191,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12260,6 +13218,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12283,6 +13246,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12302,6 +13270,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12363,7 +13336,12 @@
         "off": true
       }
     ],
-    "openingHours": "10:00 - 22:00 (일 휴무)"
+    "openingHours": "10:00 - 22:00 (일 휴무)",
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
+    ]
   },
   {
     "id": "seouletc-037",
@@ -12382,6 +13360,11 @@
       "포켓몬",
       "디즈니",
       "건담"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -12406,6 +13389,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -12430,6 +13416,11 @@
       "치이카와",
       "원피스",
       "주술회전"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -12499,6 +13490,9 @@
     "series": [
       "건담",
       "에반게리온"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -12545,6 +13539,11 @@
       "산리오",
       "치이카와",
       "원피스"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -12610,6 +13609,9 @@
     "series": [
       "건담",
       "에반게리온"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -12678,6 +13680,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -12702,6 +13707,12 @@
       "귀멸의 칼날",
       "주술회전",
       "산리오"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "figure-scale",
+      "blindbox"
     ]
   },
   {
@@ -12725,6 +13736,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -12748,6 +13762,9 @@
     ],
     "series": [
       "건담"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -12778,6 +13795,13 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "poster",
+      "stationery",
+      "blindbox"
     ]
   },
   {
@@ -12806,6 +13830,11 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "poster"
     ]
   },
   {
@@ -12825,6 +13854,11 @@
       "산리오",
       "치이카와",
       "원피스"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -12880,6 +13914,13 @@
       "원피스",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -12967,6 +14008,9 @@
       "원피스",
       "나루토",
       "드래곤볼"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -12991,6 +14035,9 @@
     "series": [
       "건담",
       "에반게리온"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -13016,6 +14063,10 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale"
     ]
   },
   {
@@ -13039,6 +14090,10 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "figure-scale"
     ]
   },
   {
@@ -13085,6 +14140,9 @@
       "원피스",
       "드래곤볼",
       "나루토"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -13112,6 +14170,11 @@
       "에반게리온",
       "포켓몬",
       "가면라이더"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "blindbox"
     ]
   },
   {
@@ -13136,6 +14199,9 @@
       "드래곤볼",
       "나루토",
       "귀멸의 칼날"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -13209,6 +14275,10 @@
       "귀멸의 칼날",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -13234,6 +14304,9 @@
       "산리오",
       "치이카와",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox"
     ]
   },
   {
@@ -13286,6 +14359,11 @@
       "치이카와",
       "포켓몬",
       "디즈니"
+    ],
+    "productTypes": [
+      "blindbox",
+      "acrylstand",
+      "keychain"
     ]
   },
   {
@@ -13314,6 +14392,10 @@
       "나루토",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -13385,6 +14467,11 @@
       "원피스",
       "드래곤볼",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -13411,6 +14498,11 @@
       "원피스",
       "드래곤볼",
       "포켓몬"
+    ],
+    "productTypes": [
+      "blindbox",
+      "plush",
+      "figure-scale"
     ]
   },
   {
@@ -13524,6 +14616,13 @@
       "치이카와",
       "장송의 프리렌",
       "나의 히어로 아카데미아"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "acrylstand",
+      "keychain",
+      "blindbox"
     ]
   },
   {
@@ -13556,6 +14655,10 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -13585,6 +14688,10 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid"
     ]
   },
   {
@@ -13612,6 +14719,9 @@
       "하이큐",
       "원피스",
       "드래곤볼"
+    ],
+    "productTypes": [
+      "figure-scale"
     ]
   },
   {
@@ -13719,6 +14829,11 @@
       "장송의 프리렌",
       "나의 히어로 아카데미아",
       "그 비스크 돌은 사랑을 한다"
+    ],
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "poster"
     ]
   },
   {
@@ -13773,7 +14888,14 @@
     "openingHours": "10:00 - 20:50",
     "source": "manual",
     "lastVerified": "2026-03-05",
-    "naverPlaceId": "2045345028"
+    "naverPlaceId": "2045345028",
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "poster",
+      "stationery",
+      "blindbox"
+    ]
   },
   {
     "id": "yongsan-012",
@@ -13794,7 +14916,10 @@
     "openingHours": "10:30 - 20:00",
     "source": "manual",
     "lastVerified": "2026-03-05",
-    "naverPlaceId": "2075008032"
+    "naverPlaceId": "2075008032",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "gangnam-013",
@@ -13836,7 +14961,10 @@
     ],
     "type": "independent",
     "source": "manual",
-    "lastVerified": "2026-03-05"
+    "lastVerified": "2026-03-05",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "gwangjin-007",
@@ -13859,7 +14987,10 @@
     "source": "manual",
     "lastVerified": "2026-03-05",
     "naverPlaceId": "1591366822",
-    "phone": "070-8228-6133"
+    "phone": "070-8228-6133",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "gangnam-014",
@@ -13880,7 +15011,10 @@
     ],
     "type": "independent",
     "source": "manual",
-    "lastVerified": "2026-03-05"
+    "lastVerified": "2026-03-05",
+    "productTypes": [
+      "figure-scale"
+    ]
   },
   {
     "id": "busan-031",
@@ -13901,7 +15035,10 @@
     "type": "independent",
     "source": "manual",
     "lastVerified": "2026-03-05",
-    "naverPlaceId": "2008421035"
+    "naverPlaceId": "2008421035",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "incheon-020",
@@ -13921,7 +15058,10 @@
     "type": "independent",
     "source": "manual",
     "lastVerified": "2026-03-05",
-    "naverPlaceId": "1530998312"
+    "naverPlaceId": "1530998312",
+    "productTypes": [
+      "blindbox"
+    ]
   },
   {
     "id": "gyeonggi-094",
@@ -13945,7 +15085,11 @@
     "phone": "010-9682-1421",
     "openingHours": "평일 13:00-21:00, 주말 11:00-21:00",
     "source": "manual",
-    "lastVerified": "2026-03-05"
+    "lastVerified": "2026-03-05",
+    "productTypes": [
+      "figure-scale",
+      "blindbox"
+    ]
   },
   {
     "id": "daegu-028",
@@ -13967,7 +15111,14 @@
     "type": "independent",
     "source": "manual",
     "lastVerified": "2026-03-05",
-    "naverPlaceId": "2077427095"
+    "naverPlaceId": "2077427095",
+    "productTypes": [
+      "figure-scale",
+      "figure-nendoroid",
+      "acrylstand",
+      "keychain",
+      "blindbox"
+    ]
   },
   {
     "id": "gyeonggi-095",
@@ -13991,7 +15142,14 @@
     "type": "popup",
     "openingHours": "10:30 - 20:00",
     "source": "manual",
-    "lastVerified": "2026-03-05"
+    "lastVerified": "2026-03-05",
+    "productTypes": [
+      "acrylstand",
+      "keychain",
+      "poster",
+      "stationery",
+      "blindbox"
+    ]
   },
   {
     "id": "busan-032",
@@ -14010,6 +15168,9 @@
     ],
     "type": "independent",
     "source": "manual",
-    "lastVerified": "2026-03-05"
+    "lastVerified": "2026-03-05",
+    "productTypes": [
+      "figure-scale"
+    ]
   }
 ]

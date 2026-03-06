@@ -1,7 +1,7 @@
 "use client";
 
 import type { Store } from "@/types/store";
-import { genreLabels, areaLabels } from "@/types/store";
+import { genreLabels, areaLabels, productTypeLabels } from "@/types/store";
 import FreshnessBadge from "@/components/detail/FreshnessBadge";
 import { getBusinessStatus, statusConfig } from "@/lib/opening-hours";
 import { getPopupStatus, popupStatusConfig } from "@/lib/popup-status";
@@ -103,6 +103,14 @@ export default function StoreListPanel({
                         +{store.series!.length - 3}
                       </span>
                     )}
+                    {store.productTypes?.slice(0, 2).map((pt) => (
+                      <span
+                        key={pt}
+                        className="px-1.5 py-0.5 text-[10px] rounded bg-teal-50 text-teal-600"
+                      >
+                        {productTypeLabels[pt]}
+                      </span>
+                    ))}
                   </div>
                 </button>
                 {onToggleFavorite && (

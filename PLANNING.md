@@ -263,6 +263,20 @@ Milestone 1~4(MVP)는 완료된 상태. 아래는 서비스 고도화를 위한 
 
 ---
 
+## Phase 10: 데이터 자동화
+
+### 10-1. 신규 입고/소식 자동 수집
+- 매장 인스타그램, X(트위터) 등 SNS 계정에서 신규 입고 소식 자동 수집
+- `scripts/fetch-news.ts` — 주기적 실행 (GitHub Actions cron)
+- 매장별 SNS 계정 URL 필드 추가 (`instagram`, `twitter`)
+- 수집된 소식을 `public/data/news.json`에 저장
+- 매장 상세 뷰에 "최근 소식" 섹션 표시 (최근 7일)
+- 시간 경과에 따라 자동 만료 (7일 후 삭제)
+- 구현 방식: Instagram 공개 프로필 scraping 또는 RSS 변환 서비스 활용
+- 백엔드 없이 정적 JSON으로 관리 (스크립트 → JSON → Git push)
+
+---
+
 ## 인프라 로드맵
 
 ### 호스팅 전환

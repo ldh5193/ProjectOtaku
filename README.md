@@ -70,6 +70,7 @@ ProjectOtaku/
     │   │   ├── FilterSection.tsx       # 필터 래퍼 (SearchBar + Genre + Series, compact 모드)
     │   │   ├── GenreFilterBar.tsx      # 장르 칩 토글 버튼 (8종, 멀티선택, 초기화)
     │   │   ├── SeriesFilterBar.tsx     # 시리즈 칩 필터 (핑크 테마, 접기/펼치기, 인라인 검색)
+    │   │   ├── ProductTypeFilterBar.tsx # 상품 유형 칩 필터 (청록 테마)
     │   │   └── SearchBar.tsx           # 검색 입력 (300ms 디바운스)
     │   ├── list/
     │   │   └── StoreListPanel.tsx      # 지역 그룹별 매장 리스트 + 신선도 뱃지
@@ -111,7 +112,8 @@ ProjectOtaku/
 ### 카테고리 필터
 - 8개 장르 칩 버튼으로 필터링 (애니/피규어/굿즈/만화/게임/아이돌/TCG/가챠)
 - 작품/시리즈 칩 필터 (핑크 테마, 빈도순 정렬, 접기/펼치기)
-- 멀티 선택 가능 (장르 OR, 시리즈 OR, 장르×시리즈 AND)
+- 상품 유형 칩 필터 (청록 테마): 아크스탠드, 랜덤박스, 넨도로이드, 스케일피규어, 봉제인형, 의류, 포토카드, 키링, 문구, 이타백, 포스터
+- 멀티 선택 가능 (장르 OR, 시리즈 OR, 상품유형 OR, 상호간 AND)
 - 초기화 버튼으로 전체 복원
 
 ### 검색
@@ -246,6 +248,7 @@ npm start
 ```
 
 **장르 종류:** anime, figure, goods, manga, game, idol, tcg, gashapon
+**상품 유형:** acrylstand, blindbox, figure-nendoroid, figure-scale, plush, apparel, photocard, keychain, stationery, itabag, poster
 **매장 유형:** franchise, independent, popup
 **지역 코드:** hongdae, gangnam, sinchon, jongno, dongdaemun, yongsan, songpa, gwangjin, etc-seoul, gyeonggi, incheon, busan, daegu, daejeon, gwangju, chungnam, chungbuk, jeonbuk, jeonnam, gyeongbuk, gyeongnam, gangwon, jeju, etc
 
